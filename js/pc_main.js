@@ -39,10 +39,17 @@ $(function() {
 				$('.sec_title span').removeClass('sec_A');
 				$(this).addClass('sec_A')
 				$('.sec_box').eq(a).css('display','block');
-			},
-//			mouseout:function(){
-//				
-//			}
+			}
+		})
+	});
+	$('.shade_nav').each(function(a,b){
+		$(this).on({
+			mouseover:function(){
+				$('.msg_box').css('display','none');
+				$('.shade_nav').children('span').removeClass('sec_A');
+				$(this).children('span').addClass('sec_A');
+				$('.msg_box').eq(a).css('display','block');
+			}
 		})
 	})
 })
