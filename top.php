@@ -19,7 +19,7 @@
 			<ul>
 				<li>
 					<div>
-						<a href="<?=get_url('article',$art_group[1][0]);?>">首页</a>
+						<a href="/">首页</a>
 					</div>
 				</li>
 				<li>
@@ -42,7 +42,7 @@
 				</li>
 				<li>
 					<div class="start">
-						<a href="/products.php">产品中心</a>
+						<a href="/products.php?CateId=24">产品中心</a>
 					</div>
 					<div class="nav2">
 						<?php
