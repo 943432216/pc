@@ -210,17 +210,17 @@ function turn_page_ext($page, $total_pages, $query_string, $row_count, $pre_page
 	
 	$turn_page_str='';
 	$pre=$page-1>0?$page-1:1;
-	$turn_page_str.="<p><a href='$query_string$pre$html_ext' class='page_button hover'>$pre_page</a></p>&nbsp;";
+	$turn_page_str.="<a href='$query_string$pre$html_ext' class='page_button hover'>$pre_page</a>&nbsp;";
 	
 	for($i=$i_start; $i<=$i_end; $i++){
-		$turn_page_str.=$page!=$i?"<p><a href='{$query_string}{$i}{$html_ext}' class='page_item'>$i</a></p>&nbsp;":"<p><font class='page_item_current'>$i</font></p>&nbsp;";
+		$turn_page_str.=$page!=$i?"<a href='{$query_string}{$i}{$html_ext}' class='page_item pagenum'>$i</a>&nbsp;":"<font class='page_item_current pagenum'>$i</font>&nbsp;";
 	}
 	
-	$i_end<$total_pages && $turn_page_str.="<p><a href='{$query_string}{$total_pages}{$html_ext}' class='page_item'>$total_pages</a></p>";
+	$i_end<$total_pages && $turn_page_str.="<a href='{$query_string}{$total_pages}{$html_ext}' class='page_item pagenum'>$total_pages</a>";
 	
 	$next=$page+1>$total_pages?$total_pages:$page+1;
 	$page>=$total_pages && $page--;
-	$turn_page_str.="<p><a href='$query_string$next$html_ext' class='page_button'>$next_page</a></p>";
+	$turn_page_str.="<a href='$query_string$next$html_ext' class='page_button'>$next_page</a>";
 	
 	return $turn_page_str;
 }
