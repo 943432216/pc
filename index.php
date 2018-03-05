@@ -50,7 +50,7 @@ $pageName='index';
 					</div>
 				</div>
 				<div class="sec_con">
-					<div class="msg_box" style="display: block;">
+					<div class="msg_boxs" style="display: block;">
 						<div class="msg_1">
 							<div class="msg_img">
 								<img src="img/686a9d6efb.png" class="img" />
@@ -82,7 +82,7 @@ $pageName='index';
 							</div>
 						</div>
 					</div>
-					<div class="msg_box">
+					<div class="msg_boxs">
 						<div class="msg_1">
 							<div class="msg_img">
 								<img src="img/686a9d6efb.png" class="img" />
@@ -114,7 +114,7 @@ $pageName='index';
 							</div>
 						</div>
 					</div>
-					<div class="msg_box position">
+					<div class="msg_boxs position">
 
 						<div class="big_video">
 							<iframe id="vidse" width="100%" height="100%" frameborder="no" scrolling="no" src='http://player.youku.com/embed/XMTc2MzQ4NTI1Ng=='></iframe>

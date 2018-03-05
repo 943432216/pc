@@ -34,13 +34,13 @@ $(function() {
 			$('.ewmx').css('display', 'none');
 		}
 	});
-	$('.sec_title span').each(function(a, b) {
+	$('.sec_titles span').each(function(a, b) {
 		$(this).on({
 			mouseover: function() {
-				$('.sec_box').css('display', 'none');
-				$('.sec_title span').removeClass('sec_A');
+				$('.msg_boxs').css('display', 'none');
+				$('.sec_titles span').removeClass('sec_A');
 				$(this).addClass('sec_A')
-				$('.sec_box').eq(a).css('display', 'block');
+				$('.msg_boxs').eq(a).css('display', 'block');
 			}
 		})
 	});
