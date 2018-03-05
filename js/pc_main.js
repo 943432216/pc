@@ -90,6 +90,7 @@ $(function() {
 	$('#homepage').click(function(){
 		SetHome(urls)
 	})
+	$('.bx_2').find('img').addClass('img');
 })
 
 function videold(num) {

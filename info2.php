@@ -40,7 +40,7 @@ $banner=$db->get_one('ad',"AId='7'");
 				<div class="sec_titles left width">
 					<?php foreach((array)$info2_cate as $item){?>
 					<div class="shade overflow shade_nav">
-						<span class="sec_A"><?=$item['Category']?></span>
+						<span><?=$item['Category']?></span>
 					</div>
 					<?php }?>
 				</div>
