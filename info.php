@@ -19,6 +19,7 @@ if($CateId){
 }
 $pageName='info';
 $banner=$db->get_one('ad',"AId='5'");
+//var_dump($info_row);exit;
 ?>
 <!DOCTYPE html>
 <html>
@@ -58,7 +59,7 @@ $banner=$db->get_one('ad',"AId='5'");
 						?>
 						<div class="msg_1">
 							<div class="msg_img">
-								<a href="<?=$info_row[$i]['ExtUrl']?$info_row[$i]['ExtUrl']:get_url('info', $info_row[$i]);?>"><img src="<?=$info_row['ThumbPic']?>" class="img"/></a>
+								<a href="<?=$info_row[$i]['ExtUrl']?$info_row[$i]['ExtUrl']:get_url('info', $info_row[$i]);?>"><img src="<?=$info_row[$i]['ThumbPic']?>" class="img"/></a>
 							</div>
 							<div class="msg_con">
 								<h2><?=$info_row[$i]['Title'];?></h2>

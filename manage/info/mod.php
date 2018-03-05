@@ -84,7 +84,7 @@ if($_POST){
 		//var_dump($new_pic_path);exit;
 		move_uploaded_file($_FILES['thumb']['tmp_name'], $new_pic_path);
 	}
-	//var_dump($new_pic_path);exit;
+	//var_dump($_FILES["thumb"]["error"]);exit;
 	$db->update('info', "InfoId='$InfoId'", array(
 			'CateId'			=>	$CateId,
 			'Title'				=>	$Title,
