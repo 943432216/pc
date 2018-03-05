@@ -63,22 +63,22 @@ $banner=$db->get_one('ad',"AId='5'");
 								<a href="<?=$info_row[$i]['ExtUrl']?$info_row[$i]['ExtUrl']:get_url('info', $info_row[$i]);?>">查看详情 》》</a>
 							</div>
 						</div>
-						<?php }?>
-						
+						<?php }?>					
+						<?php if($total_pages>0){?>
 						<div class="page">
-							<span class="firstd">首页</span>
-							<span>上一页</span>
-							<p class="avt">1</p>
-							<p class="msg_color">2</p>
-							<p class="msg_color">3</p>
-							<p class="msg_color">...</p>
-							<p class="msg_color">8</p>
-							<p class="msg_color">9</p>
-							<span>下一页</span>
-							<span>尾页</span>
-							<div>跳转<input type="text" id="page" class="pages"/>页</div>
-							<span>GO</span>
+							<a href="/info2.php?<?=$query_string?>&page=1" class="page_item hover">首页</a>
+							<?=turn_page_ext($page, $total_pages, $turn_page_query_string, $row_count, '上一页', '下一页', $website_url_type,1);?>
+							<a href="/info2.php?<?=$query_string?>&page=<?=$total_pages?>" class="page_item hover">未页</a>
+							<form style="display:inline;" action="/info2.php?<?=query_string('page')?>" method="GET">转到 <input class="page" type="text" name="page" onkeyup="set_number(this,0)" onpaste="set_number(this,0)" /> 页 <input type="submit" class="submit" onclick="return go_url();" value="Go" /></form>
+							<script type="text/javascript">
+								function go_url(){
+									var v = jQuery('.page').val();
+									window.location='/info2.php?<?=query_string('page')?>'+"&page="+parseInt(v);
+									return false;
+								}
+							</script>
 						</div>
+						<?php }?>
 					</div>
 					<div class="msg_box">
 						<div class="big_video">

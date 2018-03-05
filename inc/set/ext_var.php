@@ -216,7 +216,7 @@ function turn_page_ext($page, $total_pages, $query_string, $row_count, $pre_page
 		$turn_page_str.=$page!=$i?"<a href='{$query_string}{$i}{$html_ext}' class='page_item'>$i</a>&nbsp;":"<font class='page_item_current'>$i</font>&nbsp;";
 	}
 	
-	$i_end<$total_pages && $turn_page_str.="<a href='{$query_string}{$total_pages}{$html_ext}' class='page_item'>$total_pages</a>";
+	$i_end<$total_pages && $turn_page_str.="<a href='{$query_string}{$total_pages}{$html_ext}' class='page_item pagenum'>$total_pages</a>";
 	
 	$next=$page+1>$total_pages?$total_pages:$page+1;
 	$page>=$total_pages && $page--;
