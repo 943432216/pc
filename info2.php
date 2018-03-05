@@ -40,7 +40,7 @@ $banner=$db->get_one('ad',"AId='7'");
 				<div class="sec_titles left width">
 					<?php foreach((array)$info2_cate as $item){?>
 					<div class="shade overflow shade_nav">
-						<span><?=$item['Category']?></span>
+						<a href=""><?=$item['Category']?></a>
 					</div>
 					<?php }?>
 				</div>
@@ -91,6 +91,22 @@ $banner=$db->get_one('ad',"AId='7'");
 		<script src="js/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/unslider.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/pc_main.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				$('.contents').find('*').removeAttr('style');
+				$('.contents').find('img').addClass('img');
+				$('.contents').find('strong').css({
+					'font-size':'17px',
+					'color':'#323232',
+					'width':'100%',
+					'font-weight':'600',
+					'text-align':'center',
+					'display':'block',
+					'margin':'10px 0',
+				});
+				$('.contents').find('span').css('line-height','160%');
+			})
+		</script>
 	</body>
 
 </html>
