@@ -105,7 +105,9 @@ $banner=$db->get_one('ad',"AId='7'");
 					'margin':'10px 0',
 				});
 				$('.contents').find('span').css('line-height','160%');
-				$('.pagenum').css('background','#c49858 !important');
+				$('.pagenum').css('background','#c49858');
+				$('.pagenum').css('border-color','#c49858');
+				$('.paged').css('border-color','#c49858');
 			})
 		</script>
 	</body>
