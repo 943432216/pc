@@ -39,13 +39,13 @@ $pageName='index';
 				<span class="video_right"><img src="img/video_right.png"/></span>
 				<div class="sec_stl"><img src="img/pc_msg.png" /></div>
 				<div class="sec_titles left width">
-					<div class="shade overflow shade_nav">
+					<div class="shade overflow shade_navd">
 						<span class="sec_A">公司动态</span>
 					</div>
-					<div class="shade overflow shade_nav">
+					<div class="shade overflow shade_navd">
 						<span>行业动态</span>
 					</div>
-					<div class="shade overflow shade_nav">
+					<div class="shade overflow shade_navd">
 						<span>视频中心</span>
 					</div>
 				</div>

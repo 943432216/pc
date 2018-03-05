@@ -71,11 +71,11 @@ $banner=$db->get_one('ad',"AId='7'");
 							<a href="/info2.php?<?=$query_string?>&page=1" class="page_item hover">首页</a>
 							<?=turn_page_ext($page, $total_pages, $turn_page_query_string, $row_count, '上一页', '下一页', $website_url_type,1);?>
 							<a href="/info2.php?<?=$query_string?>&page=<?=$total_pages?>" class="page_item hover">未页</a>
-							<form style="display:inline;" action="/info2.php?<?=query_string('page')?>" method="GET">转到 <input class="page" type="text" name="page" onkeyup="set_number(this,0)" onpaste="set_number(this,0)" /> 页 <input type="submit" class="submit" onclick="return go_url();" value="Go" /></form>
+							<form style="display:inline;" action="/info2.php?<?=query_string('paged')?>" method="GET">转到 <input class="paged" type="text" name="paged" onkeyup="set_number(this,0)" onpaste="set_number(this,0)" /> 页 <input type="submit" class="submit" onclick="return go_url();" value="Go" /></form>
 							<script type="text/javascript">
 								function go_url(){
-									var v = jQuery('.page').val();
-									window.location='/info2.php?<?=query_string('page')?>'+"&page="+parseInt(v);
+									var v = jQuery('.paged').val();
+									window.location='/info2.php?<?=query_string('paged')?>'+"&page="+parseInt(v);
 									return false;
 								}
 							</script>

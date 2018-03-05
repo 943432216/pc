@@ -45,7 +45,7 @@ $(function() {
 		})
 	});
 	//新闻
-	$('.shade_nav').each(function(a, b) {
+	$('.shade_navd').each(function(a, b) {
 		$(this).on({
 			mouseover: function() {
 				$('.msg_box').css('display', 'none');
@@ -90,7 +90,6 @@ $(function() {
 	$('#homepage').click(function(){
 		SetHome(urls)
 	})
-//	$('.bx_2').find('img').addClass('img');
 })
 
 function videold(num) {
