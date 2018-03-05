@@ -40,7 +40,7 @@ $banner=$db->get_one('ad',"AId='7'");
 				<div class="sec_titles left width">
 					<?php foreach((array)$info2_cate as $item){?>
 					<div class="shade overflow shade_nav">
-						<a href=""><?=$item['Category']?></a>
+						<a href="<?=get_url('info2_category',$item)?>"><?=$item['Category']?></a>
 					</div>
 					<?php }?>
 				</div>
