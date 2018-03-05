@@ -49,6 +49,9 @@ $banner=$db->get_one('ad',"AId='5'");
 					<?php }?>
 				</div>
 				<div class="sec_con overflow">
+					<?php  
+					if ($CateId != 6) {
+					?>
 					<div class="msg_box">
 						<?php
 						for($i=0; $i<count($info_row); $i++){
@@ -80,6 +83,7 @@ $banner=$db->get_one('ad',"AId='5'");
 						</div>
 						<?php }?>
 					</div>
+					<?php } else { ?>
 					<div class="msg_box">
 						<div class="big_video">
 							<iframe src="http://player.youku.com/embed/XMTYwNzQ3ODA0OA==" width="100%" height="100%" frameborder="no" scrolling="no"></iframe>
@@ -94,6 +98,7 @@ $banner=$db->get_one('ad',"AId='5'");
 							<span></span>
 						</div>
 					</div>
+					<?php } ?>
 				</div>
 			</section>
 			<?php include('footer.php'); ?>
