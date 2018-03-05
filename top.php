@@ -99,7 +99,7 @@
 				</li>
 				<li>
 					<div>
-						<a href="#">联系心宝</a>
+						<a href="/contact.php">联系心宝</a>
 					</div>
 				</li>
 			</ul>
