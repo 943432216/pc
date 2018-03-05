@@ -45,7 +45,7 @@ $banner=$db->get_one('ad',"AId='5'");
 			                if($item['CateId'] == 7){continue;}
 			        ?>
 					<div class="shade overflow shade_nav">
-						<a href="<?=get_url('info_category',$item)?>" class="sec_A"><?=$item['Category']?></a>
+						<a href="<?=get_url('info_category',$item)?>"><?=$item['Category']?></a>
 					</div>
 					<?php }?>
 				</div>
@@ -73,11 +73,11 @@ $banner=$db->get_one('ad',"AId='5'");
 							<a href="/info2.php?<?=$query_string?>&page=1" class="page_item hover">首页</a>
 							<?=turn_page_ext($page, $total_pages, $turn_page_query_string, $row_count, '上一页', '下一页', $website_url_type,1);?>
 							<a href="/info2.php?<?=$query_string?>&page=<?=$total_pages?>" class="page_item hover">未页</a>
-							<form style="display:inline;" action="/info2.php?<?=query_string('page')?>" method="GET">转到 <input class="page" type="text" name="page" onkeyup="set_number(this,0)" onpaste="set_number(this,0)" /> 页 <input type="submit" class="submit" onclick="return go_url();" value="Go" /></form>
+							<form action="/info2.php?<?=query_string('page')?>" method="GET">转到 <input class="pages" type="text" name="pages" onkeyup="set_number(this,0)" onpaste="set_number(this,0)" /> 页 <input type="submit" class="submit" onclick="return go_url();" value="Go" /></form>
 							<script type="text/javascript">
 								function go_url(){
-									var v = jQuery('.page').val();
-									window.location='/info2.php?<?=query_string('page')?>'+"&page="+parseInt(v);
+									var v = jQuery('.pages').val();
+									window.location='/info2.php?<?=query_string('pages')?>'+"&page="+parseInt(v);
 									return false;
 								}
 							</script>
@@ -108,6 +108,13 @@ $banner=$db->get_one('ad',"AId='5'");
 		<script src="js/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/unslider.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/pc_main.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function(){
+				$('.pagenum').css('background','#c49858');
+				$('.pagenum').css('border-color','#c49858');
+				$('.paged').css('border-color','#c49858');
+			})
+		</script>
 	</body>
 
 </html>

@@ -80,6 +80,9 @@ $banner=$db->get_one('ad',"AId='6'");
 		<script src="js/unslider.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/pc_main.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
+			$('.pagenum').css('background','#fff');
+			$('.pagenum').css('color','#d13600')
+			$('.pagenum').css('border-color','#fff')
 		</script>
 	</body>
 
