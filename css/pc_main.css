@@ -55,7 +55,7 @@
 
 section{width: 94%;padding:0 3%;}
 /*demo1*/
-.sec_title,.sec_titles{margin:30px 0 18px 0;background: url(../img/bgs.png)no-repeat left center;height: 60px;background-size:100%;}
+.sec_title,.sec_titles{margin:30px 0 18px 0;background: url(../img/bgs.png)no-repeat;height: 60px;background-size:100%;background-position:left center;}
 .sec_title span,.sec_titles span,.sec_title a,.sec_titles a{cursor:pointer;float: left;display: block;width: 180px;height:58px;line-height:58px;text-align: center;background: #c49858;border: 1px solid #C49858;border-radius:30px;margin: 0 10px;font-size: 24px;color: white;}
 .sec_title span:nth-of-type(1){margin-left:22%;}
 .sec_A{background: #d13600 !important;}
@@ -174,9 +174,30 @@ input[type='submit']{font-size: 30px;width:198px;height: 68px;color: #fff;backgr
 .about_tl{float:left;width:97%;color: #232323;height: 35px;line-height: 35px;padding:0 0 0 3%;border-left:4px solid #d13600;margin-bottom: 18px;}
 .about_tl a{float:right;font-size: 20px;color: #999999;}
 .about_details{width:80%;padding: 0 10%;background: #fff;float: left;margin:30px 0;}
-.about_details li{width:203px;height: 233px;float: left;margin: 0 22px;background: url(../img/six.png) no-repeat;background-size:100% 100%;}
-.about_details li a{position:relative;}
- .product_details ul{padding: 0;width: 100%;}
+.about_details li{width:203px;height: 233px;float: left;margin: 20px 22px;background: url(../img/six.png) no-repeat;background-size:100% 100%;}
+.about_details li a{position:relative;width: 100%;height: 100%;display: block;}
+.about_details li img{width:168px;height: 114px;display: block;position: absolute;left:18px;top:64px;}
+.product_details ul{padding: 0;width: 100%;}
+.about_details li p{font-size:16px;color:#d13600;width: 100%;text-align: center;position: absolute;left: 0;top:76%;z-index: 99999;}
+.abXBs{width:94%;margin: 0 3%;margin: 20px 3% 10px 3%;}
+/*product_details*/
+.details_top,.details_con{float:left;width:86%;margin:30px 0;padding: 0 7%;}
+.details_tle{width: 39%;height:380px;background: #fff;border: 1px solid #D13600;}
+.details_tle img{width: 90%;height: 90%;padding: 5%;}
+.details_tri{width: 57%;padding:0 0 0 3%;}
+.details_tri li{float: left;width: 100%;font-size: 17px;color: #323232;margin:8px 0;line-height: 160%;}
+.details_tri h1{float: left;width: 100%;font-size: 40px;color: #323232;margin: 45px 0;}
+.picsmall{width: 100%;height: 80px;margin: 27px 0;float: left;}
+.picsmall div{height:78px;width: 40%;}
+.picsmall div span{float: left;width: 20%;height:100%;border: 1px solid #b0b0b0;display: block;margin:0 15px;background:#fff;}
+.picsmall div span img{width: 90%;height: 90%;padding: 5%;}
+.picsmall div p:nth-of-type(1){background: url(../img/product_prev.png) no-repeat;background-size:100% 100%;float: left;width:44px;height: 100%;cursor: pointer;}
+.picsmall div p:nth-of-type(2){background: url(../img/product_next.png) no-repeat;background-size:100% 100%;float: right;width:44px;height: 100%;cursor: pointer;}
+.details_con{margin:  0 0 30px 0;}
+.details_con span{width:30%;margin: 0 1%;text-align: center;display: block;float: left;background: #d2d2d2;height: 60px;line-height: 60px;font-size:25px;color: #fff;cursor: pointer;}
+.avts{background:url(../img/xtb.png) no-repeat #D13600  !important;background-position: center 51px !important;}
+.details_con div{width: 100%;padding: 40px 0;display: none;float:left;}
+
 /*兼容*/
 @media only screen and (min-width:1601px) and (max-width: 1920px) {
 	.tel_right p:nth-of-type(1) {
@@ -191,7 +212,7 @@ input[type='submit']{font-size: 30px;width:198px;height: 68px;color: #fff;backgr
 	.nav_right ul li a{font-size: 30px;}
 	.tel_right p:nth-of-type(1){margin-left:57%;}
 	.footer_nav{margin:37px 0 0 0;}
-	.sec_title a,.sec_titles a,.sec_titles span{height: 48px;line-height: 48px;font-size: 20px;width: 150px;}
+	.sec_title a,.sec_titles a,.sec_titles span{height: 50px;line-height:50px;font-size: 20px;width: 150px;}
 	.sec_title span:nth-of-type(1){margin-left:23%;}
 	.blogoll{height: 106px;}
 	.blogoll_left{font-size: 25px;background-size:52px 52px;width:200px;height: 106px;line-height: 106px;background: url(../img/brbg.png) no-repeat left center;background-size:100% 75px;}

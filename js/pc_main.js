@@ -89,6 +89,16 @@ $(function() {
 	})
 	$('#homepage').click(function(){
 		SetHome(urls)
+	});
+	$('.details_con span').each(function(a,b){
+		$(this).on({
+			mouseover:function(){
+				$('.details_con span').removeClass('avts');
+				$(this).addClass('avts');
+				$('.details_con div	').css('display','none');
+				$('.details_con div').eq(a).css('display','block')
+			}
+		})
 	})
 })
 
@@ -117,3 +127,4 @@ function SetHome(url) {
 		alert("您好,您的浏览器不支持自动设置页面为首页功能,请您手动在浏览器里设置该页面为首页!");
 	}
 }
+
