@@ -40,9 +40,9 @@ if($GroupId==1){
 			</div>
 			<section class="left position" >
 				<div class="sec_stl"><img src="img/stl.png"/></div>
-				<div class="sec_title left width">
+				<div class="sec_title left width abXB">
 					<?php foreach((array)$art_group[$GroupId] as $item){?>
-					<a href="<?=get_url('article',$item)?>"><span class="sec_A"><?=$item['Title']?></span></a>
+					<a href="<?=get_url('article',$item)?>"><?=$item['Title']?></a>
 					<?php }?>
 				</div>
 				<div class="sec_con">
@@ -60,12 +60,15 @@ if($GroupId==1){
 		<script src="js/pc_main.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
 			$(function() {
-				$('#marquee ul li').height($('.img').height());
-				var unslider06 = $('#marquee').unslider({
-					dots: true,
-					fluid: true
-				});
-				data06 = unslider06.data('unslider');
+				$('.abXB').find('a').eq(0).css('margin-left','22%');
+//				var uls=window.location.href;
+//				uls=uls.split('=')[1];
+//				if(uls=='3'){
+//					$('sec_con').find('*').removeAttr('style');
+//					$('sec_con').find('img').addClass('img')
+//					$('sec_con').find('div').css('float','left')
+//				}
+				
 			})
 		</script>
 	</body>

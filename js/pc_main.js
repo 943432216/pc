@@ -84,19 +84,28 @@ $(function() {
 	var urls = window.location.href;
 	var titles = document.title;
 	$('#collect').click(function() {
-		
+
 		AddFavorite(titles, urls);
 	})
-	$('#homepage').click(function(){
+	$('#homepage').click(function() {
 		SetHome(urls)
 	});
-	$('.details_con span').each(function(a,b){
+
+	urls = urls.split('=')[1];
+	if(urls == '3') {
+		$('.sec_box').find('*').removeAttr('style');
+		$('.sec_box').find('img').addClass('img')
+		$('.sec_box').find('div').css('float', 'left');
+		$('.sec_box').find('span').css('line-height','160%')
+	}
+
+	$('.details_con span').each(function(a, b) {
 		$(this).on({
-			mouseover:function(){
+			mouseover: function() {
 				$('.details_con span').removeClass('avts');
 				$(this).addClass('avts');
-				$('.details_con div	').css('display','none');
-				$('.details_con div').eq(a).css('display','block')
+				$('.details_con div	').css('display', 'none');
+				$('.details_con div').eq(a).css('display', 'block')
 			}
 		})
 	})
@@ -127,4 +136,3 @@ function SetHome(url) {
 		alert("您好,您的浏览器不支持自动设置页面为首页功能,请您手动在浏览器里设置该页面为首页!");
 	}
 }
-
