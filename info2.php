@@ -62,7 +62,7 @@ $banner=$db->get_one('ad',"AId='7'");
 							<div class="msg_con">
 								<h2><?=$info_row[$i]['Title'];?></h2>
 								<p><?=$info_row[$i]['BriefDescription'];?></p>
-								<a href="<?=$info_row[$i]['ExtUrl']?$info_row[$i]['ExtUrl']:get_url('info2', $info_row[$i]);?>">查看详情 》》</a>
+								<a href="<?=$info_row[$i]['ExtUrl']?$info_row[$i]['ExtUrl']:get_url('info', $info_row[$i]);?>">查看详情 》》</a>
 							</div>
 						</div>
 						<?php }?>					

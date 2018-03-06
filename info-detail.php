@@ -13,10 +13,8 @@ $pageName='info';
 $banner=$db->get_one('ad',"AId='5'");
 
 $msg_all = $db->get_all('info', 1, 'InfoId,Title,AccTime,PageUrl', 'InfoId desc');
-$info_id = htmlentities($_GET['InfoId']);
-$info_cate = $db->get_one('info', "InfoId=$info_id", 'CateId');
-$recommend = $db->get_all('info', "CateId=$info_cate[CateId]", 'InfoId,Title,AccTime,PageUrl', 'InfoId desc');
-// var_dump($recommend);exit;
+$recommend = $db->get_all('info', "CateId=$cur_cate[CateId]", 'InfoId,Title,AccTime,PageUrl', 'InfoId desc');
+//var_dump($recommend);exit;
 ?>
 <!DOCTYPE html>
 <html>

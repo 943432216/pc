@@ -50,7 +50,7 @@ $banner=$db->get_one('ad',"AId='6'");
 								<div class="bx_3"></div>
 							</div>
 							<div class="pro_details">
-								<span class="left pro_de">查看更多</span>
+								<a href="<?=$url?>" class="left pro_de">查看更多</a>
 							</div>
 						</div>
 						<?php }?>
