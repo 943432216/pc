@@ -18,12 +18,12 @@
 		<div class="left nav_right">
 			<ul>
 				<li>
-					<div>
+					<div class="ff">
 						<a href="/">首页</a>
 					</div>
 				</li>
 				<li>
-					<div class="start">
+					<div class="start ff">
 						<a href="<?=get_url('article',$art_group[1][0]);?>">关于心宝</a>
 					</div>
 					<div class="nav2">
@@ -41,7 +41,7 @@
 					</div>
 				</li>
 				<li>
-					<div class="start">
+					<div class="start ff">
 						<a href="/products.php?CateId=24">产品中心</a>
 					</div>
 					<div class="nav2">
@@ -59,7 +59,7 @@
 					</div>
 				</li>
 				<li>
-					<div class="start">
+					<div class="start ff">
 						<a href="<?=get_url('info2_category',$info2_cate[0]);?>">心肾同治</a>
 					</div>
 					<div class="nav2">
@@ -77,7 +77,7 @@
 					</div>
 				</li>
 				<li>
-					<div class="start">
+					<div class="start ff">
 						<a href="/info.php?CateId=1">最新动态</a>
 					</div>
 					<div class="nav2">
@@ -98,7 +98,7 @@
 					</div>
 				</li>
 				<li>
-					<div>
+					<div class="ff">
 						<a href="/contact.php">联系心宝</a>
 					</div>
 				</li>

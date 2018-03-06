@@ -34,7 +34,7 @@ $pageName='index';
 					</ul>
 				</div>
 			</div>
-			<section class="left position">
+			<section class="left position china_bg">
 				<span class="video_left"><img src="img/video_left.png"/></span>
 				<span class="video_right"><img src="img/video_right.png"/></span>
 				<div class="sec_stl"><img src="img/pc_msg.png" /></div>

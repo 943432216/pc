@@ -1,5 +1,5 @@
 <div class="left blogoll">
-	<div class="left blogoll_left">友情链接：</div>
+	<div class="left blogoll_left ff"><p>友情链接：</p></div>
 	<div class="left blogoll_right">
 		<?php 
 		$link_row=$db->get_all('links','1','*','MyOrder desc,LId asc');
@@ -14,7 +14,7 @@
 	<div class="left width footer_top position">
 		<div class="logob"><img src="img/pc_logob.png"/></div>
 		<span class="footer_nav left">
-			<h2>关于心宝</h2>
+			<h2 class="ff">关于心宝</h2>
 			<?php
 			if(!empty($art_group[1])){
 			?>
@@ -28,7 +28,7 @@
 			<?php }?>
 		</span>
 		<span class="footer_nav left">
-			<h2>产品中心</h2>
+			<h2 class="ff">产品中心</h2>
 			<?php
 			if(!empty($product_cate)){
 			?>
@@ -42,7 +42,7 @@
 			<?php }?>
 		</span>
 		<span class="footer_nav left">
-			<h2>心肾同治</h2>
+			<h2 class="ff">心肾同治</h2>
 			<?php
 			if(!empty($info2_cate)){
 			?>
@@ -56,7 +56,7 @@
 			<?php }?>
 		</span>
 		<span class="footer_nav left">
-			<h2>最新动态</h2>
+			<h2 class="ff">最新动态</h2>
 			<?php
 			if(!empty($info_cate)){
 			?>
@@ -73,7 +73,7 @@
 			<?php }?>
 		</span>
 		<span class="footer_navs">
-			<h2>联系我们</h2>
+			<h2 class="ff">联系我们</h2>
 			<ul>
 				<li>
 					企业名称：广东心宝药业科技有限公司
