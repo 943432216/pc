@@ -137,9 +137,6 @@ $pageName='index';
 									<div class="bx_2"><img src="img/59ac9eae09.jpg" /></div>
 									<div class="bx_3"></div>
 								</div>
-								<!--<div class="pro_details">
-									<span class="left pro_de">查看更多</span>
-								</div>-->
 							</div>
 							<div class="pro_box">
 								<div class="six_box position">
@@ -148,9 +145,6 @@ $pageName='index';
 									<div class="bx_2"><img src="img/59ac9eae09.jpg" /></div>
 									<div class="bx_3"></div>
 								</div>
-								<!--<div class="pro_details">
-									<span class="left pro_de">查看更多</span>
-								</div>-->
 							</div>
 							<div class="pro_box">
 								<div class="six_box position">
@@ -260,7 +254,7 @@ $pageName='index';
     				dots: true,
 					fluid: true,
 					speed:200,
-					delay:10000
+					delay:5000
     			});
 
    				 $('.unslider-arrow').click(function() {
