@@ -1,6 +1,6 @@
 <?php
-$list_row_count=4;	//每行显示的产品件数
-$list_line_count=4;	//显示的行数
+$list_row_count=3;	//每行显示的产品件数
+$list_line_count=3;	//显示的行数
 $product_img_width=160;	//产品图片宽度
 $product_img_height=160;	//产品图片高度
 $query_string=query_string('page');
