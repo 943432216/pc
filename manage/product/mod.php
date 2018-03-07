@@ -138,11 +138,15 @@ if($_POST){
 			'AccTime'			=>	$service_time
 		)
 	);
-	
+
 	if(get_cfg('product.description')){
 		$Description=save_remote_img($_POST['Description'], $save_dir);
+		$MainTreat=save_remote_img($_POST['main_treat'], $save_dir);
+		$CarefulThings=save_remote_img($_POST['careful_things'], $save_dir);
 		$db->update('product_description', "ProId='$ProId'", array(
-				'Description'	=>	$Description
+				'Description'	=>	$Description,
+				'MainTreat'     =>  $MainTreat,
+				'CarefulThings' =>  $CarefulThings
 			)
 		);
 	}
@@ -530,11 +534,19 @@ include('../../inc/manage/header.php');
 	<?php if(get_cfg('product.description')){?>
 		<?php for($i=0; $i<count(get_cfg('ly200.lang_array')); $i++){?>
 			<tr>
-				<td nowrap><?=get_lang('ly200.description').lang_name($i, 0);?>:</td>
+				<td nowrap>产品说明书</td>
 				<td class="ck_editor"><textarea class="ckeditor" name="Description<?=lang_name($i, 1);?>"><?=htmlspecialchars($product_description_row['Description'.lang_name($i, 1)]);?></textarea></td>
 			</tr>
 		<?php }?>
 	<?php }?>
+	<tr>
+		<td nowrap>主治功能</td>
+		<td class="ck_editor"><textarea class="ckeditor" name="main_treat"><?=htmlspecialchars($product_description_row['MainTreat']);?></textarea></td>
+	</tr>
+	<tr>
+		<td nowrap>注意事项</td>
+		<td class="ck_editor"><textarea class="ckeditor" name="careful_things"><?=htmlspecialchars($product_description_row['CarefulThings']);?></textarea></td>
+	</tr>
 	<tr>
 		<td>&nbsp;</td>
 		<td><input type="submit" value="<?=get_lang('ly200.mod');?>" name="submit" class="form_button"><a href="index.php?<?=$query_string;?>" class="return"><?=get_lang('ly200.return');?></a><input type="hidden" name="query_string" value="<?=$query_string;?>"><input type="hidden" name="ProId" value="<?=$ProId;?>"></td>
