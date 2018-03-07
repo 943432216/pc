@@ -37,7 +37,7 @@ $pageName='index';
 			<section class="left position china_bg">
 				<span class="video_left"><img src="img/video_left.png"/></span>
 				<span class="video_right"><img src="img/video_right.png"/></span>
-				<div class="sec_stl"><img src="img/pc_msg.png" /></div>
+				<div class="sec_stl"><img src="img/pc_msg.png" class="img"/></div>
 				<div class="sec_titles left width">
 					<div class="shade overflow shade_navd">
 						<span class="sec_A">公司动态</span>
@@ -123,7 +123,7 @@ $pageName='index';
 				</div>
 			</section>
 			<section class="left position sec_bg">
-				<div class="sec_proi"><img src="img/PC_product_tl.png" /></div>
+				<div class="sec_proi"><img src="img/PC_product_tl.png" class="img"/></div>
 				<div class="index_dw"></div>
 				<a href="javascript:;" id="prev" class="unslider-arrow prev"></a>
 				<a href="javascript:;" id="next" class="unslider-arrow next"></a>
@@ -249,7 +249,11 @@ $pageName='index';
 				});
 				data06 = unslider06.data('unslider');
 			//产品轮播
-   				$('#product_mar ul li').css('height','550');
+				var fbl=window.screen.width;
+				var heightd=0;
+				if(fbl==1600){heightd=550;}
+				if(fbl==1366){heightd=445;}
+   				$('#product_mar ul li').css('height',heightd);
     			var unslider = $('#product_mar').unslider({
     				dots: true,
 					fluid: true,

@@ -87,7 +87,33 @@ $recommend = $db->get_all('info', "CateId=$cur_cate[CateId]", 'InfoId,Title,AccT
 		<script src="js/pc_main.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
 			$(function(){
-				$('.shade').find('a').css('margin-left''0')
+				$('.shade').find('a').css('margin-left','0')
+				$('.contents').find('*').removeAttr('style');
+				$('.contents').find('span,strong,p,div,tr,td,table').addClass('width');
+				var $str=$('.contents').html();
+				$('.contents').html($str);
+				$('.contents').find('img').addClass('img');
+				$('.contents').find('strong').css({
+					'font-size':'17px',
+					'color':'#323232',
+					'width':'100%',
+					'font-weight':'600',
+					'text-align':'center',
+					'display':'block',
+					'margin':'10px 0',
+				});
+				$('.contents').find('p,span,div').css('line-height','180%');
+				$('.contents').find('p,span,div').css('text-indent','2em');
+				$('.contents').css({
+					'line-height':'180%',
+					'text-indent':'2em',
+					'display':'block'
+				});
+				$('.contents').find('img').each(function(){
+					if($(this).attr('alt')=='打印'||$(this).attr('alt')=='下载'){
+						$(this).removeClass('img');
+					}
+				})
 			})
 		</script>
 	</body>

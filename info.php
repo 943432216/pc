@@ -87,16 +87,16 @@ $banner=$db->get_one('ad',"AId='5'");
 					<?php } else { ?>
 					<div class="msg_box">
 						<div class="big_video">
-							<iframe src="http://player.youku.com/embed/XMTYwNzQ3ODA0OA==" width="100%" height="100%" frameborder="no" scrolling="no"></iframe>
+							<iframe src="http://player.youku.com/embed/XMTc2MzQ4NTI1Ng==" width="100%" height="100%" frameborder="no" scrolling="no"></iframe>
 						</div>
 						<div class="video_title">
 							其他视频
 						</div>
 						<div class="small_video">
-							<span></span>
-							<span></span>
-							<span></span>
-							<span></span>
+							<span><img src="img/videosd.png" class="img"/></span>
+							<span><img src="img/videosd.png" class="img"/></span>
+							<span><img src="img/videosd.png" class="img"/></span>
+							<span><img src="img/videosd.png" class="img"/></span>
 						</div>
 					</div>
 					<?php } ?>
@@ -113,6 +113,7 @@ $banner=$db->get_one('ad',"AId='5'");
 				$('.pagenum').css('background','#c49858');
 				$('.pagenum').css('border-color','#c49858');
 				$('.paged').css('border-color','#c49858');
+				videolds();
 			})
 		</script>
 	</body>

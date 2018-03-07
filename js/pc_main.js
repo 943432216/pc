@@ -96,7 +96,7 @@ $(function() {
 		$('.sec_box').find('*').removeAttr('style');
 		$('.sec_box').find('img').addClass('img')
 		$('.sec_box').find('div').css('float', 'left');
-		$('.sec_box').find('span').css('line-height','160%')
+		$('.sec_box').find('span').css('line-height', '160%')
 	}
 
 	$('.details_con span').each(function(a, b) {
@@ -108,12 +108,22 @@ $(function() {
 				$('.details_con div').eq(a).css('display', 'block')
 			}
 		})
-	})
+	});
+	navs()
 })
 
 function videold(num) {
 	var arr = ['http://player.youku.com/embed/XMTc2MzQ4NTI1Ng==', 'http://player.youku.com/embed/XMjQ3NzE0NTczMg==', 'http://player.youku.com/embed/XMTYwNzQ3ODA0OA==', 'http://player.youku.com/embed/XMTYwNzQ2ODY5Ng==', 'http://player.youku.com/embed/XMTUzNDI0NjUwNA=='];
 	$('#vidse').attr('src', arr[num]);
+}
+function videolds() {
+	var arr = ['http://player.youku.com/embed/XMjQ3NzE0NTczMg==', 'http://player.youku.com/embed/XMTYwNzQ3ODA0OA==', 'http://player.youku.com/embed/XMTYwNzQ2ODY5Ng==', 'http://player.youku.com/embed/XMTUzNDI0NjUwNA=='];
+	$('.small_video').find('span').each(function(a,b){
+		$(this).click(function(){
+			$('.big_video').find('iframe').attr('src',arr[a]);
+		})
+	})
+	
 }
 
 function AddFavorite(title, url) {
@@ -134,5 +144,135 @@ function SetHome(url) {
 		document.body.setHomePage(url);
 	} else {
 		alert("您好,您的浏览器不支持自动设置页面为首页功能,请您手动在浏览器里设置该页面为首页!");
+	}
+}
+
+function navs() {
+	var urls = window.location.href;
+	var a, b, c, d, e, i, x;
+	urls = urls.split('.cn/')[1];
+	//	console.log(urls);
+	if(urls == '') {
+		$('.nav_right').find('.ff').eq(0).addClass('navstax')
+		return false;
+	} else {
+		b = urls.split('.')[0];
+		switch(b) {
+			case 'article':
+				a = '关于心宝';
+				break;
+			case 'products':
+				a = '产品中心';
+				break;
+			case 'info2':
+				a = '心肾同治';
+				break;
+			case 'info':
+				a = '最新动态';
+				break;
+			case 'contact':
+				a = '联系心宝';
+				break;
+		}
+		$('.nav_right').find('.ff').each(function() {
+			if($(this).find('a').html() == a) {
+				$(this).addClass('navstax');
+			}
+		})
+	}
+	c = urls.split('php')[1];
+	if(c == '') {
+		return false;
+	} else {
+		c = urls.split('?')[1];
+		d = c.split('=')[0];
+		e = c.split('=')[1];
+		if(e.split('&')[1]=='page'){
+			e=e.split('&')[0];
+		}else{
+			e = c.split('=')[1];
+		}
+		switch(d) {
+			case 'AId':
+				i = 0;
+				break;
+			case 'CateId':
+				i = 1;
+				break;
+		}
+		if(i == 0) {
+			switch(e) {
+				case '3':
+					x = '公司简介';
+					break;
+				case '4':
+					x = '董事长致词';
+					break;
+				case '6':
+					x = '发展历程';
+					break;
+				case '7':
+					x = '企业文化';
+					break;
+				case '15':
+					x = '企业荣誉';
+					break;
+			}
+		}
+		if(i == 1) {
+			switch(e) {
+				case '1':
+					x = '公司动态';
+					break;
+				case '2':
+					x = '行业动态';
+					break;
+				case '6':
+					x = '视频中心';
+					break;
+				case '8':
+					x = '心肾相交理论';
+					break;
+				case '9':
+					x = '心宝丸的临床应用';
+					break;
+				case '11':
+					x = '蒲地蓝消炎片';
+					break;
+				case '22':
+					x = '蒲蓝地消炎胶囊';
+					break;
+				case '24':
+					x = '心宝丸';
+					break;
+			}
+		}
+
+	}
+	if(b == 'products' && e == '10') {
+		x = '龟鹿补肾片';
+	}
+	if(b == 'info2' && e == '10') {
+		x = '龟鹿补肾片健康手册';
+	}
+//	console.log(b);
+//	console.log(a)
+	$('.nav2').each(function() {
+		$('.sec_title,.sec_titles').find('a').each(function() {
+			if($(this).html() == x) {
+				$(this).addClass('sec_A');
+			}
+		})
+	})
+	$('.page').find('*').removeAttr('style');
+	if(a=='产品中心'){
+		$('.page').find('.pagenum').css({
+			'background':'#fff',
+			'color':'#D13600'
+		});
+		$('.page').find('font').addClass('pageavt');
+	}
+	if(a=='最新动态'||a=='心肾同治'){
+		$('.page').find('font').addClass('pageavts');
 	}
 }
