@@ -26,7 +26,7 @@ $recommend = $db->get_all('info', "CateId=$cur_cate[CateId]", 'InfoId,Title,AccT
 		<link rel="stylesheet" type="text/css" href="css/pc_main.css" />
 		<script type="text/javascript">
 			var btname=<?=$CateId?>;
-			console.log(btname);
+//			console.log(btname);
 		</script>
 	</head>
 		
@@ -120,6 +120,7 @@ $recommend = $db->get_all('info', "CateId=$cur_cate[CateId]", 'InfoId,Title,AccT
 						
 					}
 				})
+				navt(btname);
 			})
 		</script>
 	</body>

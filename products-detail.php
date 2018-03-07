@@ -39,7 +39,7 @@ if(($sum_pro = count($pro_cul_cate)) < 5) {
 		<link rel="stylesheet" type="text/css" href="css/pc_main.css" />
 		<script type="text/javascript">
 			var btname=<?=$CateId?>;
-			console.log(btname);
+//			console.log(btname);
 		</script>
 	</head>
 
@@ -116,7 +116,8 @@ if(($sum_pro = count($pro_cul_cate)) < 5) {
 		<script src="js/pc_main.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
 			$(function() {
-				$('.abXBs').find('a').eq(0).css('margin-left','30%')
+				$('.abXBs').find('a').eq(0).css('margin-left','30%');
+				navt(btname);
 			})
 		</script>
 	</body>

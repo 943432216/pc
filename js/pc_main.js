@@ -106,9 +106,9 @@ $(function() {
 				$(this).addClass('avts');
 				$('.details_con div	').css('display', 'none');
 				$('.details_con div').eq(a).css('display', 'block');
-				$('.details_con div').eq(a).mouseover(function(){
-					$(this).css('display','block');
-//					$(this).find('span').removeClass('avts');
+				$('.details_con div').eq(a).mouseover(function() {
+					$(this).css('display', 'block');
+					//					$(this).find('span').removeClass('avts');
 				})
 			}
 		})
@@ -120,14 +120,15 @@ function videold(num) {
 	var arr = ['http://player.youku.com/embed/XMTc2MzQ4NTI1Ng==', 'http://player.youku.com/embed/XMjQ3NzE0NTczMg==', 'http://player.youku.com/embed/XMTYwNzQ3ODA0OA==', 'http://player.youku.com/embed/XMTYwNzQ2ODY5Ng==', 'http://player.youku.com/embed/XMTUzNDI0NjUwNA=='];
 	$('#vidse').attr('src', arr[num]);
 }
+
 function videolds() {
 	var arr = ['http://player.youku.com/embed/XMjQ3NzE0NTczMg==', 'http://player.youku.com/embed/XMTYwNzQ3ODA0OA==', 'http://player.youku.com/embed/XMTYwNzQ2ODY5Ng==', 'http://player.youku.com/embed/XMTUzNDI0NjUwNA=='];
-	$('.small_video').find('span').each(function(a,b){
-		$(this).click(function(){
-			$('.big_video').find('iframe').attr('src',arr[a]);
+	$('.small_video').find('span').each(function(a, b) {
+		$(this).click(function() {
+			$('.big_video').find('iframe').attr('src', arr[a]);
 		})
 	})
-	
+
 }
 
 function AddFavorite(title, url) {
@@ -191,9 +192,9 @@ function navs() {
 		c = urls.split('?')[1];
 		d = c.split('=')[0];
 		e = c.split('=')[1];
-		if(e.split('&')[1]=='page'){
-			e=e.split('&')[0];
-		}else{
+		if(e.split('&')[1] == 'page') {
+			e = e.split('&')[0];
+		} else {
 			e = c.split('=')[1];
 		}
 		switch(d) {
@@ -259,8 +260,6 @@ function navs() {
 	if(b == 'info2' && e == '10') {
 		x = '龟鹿补肾片健康手册';
 	}
-//	console.log(b);
-//	console.log(a)
 	$('.nav2').each(function() {
 		$('.sec_title,.sec_titles').find('a').each(function() {
 			if($(this).html() == x) {
@@ -269,14 +268,69 @@ function navs() {
 		})
 	})
 	$('.page').find('*').removeAttr('style');
-	if(a=='产品中心'){
+	if(a == '产品中心') {
 		$('.page').find('.pagenum').css({
-			'background':'#fff',
-			'color':'#D13600'
+			'background': '#fff',
+			'color': '#D13600'
 		});
 		$('.page').find('font').addClass('pageavt');
 	}
-	if(a=='最新动态'||a=='心肾同治'){
+	if(a == '最新动态' || a == '心肾同治') {
 		$('.page').find('font').addClass('pageavts');
 	}
+}
+
+function navt(data) {
+	urls = window.location.href;
+	var a, b, x;
+	b=data.toString();
+	urls = urls.split('cn/')[1];
+	a = urls.split('.')[0];
+	$('.nav_right').find('.ff').each(function() {
+		if(a == 'products-detail') {
+			$('.ff').eq(2).addClass('navstax');
+		}
+		if(a == 'info2-detail') {
+			$('.ff').eq(3).addClass('navstax');
+		}
+		if(a == 'info-detail') {
+			$('.ff').eq(4).addClass('navstax');
+		}
+	})
+	switch(b) {
+		case '1':
+			x = '公司动态';
+			break;
+		case '2':
+			x = '行业动态';
+			break;
+		case '6':
+			x = '视频中心';
+			break;
+		case '9':
+			x = '心宝丸的临床应用';
+			break;
+		case '11':
+			x = '蒲地蓝消炎片';
+			break;
+		case '22':
+			x = '蒲蓝地消炎胶囊';
+			break;
+		case '24':
+			x = '心宝丸';
+			break;
+	}
+	if(a == 'products-detail' && b == '10') {
+		x = '龟鹿补肾片';
+	}
+	if(a == 'info2-detail' && b == '10') {
+		x = '龟鹿补肾片健康手册';
+	}
+	console.log(x);
+	$('.abXBs,.shade_nav').find('a').each(function(){
+		if($(this).html()==x){
+			$(this).addClass('sec_A')
+		}
+	})
+
 }

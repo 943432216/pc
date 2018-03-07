@@ -261,7 +261,7 @@ input[value='Go']{float: none;font-size: 18px;}
 	.nav_right ul li a{font-size: 25px;height: 53px;line-height: 53px;}
 	.nav_right ul li div{height: 53px;margin: 10px 0;}
 	.nav2 ul li a{font-size:17px !important;height: 30px;line-height: 30px;}
-	.nav2{top:60px;}
+	.nav2{top:65px;}
 	.sec_title, .sec_titles{height:48px;}
 	.sec_title a, .sec_titles a, .sec_titles span{height: 42px;line-height: 42px;width: 125px;font-size: 17px;}
 	.shade{padding:0 5px 0 15px;width:130px;}
@@ -285,7 +285,7 @@ input[value='Go']{float: none;font-size: 18px;}
 	.footer_navs{margin-top:30px;padding-left:68px;}
 	.footer_nav h2, .footer_navs h2{font-size: 21px;}
 	.footer_nav ul, .footer_navs ul{margin-top: 15px;}
-	.footer_navs li{font-size: 14px;}
+	.footer_navs li{font-size: 14px !important;}
 	.logob img{width: 130px;height: 180px;}
 	.sec_proi{width: 55px;height: 160px;top:115px}
 }

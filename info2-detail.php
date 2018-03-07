@@ -24,6 +24,10 @@ $recommend = $db->get_all('info2', "CateId=$cur_cate[CateId]", 'InfoId,Title,Acc
 		<title>心宝药业</title>
 		<link rel="stylesheet" type="text/css" href="css/nitialize.css" />
 		<link rel="stylesheet" type="text/css" href="css/pc_main.css" />
+		<script type="text/javascript">
+			var btname=<?=$CateId?>;
+//			console.log(btname);
+		</script>
 	</head>
 
 	<body>
@@ -111,6 +115,7 @@ $recommend = $db->get_all('info2', "CateId=$cur_cate[CateId]", 'InfoId,Title,Acc
 						$(this).removeClass('img');
 					}
 				})
+				navt(btname);
 			})
 		</script>
 	</body>
