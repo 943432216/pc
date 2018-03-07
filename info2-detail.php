@@ -4,16 +4,16 @@ include($site_root_path.'/inc/set/ext_var.php');
 include($site_root_path.'/inc/fun/mysql.php');
 include($site_root_path.'/inc/function.php');
 include($site_root_path.'/inc/common.php');
-include($site_root_path.'/inc/lib/info/detail.php');
+include($site_root_path.'/inc/lib/info2/detail.php');
 $CateId=(int)$info_row['CateId'];
 if($CateId){
-	$cur_cate=$db->get_one('info_category',"CateId='$CateId'");
+	$cur_cate=$db->get_one('info2_category',"CateId='$CateId'");
 }
 $pageName='info';
-$banner=$db->get_one('ad',"AId='5'");
+$banner=$db->get_one('ad',"AId='7'");
 
-$msg_all = $db->get_all('info', 1, 'InfoId,Title,AccTime,PageUrl', 'InfoId desc');
-$recommend = $db->get_all('info', "CateId=$cur_cate[CateId]", 'InfoId,Title,AccTime,PageUrl', 'InfoId desc');
+$msg_all = $db->get_all('info2', 1, 'InfoId,Title,AccTime,PageUrl', 'InfoId desc');
+$recommend = $db->get_all('info2', "CateId=$cur_cate[CateId]", 'InfoId,Title,AccTime,PageUrl', 'InfoId desc');
 // var_dump($CateId);exit;
 ?>
 <!DOCTYPE html>
