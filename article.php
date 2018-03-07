@@ -68,7 +68,8 @@ if($GroupId==1){
 //					$('sec_con').find('img').addClass('img')
 //					$('sec_con').find('div').css('float','left')
 //				}
-				
+				$('.sec_box').find('*').removeAttr('style');
+				$('.sec_box').find('img').addClass('img')
 			})
 		</script>
 	</body>

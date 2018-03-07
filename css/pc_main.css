@@ -198,12 +198,12 @@ input[value='Go']{float: none;font-size: 18px;}
 .picsmall div p:nth-of-type(1){background: url(../img/product_prev.png) no-repeat;background-size:100% 100%;float: left;width:44px;height: 100%;cursor: pointer;}
 .picsmall div p:nth-of-type(2){background: url(../img/product_next.png) no-repeat;background-size:100% 100%;float: right;width:44px;height: 100%;cursor: pointer;}
 .details_con{margin:  0 0 30px 0;}
-.details_con span{width:30%;margin: 0 1%;text-align: center;display: block;float: left;background: #d2d2d2;height: 60px;line-height: 60px;font-size:25px;color: #fff;cursor: pointer;}
+.con_title{width:30%;margin: 0 1%;text-align: center;display: block;float: left;background: #d2d2d2;height: 60px;line-height: 60px;font-size:25px;color: #fff;cursor: pointer;}
 .avts{background:url(../img/xtb.png) no-repeat #D13600  !important;background-position: center 51px !important;}
 .details_con div{width: 100%;padding: 40px 0;display: none;float:left;border-rig}
 
 /*兼容*/
-@media only screen and (min-width:1601px) and (max-width: 1920px) {
+@media only screen and (min-width:1602px) and (max-width: 1920px) {
 	.tel_right p:nth-of-type(1) {
     	margin-left: 63%;
 	}
@@ -211,7 +211,7 @@ input[value='Go']{float: none;font-size: 18px;}
 }
 
 
-@media only screen and (max-width:1600px ) {
+@media only screen and (max-width:1601px ) {
 	/*header and  footer*/
 	.nav_right ul li a{font-size: 30px;}
 	.tel_right p:nth-of-type(1){margin-left:57%;}
@@ -248,7 +248,7 @@ input[value='Go']{float: none;font-size: 18px;}
 	
 }
 
-@media only screen and (max-width:1366px ) {
+@media only screen and (min-width:1360px) and (max-width:1367px) {
 	.headr_title{height: 35px;}
 	.wel{font-size: 10px;height: 35px;line-height: 35px;}
 	.header_nav{height: 70px;}
@@ -292,5 +292,10 @@ input[value='Go']{float: none;font-size: 18px;}
 
 
 @media only screen and (max-width:1280px ) {
+	
+}
+
+
+@media only screen and (min-width: 100px) and (max-width: 640px) {
 	
 }

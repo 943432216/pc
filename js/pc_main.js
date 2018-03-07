@@ -99,13 +99,17 @@ $(function() {
 		$('.sec_box').find('span').css('line-height', '160%')
 	}
 
-	$('.details_con span').each(function(a, b) {
+	$('.con_title').each(function(a, b) {
 		$(this).on({
 			mouseover: function() {
-				$('.details_con span').removeClass('avts');
+				$('.con_title').removeClass('avts');
 				$(this).addClass('avts');
 				$('.details_con div	').css('display', 'none');
-				$('.details_con div').eq(a).css('display', 'block')
+				$('.details_con div').eq(a).css('display', 'block');
+				$('.details_con div').eq(a).mouseover(function(){
+					$(this).css('display','block');
+//					$(this).find('span').removeClass('avts');
+				})
 			}
 		})
 	});
