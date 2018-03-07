@@ -37,6 +37,10 @@ if(($sum_pro = count($pro_cul_cate)) < 5) {
 		<title>心宝药业</title>
 		<link rel="stylesheet" type="text/css" href="css/nitialize.css" />
 		<link rel="stylesheet" type="text/css" href="css/pc_main.css" />
+		<script type="text/javascript">
+			var btname=<?=$CateId?>;
+			console.log(btname);
+		</script>
 	</head>
 
 	<body>
@@ -78,9 +82,9 @@ if(($sum_pro = count($pro_cul_cate)) < 5) {
 					</div>
 				</div>
 				<div class="details_con">
-					<span>主治功能</span>
-					<span class="avts">注意事项</span>
-					<span>产品说明书</span>
+					<span class="con_title">主治功能</span>
+					<span class="avts con_title">注意事项</span>
+					<span class="con_title">产品说明书</span>
 					<div><?=$product_description['MainTreat']?></div>
 					<div><?=$product_description['CarefulThings']?></div>
 					<div><?=$product_description['Description']?></div>

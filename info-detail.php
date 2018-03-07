@@ -24,8 +24,12 @@ $recommend = $db->get_all('info', "CateId=$cur_cate[CateId]", 'InfoId,Title,AccT
 		<title>心宝药业</title>
 		<link rel="stylesheet" type="text/css" href="css/nitialize.css" />
 		<link rel="stylesheet" type="text/css" href="css/pc_main.css" />
+		<script type="text/javascript">
+			var btname=<?=$CateId?>;
+			console.log(btname);
+		</script>
 	</head>
-
+		
 	<body>
 		<div class="xb_box overflow">
 			<?php include('top.php'); ?>
@@ -89,7 +93,8 @@ $recommend = $db->get_all('info', "CateId=$cur_cate[CateId]", 'InfoId,Title,AccT
 			$(function(){
 				$('.shade').find('a').css('margin-left','0')
 				$('.contents').find('*').removeAttr('style');
-				$('.contents').find('span,strong,p,div,tr,td,table').addClass('width');
+				$('.contents').find('span,strong,p,div,tr,td,table,pre').addClass('width');
+				$('.contents').find('span,strong,p,div,tr,td,table,pre').addClass('left');
 				var $str=$('.contents').html();
 				$('.contents').html($str);
 				$('.contents').find('img').addClass('img');
@@ -112,6 +117,7 @@ $recommend = $db->get_all('info', "CateId=$cur_cate[CateId]", 'InfoId,Title,AccT
 				$('.contents').find('img').each(function(){
 					if($(this).attr('alt')=='打印'||$(this).attr('alt')=='下载'){
 						$(this).removeClass('img');
+						
 					}
 				})
 			})
