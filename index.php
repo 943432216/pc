@@ -7,7 +7,11 @@ include($site_root_path.'/inc/common.php');
 $pageName='index';
 $company_states = $db->get_limit('info', 'CateId=1', 'InfoId,ExtUrl,Title,ThumbPic,BriefDescription,PageUrl', 'InfoId desc', 1, 3);
 $industry_states = $db->get_limit('info', 'CateId=2', 'InfoId,ExtUrl,Title,ThumbPic,BriefDescription,PageUrl', 'InfoId desc', 1, 3);
-// var_dump($company_states);exit;
+// $products = $db->get_limit('product', 1, 'ProId,ExtUrl,Title,ThumbPic,BriefDescription,PageUrl', 'ProId desc', 1, 3);
+$recommend_1 = $db->get_limit('product', 'IsRecommend=1', '*', 'ProId desc', 0, 3);
+$recommend_2 = $db->get_limit('product', 'IsRecommend=2', '*', 'ProId desc', 0, 3);
+$recommend_3 = $db->get_limit('product', 'IsRecommend=3', '*', 'ProId desc', 0, 3);
+// var_dump($recommend_1);exit;
 ?>
 <!DOCTYPE html>
 <html>
@@ -97,103 +101,46 @@ $industry_states = $db->get_limit('info', 'CateId=2', 'InfoId,ExtUrl,Title,Thumb
 				<div id="product_mar" class="sec_con section_pro">
 					<ul>
 						<li>
-							<div class="pro_box">
+							<?php foreach($recommend_1 as $item) { ?>
+							<a href="<?=get_url('product',$item)?>" class="pro_box">
 								<div class="six_box position">
-									<p class="pro_name">龟鹿补肾片</p>
+									<p class="pro_name"><?=$item['Name']?></p>
 									<div class="bx_1"></div>
-									<div class="bx_2"><img src="img/59ac9eae09.jpg" /></div>
+									<div class="bx_2"><img src="<?=$item['PicPath_0']?>" /></div>
 									<div class="bx_3"></div>
 								</div>
-							</div>
-							<div class="pro_box">
-								<div class="six_box position">
-									<p class="pro_name">龟鹿补肾片</p>
-									<div class="bx_1"></div>
-									<div class="bx_2"><img src="img/59ac9eae09.jpg" /></div>
-									<div class="bx_3"></div>
-								</div>
-							</div>
-							<div class="pro_box">
-								<div class="six_box position">
-									<p class="pro_name">龟鹿补肾片</p>
-									<div class="bx_1"></div>
-									<div class="bx_2"><img src="img/59ac9eae09.jpg" /></div>
-									<div class="bx_3"></div>
-								</div>
-								<!--<div class="pro_details">
-									<span class="left pro_de">查看更多</span>
-								</div>-->
-							</div>
+							</a>
+							<?php } ?>
 						</li>
 						<li>
-							<div class="pro_box">
+							<?php foreach($recommend_2 as $item) { ?>
+							<a href="<?=get_url('product',$item)?>" class="pro_box">
 								<div class="six_box position">
-									<p class="pro_name">龟鹿补肾片</p>
+									<p class="pro_name"><?=$item['Name']?></p>
 									<div class="bx_1"></div>
-									<div class="bx_2"><img src="img/59ac9eae09.jpg" /></div>
+									<div class="bx_2"><img src="<?=$item['PicPath_0']?>" /></div>
 									<div class="bx_3"></div>
 								</div>
 								<!--<div class="pro_details">
 									<span class="left pro_de">查看更多</span>
 								</div>-->
-							</div>
-							<div class="pro_box">
-								<div class="six_box position">
-									<p class="pro_name">龟鹿补肾片</p>
-									<div class="bx_1"></div>
-									<div class="bx_2"><img src="img/59ac9eae09.jpg" /></div>
-									<div class="bx_3"></div>
-								</div>
-								<!--<div class="pro_details">
-									<span class="left pro_de">查看更多</span>
-								</div>-->
-							</div>
-							<div class="pro_box">
-								<div class="six_box position">
-									<p class="pro_name">龟鹿补肾片</p>
-									<div class="bx_1"></div>
-									<div class="bx_2"><img src="img/59ac9eae09.jpg" /></div>
-									<div class="bx_3"></div>
-								</div>
-								<!--<div class="pro_details">
-									<span class="left pro_de">查看更多</span>
-								</div>-->
-							</div>
+							</a>
+							<?php } ?>
 						</li>
 						<li>
+							<?php foreach($recommend_3 as $item) { ?>
 							<div class="pro_box">
-								<div class="six_box position">
-									<p class="pro_name">龟鹿补肾片</p>
+								<a href="<?=get_url('product',$item)?>" class="six_box position">
+									<p class="pro_name"><?=$item['Name']?></p>
 									<div class="bx_1"></div>
-									<div class="bx_2"><img src="img/59ac9eae09.jpg" /></div>
+									<div class="bx_2"><img src="<?=$item['PicPath_0']?>" /></div>
 									<div class="bx_3"></div>
-								</div>
+								</a>
 								<!--<div class="pro_details">
 									<span class="left pro_de">查看更多</span>
 								</div>-->
 							</div>
-							<div class="pro_box">
-								<div class="six_box position">
-									<p class="pro_name">龟鹿补肾片</p>
-									<div class="bx_1"></div>
-									<div class="bx_2"><img src="img/59ac9eae09.jpg" /></div>
-									<div class="bx_3"></div>
-								</div>
-								<!--<div class="pro_details">
-									<span class="left pro_de">查看更多</span>
-								</div>-->
-							</div>
-							<div class="pro_box">
-								<div class="six_box position">
-									<p class="pro_name">龟鹿补肾片</p>
-									<div class="bx_1"></div>
-									<div class="bx_2"><img src="img/59ac9eae09.jpg" /></div>
-									<div class="bx_3"></div>
-								</div>
-								<!--<div class="pro_details">
-									<span class="left pro_de">查看更多</span>
-								</div>-->
-							</div>
+							<?php } ?>
 						</li>
 					</ul>
 				</div>
