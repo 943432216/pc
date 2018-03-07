@@ -325,6 +325,10 @@ include('../../inc/manage/header.php');
 			</td>
 		</tr>
 	<?php }?>
+	<tr>
+		<td nowrap>首页推荐位</td>
+		<td><input name="recommend" type="text" value="<?=htmlspecialchars($product_row['Model']);?>" class="form_input" size="25" maxlength="50"></td>
+	</tr>
 	<?php if(get_cfg('product.color_ele')){?>
 		<tr>
 			<td nowrap><?=get_lang('product.color');?>:</td>

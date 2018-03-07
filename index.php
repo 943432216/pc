@@ -5,6 +5,9 @@ include($site_root_path.'/inc/fun/mysql.php');
 include($site_root_path.'/inc/function.php');
 include($site_root_path.'/inc/common.php');
 $pageName='index';
+$company_states = $db->get_limit('info', 'CateId=1', 'InfoId,ExtUrl,Title,ThumbPic,BriefDescription,PageUrl', 'InfoId desc', 1, 3);
+$industry_states = $db->get_limit('info', 'CateId=2', 'InfoId,ExtUrl,Title,ThumbPic,BriefDescription,PageUrl', 'InfoId desc', 1, 3);
+// var_dump($company_states);exit;
 ?>
 <!DOCTYPE html>
 <html>
@@ -51,18 +54,32 @@ $pageName='index';
 				</div>
 				<div class="sec_con">
 					<div class="msg_boxs" style="display: block;">
-					
+						<?php foreach($company_states as $it) {?>
 						<div class="msg_1">
 							<div class="msg_img">
-								<img src="img/686a9d6efb.png" class="img" />
+								<img src="<?=$it['ThumbPic']?>" class="img" />
 							</div>
 							<div class="msg_con">
-								<h2>我们等您来｜欢迎莅临第78届药交会心宝药业展位参观洽谈</h2>
-								<p>医药行业最具权威影响力与规模的第78届全国药品交易会在广州国际会展中心举行。广东心宝药业科技有限公司作为本届药交会重要参展商，在B区12.2展馆12.2E32特装展位盛装开幕。</p>
-								<a href="#">查看详情 》》</a>
+								<h2><?=$it['Title']?></h2>
+								<p><?=$it['BriefDescription']?></p>
+								<a href="<?=$it['ExtUrl']?$it['ExtUrl']:get_url('info', $it);?>">查看详情 》》</a>
 							</div>
 						</div>
-						
+						<?php } ?>
+					</div>
+					<div class="msg_boxs">
+						<?php foreach($industry_states as $it) {?>
+						<div class="msg_1">
+							<div class="msg_img">
+								<img src="<?=$it['ThumbPic']?>" class="img" />
+							</div>
+							<div class="msg_con">
+								<h2><?=$it['Title']?></h2>
+								<p><?=$it['BriefDescription']?></p>
+								<a href="<?=$it['ExtUrl']?$it['ExtUrl']:get_url('info', $it);?>">查看详情 》》</a>
+							</div>
+						</div>
+						<?php } ?>
 					</div>
 					<div class="msg_boxs position">
 
