@@ -26,7 +26,7 @@ if(($sum_pro = count($pro_cul_cate)) < 5) {
 		$pro_cul_cate[] = $porducts[mt_rand(0, $porducts_sum)];
 	}
 }
-//var_dump($pro_cul_cate);exit;
+// var_dump($CateId);exit;
 //$pic_top = $db->get_one('ad',"AId='6");
 ?>
 <!DOCTYPE html>

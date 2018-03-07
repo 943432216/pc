@@ -51,6 +51,7 @@ $pageName='index';
 				</div>
 				<div class="sec_con">
 					<div class="msg_boxs" style="display: block;">
+					
 						<div class="msg_1">
 							<div class="msg_img">
 								<img src="img/686a9d6efb.png" class="img" />
@@ -61,58 +62,7 @@ $pageName='index';
 								<a href="#">查看详情 》》</a>
 							</div>
 						</div>
-						<div class="msg_1">
-							<div class="msg_img">
-								<img src="img/686a9d6efb.png" class="img" />
-							</div>
-							<div class="msg_con">
-								<h2>我们等您来｜欢迎莅临第78届药交会心宝药业展位参观洽谈</h2>
-								<p>医药行业最具权威影响力与规模的第78届全国药品交易会在广州国际会展中心举行。广东心宝药业科技有限公司作为本届药交会重要参展商，在B区12.2展馆12.2E32特装展位盛装开幕。</p>
-								<a href="#">查看详情 》》</a>
-							</div>
-						</div>
-						<div class="msg_1">
-							<div class="msg_img">
-								<img src="img/686a9d6efb.png" class="img" />
-							</div>
-							<div class="msg_con">
-								<h2>我们等您来｜欢迎莅临第78届药交会心宝药业展位参观洽谈</h2>
-								<p>医药行业最具权威影响力与规模的第78届全国药品交易会在广州国际会展中心举行。广东心宝药业科技有限公司作为本届药交会重要参展商，在B区12.2展馆12.2E32特装展位盛装开幕。</p>
-								<a href="#">查看详情 》》</a>
-							</div>
-						</div>
-					</div>
-					<div class="msg_boxs">
-						<div class="msg_1">
-							<div class="msg_img">
-								<img src="img/686a9d6efb.png" class="img" />
-							</div>
-							<div class="msg_con">
-								<h2>我们等您来｜欢迎莅临第78届药交会心宝药业展位参观洽谈</h2>
-								<p>医药行业最具权威影响力与规模的第78届全国药品交易会在广州国际会展中心举行。广东心宝药业科技有限公司作为本届药交会重要参展商，在B区12.2展馆12.2E32特装展位盛装开幕。</p>
-								<a href="#">查看详情 》》</a>
-							</div>
-						</div>
-						<div class="msg_1">
-							<div class="msg_img">
-								<img src="img/686a9d6efb.png" class="img" />
-							</div>
-							<div class="msg_con">
-								<h2>我们等您来｜欢迎莅临第78届药交会心宝药业展位参观洽谈</h2>
-								<p>医药行业最具权威影响力与规模的第78届全国药品交易会在广州国际会展中心举行。广东心宝药业科技有限公司作为本届药交会重要参展商，在B区12.2展馆12.2E32特装展位盛装开幕。</p>
-								<a href="#">查看详情 》》</a>
-							</div>
-						</div>
-						<div class="msg_1">
-							<div class="msg_img">
-								<img src="img/686a9d6efb.png" class="img" />
-							</div>
-							<div class="msg_con">
-								<h2>我们等您来｜欢迎莅临第78届药交会心宝药业展位参观洽谈</h2>
-								<p>医药行业最具权威影响力与规模的第78届全国药品交易会在广州国际会展中心举行。广东心宝药业科技有限公司作为本届药交会重要参展商，在B区12.2展馆12.2E32特装展位盛装开幕。</p>
-								<a href="#">查看详情 》》</a>
-							</div>
-						</div>
+						
 					</div>
 					<div class="msg_boxs position">
 
