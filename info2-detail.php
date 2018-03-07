@@ -9,7 +9,7 @@ $CateId=(int)$info_row['CateId'];
 if($CateId){
 	$cur_cate=$db->get_one('info2_category',"CateId='$CateId'");
 }
-$pageName='info';
+$pageName='info2';
 $banner=$db->get_one('ad',"AId='7'");
 
 $msg_all = $db->get_all('info2', 1, 'InfoId,Title,AccTime,PageUrl', 'InfoId desc');
@@ -33,12 +33,9 @@ $recommend = $db->get_all('info2', "CateId=$cur_cate[CateId]", 'InfoId,Title,Acc
 				<img src="img/banner_01.jpg" class="img"/>
 			</div>
 			<div class="sec_titles left pro_titles">
-					<?php
-			            foreach((array)$info_cate as $item){
-			                if($item['CateId'] == 7){continue;}
-			        ?>
+					<?php foreach((array)$info2_cate as $item){?>
 					<div class="shade overflow shade_nav">
-						<a class="shade_navbg" href="<?=get_url('info_category',$item)?>"><?=$item['Category']?></a>
+						<a class="shade_navbg" href="<?=get_url('info2_category',$item)?>"><?=$item['Category']?></a>
 					</div>
 					<?php }?>
 				</div>
