@@ -269,7 +269,7 @@ input[value='Go']{float: none;font-size: 18px;}
 	.msg_con{height: 130px;}
 	.msg_img{width: 170px;height: 130px;}
 	.msg_con a{left: 22%;bottom:20px;}
-	.sec_stl{top: 112px;width: 55px;height: 160px;}
+	.sec_stl,.sec_pro img{top: 112px;width: 55px;height: 160px;}
 	.pro_box{width: 320px;margin-right:58px;}
 	.bx_1{width:0;border-left:160px solid transparent;border-right:160px solid transparent;border-bottom:90px solid #fff;    }
 	.bx_2{width:320px;height:180px;background-color: #fff;overflow: hidden;}
@@ -288,6 +288,15 @@ input[value='Go']{float: none;font-size: 18px;}
 	.footer_navs li{font-size: 14px !important;}
 	.logob img{width: 130px;height: 180px;}
 	.sec_proi{width: 55px;height: 160px;top:115px}
+	#map{height:425px;}
+	.con_map span p:nth-of-type(1){font-size: 19px;}
+	.con_map span p:nth-of-type(2){font-size: 19px;}
+	.sec_stls{top:100px;width: 55px;height: 160px;}
+	.con_form span p{font-size: 19px;}
+	.con_form span b{font-size: 19px;}
+	.con_form span input[type="text"]{height: 40px;line-height: 40px;}
+	.con_form img{width: 155px;height:42px;}
+	input[value="提交留言"]{width: 143px;height: 48px;font-size: 19px;margin-left: 106px;}
 }
 
 
