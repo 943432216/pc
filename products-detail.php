@@ -26,7 +26,13 @@ if(($sum_pro = count($pro_cul_cate)) < 5) {
 		$pro_cul_cate[] = $porducts[mt_rand(0, $porducts_sum)];
 	}
 }
-// var_dump($CateId);exit;
+for($i = 0; $i<=7; $i++ ) {
+	if (!empty($product_row["PicPath_$i"])) {
+		$pic_src["PicPath_$i"]['big'] = str_replace('s_', "411X317_", $product_row["PicPath_$i"]);
+		$pic_src["PicPath_$i"]['small'] = str_replace('s_', "111X85_", $product_row["PicPath_$i"]);
+	}
+}
+// var_dump($pic_src);exit;
 //$pic_top = $db->get_one('ad',"AId='6");
 ?>
 <!DOCTYPE html>
