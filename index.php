@@ -11,6 +11,7 @@ $industry_states = $db->get_limit('info', 'CateId=2', 'InfoId,ExtUrl,Title,Thumb
 $recommend_1 = $db->get_limit('product', 'IsRecommend=1', '*', 'ProId desc', 0, 3);
 $recommend_2 = $db->get_limit('product', 'IsRecommend=2', '*', 'ProId desc', 0, 3);
 $recommend_3 = $db->get_limit('product', 'IsRecommend=3', '*', 'ProId desc', 0, 3);
+$banner=$db->get_one('ad',"AId='1'");
 // var_dump($recommend_1);exit;
 ?>
 <!DOCTYPE html>
@@ -29,15 +30,14 @@ $recommend_3 = $db->get_limit('product', 'IsRecommend=3', '*', 'ProId desc', 0, 
 			<div class="banner float width">
 				<div id="marquee">
 					<ul>
+						<?php
+					     for($i=0;$i<5;$i++){
+							if(!is_file($site_root_path.$banner['PicPath_'.$i]))continue;
+						?>
 						<li>
-							<a href="javascript:;"><img src="img/banner.jpg" class="img"></a>
+							<a href="<?=$banner['Url_'.$i]?>"><img src="<?=$banner['PicPath_'.$i]?>" class="img"></a>
 						</li>
-						<li>
-							<a href="javascript:;"><img src="img/banner_01.jpg" class="img"></a>
-						</li>
-						<li>
-							<a href="javascript:;"><img src="img/banner_02.jpg" class="img"></a>
-						</li>
+						<?php }?>
 					</ul>
 				</div>
 			</div>
