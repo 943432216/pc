@@ -32,6 +32,7 @@ for($i = 0; $i<=7; $i++ ) {
 		$pic_src["PicPath_$i"]['small'] = str_replace('s_', "111X85_", $product_row["PicPath_$i"]);
 	}
 }
+$pic_src = json_encode($pic_src);
 // var_dump($pic_src);exit;
 //$pic_top = $db->get_one('ad',"AId='6");
 ?>
