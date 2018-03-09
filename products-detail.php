@@ -36,7 +36,7 @@ if(($sum_pro = count($pro_cul_cate)) < 5) {
 		<meta charset="utf-8" />
 		<title>心宝药业</title>
 		<link rel="stylesheet" type="text/css" href="css/nitialize.css" />
-		<link rel="stylesheet" type="text/css" href="css/pc_main.css" />
+		<link rel="stylesheet" type="text/css" href="css/pc_1600.css" />
 		<script type="text/javascript">
 			var btname=<?=$CateId?>;
 //			console.log(btname);

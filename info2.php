@@ -26,7 +26,7 @@ $banner=$db->get_one('ad',"AId='7'");
 		<meta charset="utf-8" />
 		<title>心宝药业</title>
 		<link rel="stylesheet" type="text/css" href="css/nitialize.css" />
-		<link rel="stylesheet" type="text/css" href="css/pc_main.css" />
+		<link rel="stylesheet" type="text/css" href="css/pc_1600.css" />
 	</head>
 
 	<body>
@@ -108,6 +108,7 @@ $banner=$db->get_one('ad',"AId='7'");
 				$('.pagenum').css('background','#c49858');
 				$('.pagenum').css('border-color','#c49858');
 				$('.paged').css('border-color','#c49858');
+				
 			})
 		</script>
 	</body>

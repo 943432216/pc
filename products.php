@@ -18,7 +18,7 @@ $banner=$db->get_one('ad',"AId='6'");
 		<meta charset="utf-8" />
 		<title>心宝药业</title>
 		<link rel="stylesheet" type="text/css" href="css/nitialize.css" />
-		<link rel="stylesheet" type="text/css" href="css/pc_main.css" />
+		<link rel="stylesheet" type="text/css" href="css/pc_1600.css" />
 	</head>
 
 	<body>
@@ -33,7 +33,7 @@ $banner=$db->get_one('ad',"AId='6'");
 				<?php }?>
 			</div>
 			<section class="left position sec_bg" >
-				<div class="sec_pro"><img src="img/PC_product_tl.png"/></div>
+				<div class="sec_pro"><img src="img/PC_product_tl.png" class="img"/></div>
 				
 				<div class="sec_con section_pro">
 					<div class="sec_box width left" style="display: block;">

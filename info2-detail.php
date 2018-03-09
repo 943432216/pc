@@ -23,7 +23,7 @@ $recommend = $db->get_all('info2', "CateId=$cur_cate[CateId]", 'InfoId,Title,Acc
 		<meta charset="utf-8" />
 		<title>心宝药业</title>
 		<link rel="stylesheet" type="text/css" href="css/nitialize.css" />
-		<link rel="stylesheet" type="text/css" href="css/pc_main.css" />
+		<link rel="stylesheet" type="text/css" href="css/pc_1600.css" />
 		<script type="text/javascript">
 			var btname=<?=$CateId?>;
 //			console.log(btname);
@@ -71,13 +71,15 @@ $recommend = $db->get_all('info2', "CateId=$cur_cate[CateId]", 'InfoId,Title,Acc
 						<h2 class="left">推荐阅读</h2>
 						<a href="#">更多 》》</a>
 					</div>
-					<ul>
-						<li><a href="#">“心心相印”公益活动走进山西同仁康大药房 </a>2018-01-25</li>
-						<li><a href="#">“心心相印”公益活动走进山西同仁康大药房 </a>2018-01-25</li>
-						<li><a href="#">“心心相印”公益活动走进山西同仁康大药房 </a>2018-01-25</li>
-						<li><a href="#">“心心相印”公益活动走进山西同仁康大药房 </a>2018-01-25</li>
-						<li><a href="#">“心心相印”公益活动走进山西同仁康大药房 </a>2018-01-25</li>
-					</ul>
+					<div class="donate_carousel">
+						<ul>
+							<li><a href="#">“心心相印”公益活动走进山西同仁康大药房 </a>2018-01-25</li>
+							<li><a href="#">“心心相印”公益活动走进山西同仁康大药房 </a>2018-01-26</li>
+							<li><a href="#">“心心相印”公益活动走进山西同仁康大药房 </a>2018-01-27</li>
+							<li><a href="#">“心心相印”公益活动走进山西同仁康大药房 </a>2018-01-28</li>
+							<li><a href="#">“心心相印”公益活动走进山西同仁康大药房 </a>2018-01-29</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 			<?php include('footer.php'); ?>
@@ -85,6 +87,7 @@ $recommend = $db->get_all('info2', "CateId=$cur_cate[CateId]", 'InfoId,Title,Acc
 
 		<script src="js/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/unslider.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/srcoll.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/pc_main.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
 			$(function(){
@@ -116,6 +119,26 @@ $recommend = $db->get_all('info2', "CateId=$cur_cate[CateId]", 'InfoId,Title,Acc
 					}
 				})
 				navt(btname);
+				$('.contents').find('strong').each(function(){
+//					console.log($('.contents').find('strong').length)
+					if ($(this).html()=='中国处方药') {
+						$('.contents').find('strong').removeAttr('style');
+						$(this).removeClass('width')
+						$(this).css({
+							'font-size':'17px',
+							'color':'#323232',
+							'font-weight':'600',
+							'text-align':'center',
+							'margin':'0',
+							'width':'100px'
+						});
+					}
+				});
+				$('.donate_carousel').Scroll({
+			        line: 1,
+			        speed: 800,
+			        timer: 2000
+   				 });
 			})
 		</script>
 	</body>

@@ -20,7 +20,7 @@ $recommend_3 = $db->get_limit('product', 'IsRecommend=3', '*', 'ProId desc', 0, 
 		<meta charset="utf-8" />
 		<title>心宝药业</title>
 		<link rel="stylesheet" type="text/css" href="css/nitialize.css" />
-		<link rel="stylesheet" type="text/css" href="css/pc_main.css" />
+		<link rel="stylesheet" type="text/css" href="css/pc_1600.css" />
 	</head>
 
 	<body>
