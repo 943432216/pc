@@ -114,6 +114,11 @@ $(function() {
 		})
 	});
 	navs()
+	$('.nav2 ul li a').each(function(){
+		$(this).click(function(){
+			$(this).css('color','#f6f0e0');
+		})
+	})
 })
 
 function videold(num) {
@@ -326,7 +331,7 @@ function navt(data) {
 	if(a == 'info2-detail' && b == '10') {
 		x = '龟鹿补肾片健康手册';
 	}
-	console.log(x);
+//	console.log(x);
 	$('.abXBs,.shade_nav').find('a').each(function(){
 		if($(this).html()==x){
 			$(this).addClass('sec_A')

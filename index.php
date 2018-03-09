@@ -21,7 +21,7 @@ $banner=$db->get_one('ad',"AId='1'");
 		<meta charset="utf-8" />
 		<title>心宝药业</title>
 		<link rel="stylesheet" type="text/css" href="css/nitialize.css" />
-		<link rel="stylesheet" type="text/css" href="css/pc_main.css" />
+		<link rel="stylesheet" type="text/css" href="css/pc_1600.css" />
 	</head>
 
 	<body>

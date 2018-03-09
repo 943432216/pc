@@ -29,7 +29,7 @@ if($GroupId==1){
 		<meta charset="utf-8" />
 		<title>心宝药业</title>
 		<link rel="stylesheet" type="text/css" href="css/nitialize.css" />
-		<link rel="stylesheet" type="text/css" href="css/pc_main.css" />
+		<link rel="stylesheet" type="text/css" href="css/pc_1600.css" />
 	</head>
 
 	<body>
@@ -39,7 +39,7 @@ if($GroupId==1){
 				<img src="img/banner_01.jpg" class="img"/>
 			</div>
 			<section class="left position" >
-				<div class="sec_stl"><img src="img/stl.png"/></div>
+				<div class="sec_stl"><img src="img/stl.png" class="img"/></div>
 				<div class="sec_title left width abXB">
 					<?php foreach((array)$art_group[$GroupId] as $item){?>
 					<a href="<?=get_url('article',$item)?>"><?=$item['Title']?></a>

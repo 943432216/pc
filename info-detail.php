@@ -23,7 +23,7 @@ $recommend = $db->get_all('info', "CateId=$cur_cate[CateId]", 'InfoId,Title,AccT
 		<meta charset="utf-8" />
 		<title>心宝药业</title>
 		<link rel="stylesheet" type="text/css" href="css/nitialize.css" />
-		<link rel="stylesheet" type="text/css" href="css/pc_main.css" />
+		<link rel="stylesheet" type="text/css" href="css/pc_1600.css" />
 		<script type="text/javascript">
 			var btname=<?=$CateId?>;
 //			console.log(btname);
@@ -74,13 +74,15 @@ $recommend = $db->get_all('info', "CateId=$cur_cate[CateId]", 'InfoId,Title,AccT
 						<h2 class="left">推荐阅读</h2>
 						<a href="#">更多 》》</a>
 					</div>
-					<ul>
-						<li><a href="#">“心心相印”公益活动走进山西同仁康大药房 </a>2018-01-25</li>
-						<li><a href="#">“心心相印”公益活动走进山西同仁康大药房 </a>2018-01-25</li>
-						<li><a href="#">“心心相印”公益活动走进山西同仁康大药房 </a>2018-01-25</li>
-						<li><a href="#">“心心相印”公益活动走进山西同仁康大药房 </a>2018-01-25</li>
-						<li><a href="#">“心心相印”公益活动走进山西同仁康大药房 </a>2018-01-25</li>
-					</ul>
+					<div class="donate_carousel">
+						<ul>
+							<li><a href="#">“心心相印”公益活动走进山西同仁康大药房 </a>2018-01-25</li>
+							<li><a href="#">“心心相印”公益活动走进山西同仁康大药房 </a>2018-01-26</li>
+							<li><a href="#">“心心相印”公益活动走进山西同仁康大药房 </a>2018-01-27</li>
+							<li><a href="#">“心心相印”公益活动走进山西同仁康大药房 </a>2018-01-28</li>
+							<li><a href="#">“心心相印”公益活动走进山西同仁康大药房 </a>2018-01-29</li>
+						</ul>
+					</div>
 				</div>
 			</div>
 			<?php include('footer.php'); ?>

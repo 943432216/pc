@@ -33,7 +33,8 @@
 						<ul>	
 							<?php foreach((array)$art_group[1] as $item){?>						
 							<li>
-								<a href="<?=get_url('article',$item)?>"><?=$item['Title']?></a>
+								<a href="<?=get_url('article',$item)?>" target="_blank"><?=$item['Title']?></a>
+								<a href=""target="_blank"></a>
 							</li>
 							<?php }?>
 						</ul>
@@ -51,7 +52,7 @@
 						<ul>
 							<?php foreach((array)$product_cate as $item){?>
 							<li>
-								<a href="<?=get_url('product_category',$item)?>"><?=$item['Category']?></a>
+								<a href="<?=get_url('product_category',$item)?>" target="_blank"><?=$item['Category']?></a>
 							</li>
 							<?php }?>
 						</ul>
@@ -69,7 +70,7 @@
 						<ul>
 							<?php foreach((array)$info2_cate as $item){?>
 							<li>
-								<a href="<?=get_url('info2_category',$item)?>"><?=$item['Category']?></a>
+								<a href="<?=get_url('info2_category',$item)?>" target="_blank"><?=$item['Category']?></a>
 							</li>
 							<?php }?>
 						</ul>
@@ -90,7 +91,7 @@
 									if($item['CateId'] == 7){continue;}
 							?>
 							<li>
-								<a href="<?=get_url('info_category',$item)?>"><?=$item['Category']?></a>
+								<a href="<?=get_url('info_category',$item)?>" target="_blank"><?=$item['Category']?></a>
 							</li>
 							<?php }?>
 						</ul>
