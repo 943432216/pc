@@ -114,6 +114,11 @@ $(function() {
 		})
 	});
 	navs()
+	$('.nav2 ul li a').each(function(){
+		$(this).click(function(){
+			$(this).css('color','#f6f0e0');
+		})
+	})
 })
 
 function videold(num) {

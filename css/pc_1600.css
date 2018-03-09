@@ -19,11 +19,13 @@
 .nav_right{width:90%;margin: 0 0 0 10%;float:left;}
 .nav_right ul li{float: left;width:16.3%;position: relative;}
 .nav_right ul li div{height: 61px;margin: 17px 0;width: 100%;float: left;}
-.navstax{background:url(../img/navbg1.png) no-repeat;background-size: 100% 100%;}
+.navstax{background:url(../img/navbg.png) no-repeat;background-size: 100% 100%;}
 .nav_right ul li a{height:61px;line-height:61px;text-align: center;display: block;color: white;font-size:30px;}
 .nav2{z-index: 99999;margin: 0 !important;height: auto !important;position: absolute;left: 0;top:80px;z-index: 99999;display:none;background:url(../img/pc_logoa.png) no-repeat #D13600 left bottom;background-size:41px 123px;padding-top: 10px;}
 .nav2 ul li{width: 100% !important;height: 42px !important;}
+.nav2 ul li:nth-last-of-type(1){height:48px !important;}
 .nav2 ul li a{width: 100%;height: 42px;line-height: 42px;overflow: hidden;font-size: 24px !important;border-bottom:1px solid #c49858;}
+.nav2 ul li:nth-last-of-type(1) a{height: 48px;}
 .ewmx img{width: 140px;height: 150px;}
 .ewmx{position: absolute;top:48px;z-index: 9999;right: 12.8%;display: none;}
 .nav2 ul li:nth-last-of-type(1) a{border: none;}
@@ -111,7 +113,7 @@ input[value='提交留言']{font-size:25px;width:168px;height:58px;color: #fff;b
 .bx_2 img{float: left;width:90%;width:90%;height: 214px;margin: 0 5%;}
 .pro_details{width: 100%;float: left;}
 .pro_de{cursor: pointer;margin-left:35%;width:73px;height:14px;border: 1px solid #d13600;padding:7px 0 7px 33px;font-size: 16px;color: white;background: url(../img/y.png) no-repeat 9px center;display: block;}
-.pro_name{color: #d13600;font-size: 25px;position: absolute;left:0%;top:76%;width:56%;text-align: center;padding: 0% 22% 0 22%;}
+.pro_name{color: #d13600;font-size: 21px;position: absolute;left:0%;top:76%;width:56%;text-align: center;padding: 0% 22% 0 22%;}
 .page{float: left;width: 100%;margin: 40px 0 20px 0;}
 /*.page span,.page p,.page div,{float: left;}*/
 .page a,.page font,input[value='Go']{padding: 6px 0;background: #d13600;border: 1px solid #d13600;border-radius:25px;color: #fff;float: left;cursor: pointer;margin: 0 13px;width: 80px;text-align: center;}
