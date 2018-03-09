@@ -46,7 +46,7 @@ $pic_src = json_encode($pic_src);
 		<link rel="stylesheet" type="text/css" href="css/pc_1600.css" />
 		<script type="text/javascript">
 			var btname=<?=$CateId?>;
-//			console.log(btname);
+			var pics=<?=$pic_src?>;
 		</script>
 	</head>
 
@@ -125,6 +125,7 @@ $pic_src = json_encode($pic_src);
 			$(function() {
 				$('.abXBs').find('a').eq(0).css('margin-left','30%');
 				navt(btname);
+				console.log(pics)
 			})
 		</script>
 	</body>
