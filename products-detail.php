@@ -76,15 +76,17 @@ $pic_src = json_encode($pic_src);
 							<li>【功能主治】<?=format_text($product_row['BriefDescription'])?></li>
 						</ul>
 					</div>
-					<div class="picsmall">
-						<div>
-							<p></p>
-							<p></p>
-							<?php for($i=0;$i<3;$i++){
-								if(!is_file($site_root_path.$product_row['PicPath_'.$i]))continue;	 
-							?>
-							<span><img src="<?=str_replace('s_', '111X85_', $product_row['PicPath_'.$i]);?>"/></span>
-							<?php }?>
+					<div class="picsmall position">
+						<p class="lefts"></p>
+						<p class="rights"></p>
+						<div class="spic overflow">
+							<div>
+								<?php for($i=0;$i<4;$i++){
+									if(!is_file($site_root_path.$product_row['PicPath_'.$i]))continue;	 
+								?>
+								<span><img src="<?=str_replace('s_', '111X85_', $product_row['PicPath_'.$i]);?>"/></span>
+								<?php }?>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -126,6 +128,16 @@ $pic_src = json_encode($pic_src);
 				$('.abXBs').children('a').eq(0).css('margin-left','30%');
 				navt(btname);
 				product_pic();
+				$('.lefts').click(function(){
+					$('.spic div').animate({
+						'margin-left':'-150px'
+					},'200','linear');
+				}),$('.rights').click(function(){
+					$('.spic div').animate({
+						'margin-left':'0'
+					},'200','linear');
+				})
+				
 			})
 		</script>
 	</body>

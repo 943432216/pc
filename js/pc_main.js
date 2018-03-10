@@ -96,7 +96,7 @@ $(function() {
 		$('.sec_box').find('img').addClass('img')
 		$('.sec_box').find('div').css('float', 'left');
 		$('.sec_box').find('span').css('line-height', '160%')
-	}else{};
+	} else {};
 
 	$('.con_title').each(function(a, b) {
 		$(this).on({
@@ -338,23 +338,49 @@ function navt(data) {
 
 }
 
+function newcon() {
+	//	console.log(about_new);
+	//	console.log(read_new);
+	$.each(read_new, function(a, b) {
+		console.log(b)
+		$('.donate_carousel ul').append('<li><a href="#"></a><b></b></li>');
+		$('.donate_carousel ul li').eq(a).find('a').html(b.Title);
+		$('.donate_carousel ul li').eq(a).find('a').attr('href', b.PageUrl);
+		$('.donate_carousel ul li').eq(a).find('b').html(ts(b.AccTime))
+	});
+	trim($('.donate_carousel ul li a').html());
+	//	$('.donate_carousel ul li').each(function(a,b){
+	//		
+	//	})
 
-function newcon(){
-	console.log(about_new);
-	console.log(read_new);
 }
 
+function product_pic() {
 
-function product_pic(){
-	var arr=[];
-	for(var i=0 in pics){
-//		arr+=i
-		console.log(i.length)
-//		for(var a=0 in pics[i]){
-//			console.log(pics[i].big)
-//			console.log(pics[i].big)
-//			arr=pics[i].big;
-//		}
+	var arr = [];
+	//	console.log(pics);
+	for(var i = 0 in pics) {
+		//		console.log(i)
+
+		for(var a = 0 in pics[i]) {
+			//			console.log(pics[i][0])
+			console.log(pics[i].length)
+		}
 	}
-	console.log(arr)
+	//	console.log(arr)
+}
+
+function trim(str) {
+	return str.replace(/(^\s+)|(\s+$)/g, "");
+}
+
+function ts(timestamp) {
+	var date = new Date(timestamp * 1000); //时间戳为10位需*1000，时间戳为13位的话不需乘1000
+	Y = date.getFullYear() + '-';
+	M = (date.getMonth() + 1 < 10 ? '0' + (date.getMonth() + 1) : date.getMonth() + 1) + '-';
+	D = date.getDate() + ' ';
+	h = date.getHours() + ':';
+	m = date.getMinutes() + ':';
+	s = date.getSeconds();
+	return Y + M + D;
 }
