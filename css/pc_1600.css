@@ -133,7 +133,8 @@ input[value='Go']{float: none;font-size: 18px;}
 .msg_box,.msg_boxs{width: 100%;float: left;overflow: hidden;}
 .msg_boxs{display: none;}
 .msg_1{border-bottom: 1px solid #dcdcdc;position: relative;width: 100%;padding:18px 0;float: left;height: 151px;overflow: hidden;}
-.msg_img{width:202px;height:151px;float:left;margin:0 25px;}
+.msg_img{width:202px;height:151px;float:left;margin:0 25px;overflow:hidden;}
+.msg_img img{height: 100%;}
 .msg_con{height:151px;}
 .msg_con h2{font-size: 17px;color:#232323;}
 .msg_con p{margin-top: 30px;font-size: 15px;color:#999;height: 54px;overflow: hidden;}
@@ -154,7 +155,7 @@ input[value='Go']{float: none;font-size: 18px;}
 .video_left{left:7%;}
 .video_right{right:7%;}
 #product_mar {width: 100%; position: relative;}
-#product_mar li {float: left;}
+#product_mar li {float: left;height: 500px;}
 .sec_bg{background: url(../img/product_bg.png) no-repeat;background-size:100% 100%;}
 #product_mar .dots {position: absolute;left:45%;bottom:0px;}
 #product_mar .dots li {display: block; width:15px;height:15px;border: 1px solid #b30003;border-radius:50%;background: #fff;margin: 0 10px;}

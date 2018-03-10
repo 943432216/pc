@@ -165,9 +165,9 @@ $banner=$db->get_one('ad',"AId='1'");
 			//产品轮播
 				var fbl=window.screen.width;
 				var heightd=0;
-				if(fbl==1600){heightd=550;}
-				if(fbl==1366){heightd=445;}
-   				$('#product_mar ul li').css('height',heightd);
+//				if(fbl==1600){heightd=550;}
+//				if(fbl==1366){heightd=445;}
+// 				$('#product_mar ul li').css('height',heightd);
     			var unslider = $('#product_mar').unslider({
     				dots: true,
 					fluid: true,

@@ -123,9 +123,9 @@ $pic_src = json_encode($pic_src);
 		<script src="js/pc_main.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
 			$(function() {
-				$('.abXBs').find('a').eq(0).css('margin-left','30%');
+				$('.abXBs').children('a').eq(0).css('margin-left','30%');
 				navt(btname);
-				console.log(pics)
+				product_pic();
 			})
 		</script>
 	</body>

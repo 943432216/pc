@@ -26,7 +26,8 @@ $recommend = $db->get_all('info', "CateId=$cur_cate[CateId]", 'InfoId,Title,AccT
 		<link rel="stylesheet" type="text/css" href="css/pc_1600.css" />
 		<script type="text/javascript">
 			var btname=<?=$CateId?>;
-//			console.log(btname);
+			var about_new=<?=$msg_all?>;
+			var read_new=<?=$recommend?>;
 		</script>
 	</head>
 		
@@ -90,6 +91,7 @@ $recommend = $db->get_all('info', "CateId=$cur_cate[CateId]", 'InfoId,Title,AccT
 
 		<script src="js/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/unslider.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/srcoll.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/pc_main.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
 			$(function(){
@@ -122,7 +124,13 @@ $recommend = $db->get_all('info', "CateId=$cur_cate[CateId]", 'InfoId,Title,AccT
 						
 					}
 				})
+				$('.donate_carousel').Scroll({
+			        line: 1,
+			        speed: 800,
+			        timer: 2000
+   				 });
 				navt(btname);
+				newcon();
 			})
 		</script>
 	</body>

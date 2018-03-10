@@ -1,4 +1,7 @@
 $(function() {
+	var ul_hf = window.location.href;
+	var titles = document.title;
+	var n = 0;
 	//导航
 	$('.start').each(function() {
 		$(this).on({
@@ -61,7 +64,6 @@ $(function() {
 		})
 	});
 	//video
-	var n = 0;
 	$('.video_left').click(function() {
 		if(n <= 0) {
 			alert('已经是第一个视频')
@@ -70,7 +72,7 @@ $(function() {
 		}
 		videold(n);
 		return n;
-	})
+	});
 	$('.video_right').click(function() {
 		if(n >= 4) {
 			alert('已经是最后一个视频')
@@ -79,25 +81,22 @@ $(function() {
 		}
 		videold(n)
 		return n;
-	})
+	});
 	//收藏or设为主页	
-	var urls = window.location.href;
-	var titles = document.title;
 	$('#collect').click(function() {
 
-		AddFavorite(titles, urls);
+		AddFavorite(titles, ul_hf);
 	})
 	$('#homepage').click(function() {
-		SetHome(urls)
+		SetHome(ul_hf);
 	});
-
-	urls = urls.split('=')[1];
-	if(urls == '3') {
+	ul_hf = ul_hf.split('=')[1];
+	if(ul_hf == '3') {
 		$('.sec_box').find('*').removeAttr('style');
 		$('.sec_box').find('img').addClass('img')
 		$('.sec_box').find('div').css('float', 'left');
 		$('.sec_box').find('span').css('line-height', '160%')
-	}
+	}else{};
 
 	$('.con_title').each(function(a, b) {
 		$(this).on({
@@ -108,17 +107,16 @@ $(function() {
 				$('.details_con div').eq(a).css('display', 'block');
 				$('.details_con div').eq(a).mouseover(function() {
 					$(this).css('display', 'block');
-					//					$(this).find('span').removeClass('avts');
 				})
 			}
 		})
 	});
-	navs()
-	$('.nav2 ul li a').each(function(){
-		$(this).click(function(){
-			$(this).css('color','#f6f0e0');
+	$('.nav2 ul li a').each(function() {
+		$(this).click(function() {
+			$(this).css('color', '#f6f0e0');
 		})
-	})
+	});
+	navs();
 })
 
 function videold(num) {
@@ -288,7 +286,7 @@ function navs() {
 function navt(data) {
 	urls = window.location.href;
 	var a, b, x;
-	b=data.toString();
+	b = data.toString();
 	urls = urls.split('cn/')[1];
 	a = urls.split('.')[0];
 	$('.nav_right').find('.ff').each(function() {
@@ -331,11 +329,32 @@ function navt(data) {
 	if(a == 'info2-detail' && b == '10') {
 		x = '龟鹿补肾片健康手册';
 	}
-//	console.log(x);
-	$('.abXBs,.shade_nav').find('a').each(function(){
-		if($(this).html()==x){
+	//	console.log(x);
+	$('.abXBs,.shade_nav').find('a').each(function() {
+		if($(this).html() == x) {
 			$(this).addClass('sec_A')
 		}
-	})
+	});
 
+}
+
+
+function newcon(){
+	console.log(about_new);
+	console.log(read_new);
+}
+
+
+function product_pic(){
+	var arr=[];
+	for(var i=0 in pics){
+//		arr+=i
+		console.log(i.length)
+//		for(var a=0 in pics[i]){
+//			console.log(pics[i].big)
+//			console.log(pics[i].big)
+//			arr=pics[i].big;
+//		}
+	}
+	console.log(arr)
 }
