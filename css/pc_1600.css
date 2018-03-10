@@ -210,5 +210,6 @@ input[value='Go']{float: none;font-size: 18px;}
 
 
 .donate_carousel{width:94%;border:1px solid #dedede;border-top:4px solid #d13600;padding:3% 2%;display: block;overflow: hidden;height: 240px;}
-.donate_carousel b{width:20%;float: right;text-align: right;}
+.donate_carousel b,.about_new li b{width:20%;float: right;text-align: right;}
+.about_new li 
 /*.donate_carousel*/

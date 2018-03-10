@@ -349,9 +349,14 @@ function newcon() {
 		$('.donate_carousel ul li').eq(a).find('b').html(ts(b.AccTime))
 	});
 	trim($('.donate_carousel ul li a').html());
-	//	$('.donate_carousel ul li').each(function(a,b){
-	//		
-	//	})
+	$.each(about_new, function(a, b) {
+		console.log(b)
+		$('.about_new ul').append('<li><a href="#"></a><b></b></li>');
+		$('.about_new ul li').eq(a).find('a').html(b.Title);
+		$('.about_new ul li').eq(a).find('a').attr('href', b.PageUrl);
+		$('.about_new ul li').eq(a).find('b').html(ts(b.AccTime))
+	});
+	trim($('.about_new ul li a').html());
 
 }
 
@@ -378,7 +383,7 @@ function ts(timestamp) {
 	var date = new Date(timestamp * 1000); //时间戳为10位需*1000，时间戳为13位的话不需乘1000
 	Y = date.getFullYear() + '-';
 	M = (date.getMonth() + 1 < 10 ? '0' + (date.getMonth() + 1) : date.getMonth() + 1) + '-';
-	D = date.getDate() + ' ';
+	D = (date.getDate() + 1 < 10 ? '0' + (date.getDate() + 1) : date.getDate() + 1);
 	h = date.getHours() + ':';
 	m = date.getMinutes() + ':';
 	s = date.getSeconds();
