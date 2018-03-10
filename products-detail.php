@@ -28,8 +28,8 @@ if(($sum_pro = count($pro_cul_cate)) < 5) {
 }
 for($i = 0; $i<=7; $i++ ) {
 	if (!empty($product_row["PicPath_$i"])) {
-		$pic_src["PicPath_$i"]['big'] = str_replace('s_', "411X317_", $product_row["PicPath_$i"]);
-		$pic_src["PicPath_$i"]['small'] = str_replace('s_', "111X85_", $product_row["PicPath_$i"]);
+		$pic_src["PicPath_$i"][0] = str_replace('s_', "411X317_", $product_row["PicPath_$i"]);
+		$pic_src["PicPath_$i"][1] = str_replace('s_', "111X85_", $product_row["PicPath_$i"]);
 	}
 }
 $pic_src = json_encode($pic_src);
