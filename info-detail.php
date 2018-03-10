@@ -21,6 +21,9 @@ foreach ($recommend as $k=>$v) {
 		$ls_next[] = $recommend[$k+1]['InfoId'];
 	}
 }
+foreach ($msg_all as $k => $v) {
+	$msg_all[$k]['PageUrl'] = get_url('info', $v);
+}
 // var_dump($msg_all);exit;
 ?>
 <!DOCTYPE html>
