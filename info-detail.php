@@ -16,6 +16,7 @@ $banner=$db->get_one('ad',"AId='5'");
 $msg_all = $db->get_limit('info', 1, 'InfoId,Title,AccTime,PageUrl', 'InfoId desc', 0, 5);
 $recommend = $db->get_all('info', "CateId=$cur_cate[CateId]", 'InfoId,Title,AccTime,PageUrl', 'InfoId desc');
 foreach ($recommend as $k=>$v) {
+	$recommend[$k]['PageUrl'] = get_url('info', $v);
 	if ($v['InfoId']==$InfoId) {
 		$ls_next[] = $recommend[$k-1]['InfoId'];
 		$ls_next[] = $recommend[$k+1]['InfoId'];
