@@ -6,6 +6,7 @@ include($site_root_path.'/inc/function.php');
 include($site_root_path.'/inc/common.php');
 include($site_root_path.'/inc/lib/info/detail.php');
 $CateId=(int)$info_row['CateId'];
+$InfoId=htmlentities($_GET['InfoId']);
 if($CateId){
 	$cur_cate=$db->get_one('info_category',"CateId='$CateId'");
 }
@@ -14,7 +15,13 @@ $banner=$db->get_one('ad',"AId='5'");
 
 $msg_all = $db->get_all('info', 1, 'InfoId,Title,AccTime,PageUrl', 'InfoId desc');
 $recommend = $db->get_all('info', "CateId=$cur_cate[CateId]", 'InfoId,Title,AccTime,PageUrl', 'InfoId desc');
-// var_dump($CateId);exit;
+foreach ($recommend as $k=>$v) {
+	if ($v['InfoId']==$InfoId) {
+		$ls_next[] = $recommend[$k-1]['InfoId'];
+		$ls_next[] = $recommend[$k+1]['InfoId'];
+	}
+}
+//var_dump($ls_next);exit;
 ?>
 <!DOCTYPE html>
 <html>
@@ -52,8 +59,12 @@ $recommend = $db->get_all('info', "CateId=$cur_cate[CateId]", 'InfoId,Title,AccT
 					<?=$info_detail;?>
 				</div>
 				<div class="details_bn left">
-					<a href="#">《《 上一篇</a>
-					<a href="#">下一篇 》》</a>
+					<?php if(isset($ls_next[0])) { ?>
+					<a href="<?=$_SERVER['SCRIPT_NAME'] . '?InfoId=' . $ls_next[0];?>">《《 上一篇</a>
+					<?php } ?>
+					<?php if(isset($ls_next[0])) { ?>
+					<a href="<?=$_SERVER['SCRIPT_NAME'] . '?InfoId=' . $ls_next[1];?>">下一篇 》》</a>
+					<?php } ?>
 				</div>
 			</section>
 			<div class="details_new left">
