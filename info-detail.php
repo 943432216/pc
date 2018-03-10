@@ -33,8 +33,8 @@ foreach ($recommend as $k=>$v) {
 		<link rel="stylesheet" type="text/css" href="css/pc_1600.css" />
 		<script type="text/javascript">
 			var btname=<?=$CateId?>;
-			var about_new=<?=$msg_all?>;
-			var read_new=<?=$recommend?>;
+			var about_new=<?=json_encode($msg_all,JSON_UNESCAPED_UNICODE)?>;
+			var read_new=<?=json_encode($recommend,JSON_UNESCAPED_UNICODE)?>;
 		</script>
 	</head>
 		
