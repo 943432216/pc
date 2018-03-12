@@ -140,102 +140,46 @@
 					<div class="sec_box width left" style="display:block">
 						<div class="XB_lc">
 							<span class="lc_left">
-								<img src="img/e1804.png"/>
+								<h3>1984</h3>
 								<p>
-									<b>1984</b>
+									<b><img src="img/e1804.png" class="img"/></b>
 									<b>被誉为“中国救心丸”的星辰牌“心宝丸”在广东省药物研究所震撼问世</b>
 								</p>
 							</span>
 							<span class="lc_right">
+								<h3>1984</h3>
 								<p>
-									<b>1984</b>
 									<b>被誉为“中国救心丸”的星辰牌“心宝丸”在广东省药物研究所震撼问世</b>
+									<b><img src="img/e1804.png" class="img"/></b>
 								</p>
-								<img src="img/e1804.png"/>
 							</span>
 							<span class="lc_left">
-								<img src="img/e1804.png"/>
+								<h3>1984</h3>
 								<p>
-									<b>1984</b>
+									<b><img src="img/e1804.png" class="img"/></b>
 									<b>被誉为“中国救心丸”的星辰牌“心宝丸”在广东省药物研究所震撼问世</b>
 								</p>
 							</span>
 							<span class="lc_right">
+								<h3>1984</h3>
 								<p>
-									<b>1984</b>
 									<b>被誉为“中国救心丸”的星辰牌“心宝丸”在广东省药物研究所震撼问世</b>
+									<b><img src="img/e1804.png" class="img"/></b>
 								</p>
-								<img src="img/e1804.png"/>
 							</span>
 							<span class="lc_left">
-								<img src="img/e1804.png"/>
+								<h3>1984</h3>
 								<p>
-									<b>1984</b>
+									<b><img src="img/e1804.png" class="img"/></b>
 									<b>被誉为“中国救心丸”的星辰牌“心宝丸”在广东省药物研究所震撼问世</b>
 								</p>
 							</span>
 							<span class="lc_right">
+								<h3>1984</h3>
 								<p>
-									<b>1984</b>
 									<b>被誉为“中国救心丸”的星辰牌“心宝丸”在广东省药物研究所震撼问世</b>
+									<b><img src="img/e1804.png" class="img"/></b>
 								</p>
-								<img src="img/e1804.png"/>
-							</span>
-							<span class="lc_left">
-								<img src="img/e1804.png"/>
-								<p>
-									<b>1984</b>
-									<b>被誉为“中国救心丸”的星辰牌“心宝丸”在广东省药物研究所震撼问世</b>
-								</p>
-							</span>
-							<span class="lc_right">
-								<p>
-									<b>1984</b>
-									<b>被誉为“中国救心丸”的星辰牌“心宝丸”在广东省药物研究所震撼问世</b>
-								</p>
-								<img src="img/e1804.png"/>
-							</span>
-							<span class="lc_left">
-								<img src="img/e1804.png"/>
-								<p>
-									<b>1984</b>
-									<b>被誉为“中国救心丸”的星辰牌“心宝丸”在广东省药物研究所震撼问世</b>
-								</p>
-							</span>
-							<span class="lc_right">
-								<p>
-									<b>1984</b>
-									<b>被誉为“中国救心丸”的星辰牌“心宝丸”在广东省药物研究所震撼问世</b>
-								</p>
-								<img src="img/e1804.png"/>
-							</span>
-							<span class="lc_left">
-								<img src="img/e1804.png"/>
-								<p>
-									<b>1984</b>
-									<b>被誉为“中国救心丸”的星辰牌“心宝丸”在广东省药物研究所震撼问世</b>
-								</p>
-							</span>
-							<span class="lc_right">
-								<p>
-									<b>1984</b>
-									<b>被誉为“中国救心丸”的星辰牌“心宝丸”在广东省药物研究所震撼问世</b>
-								</p>
-								<img src="img/e1804.png"/>
-							</span>
-							<span class="lc_left">
-								<img src="img/e1804.png"/>
-								<p>
-									<b>1984</b>
-									<b>被誉为“中国救心丸”的星辰牌“心宝丸”在广东省药物研究所震撼问世</b>
-								</p>
-							</span>
-							<span class="lc_right">
-								<p>
-									<b>1984</b>
-									<b>被誉为“中国救心丸”的星辰牌“心宝丸”在广东省药物研究所震撼问世</b>
-								</p>
-								<img src="img/e1804.png"/>
 							</span>
 						</div>
 					</div>
@@ -364,12 +308,10 @@
 		<script src="js/pc_main.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
 			$(function() {
-				$('#marquee ul li').height($('.img').height());
-				var unslider06 = $('#marquee').unslider({
-					dots: true,
-					fluid: true
-				});
-				data06 = unslider06.data('unslider');
+				var $hid=$('.lc_left p img').height();
+				console.log($hid)
+				$('.lc_left p b').height($hid);
+//				$('.lc_left p b').eq(1).css('line-height',$hid+'px');
 			})
 		</script>
 	</body>

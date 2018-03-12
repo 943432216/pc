@@ -116,7 +116,7 @@ $(function() {
 			$(this).css('color', '#f6f0e0');
 		})
 	});
-	navs();
+//	navs();
 })
 
 function videold(num) {
