@@ -31,11 +31,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 	$arr = array(
 		'dev_cate' => htmlentities($_POST['dev_cate']),
 		'time' => htmlentities($_POST['time']),
-		'pic_src' => $pic_src,
+		'pic_src' => '/u_file/develop/' . $pic_name,
 		'happen' => htmlentities($_POST['happen']),
 		'add_time' => time()
 		);
-	
+	$db->insert('develop', $arr);
 }
 // var_dump($_FILES["pic_src"]["size"]);exit;
 
