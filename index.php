@@ -153,7 +153,6 @@ $banner=$db->get_one('ad',"AId='1'");
 		<script src="js/pc_main.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
 			$(function() {
-				$('.banner').css('height','500px');
 				$('#marquee ul li').height($('#marquee ul li').find('img').height());
 				var unslider06 = $('#marquee').unslider({
 					dots: true,
