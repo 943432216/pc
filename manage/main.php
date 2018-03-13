@@ -47,6 +47,8 @@
 					<div id="dmenu" onclick="show_hidden_menu_list(3, this)"><strong>信息管理系统</strong></div>
 					<ul id="menu_list_3">
 								<li><span class="span" onclick="this.blur(); openWindows('win_article_group_0', this.innerHTML, 'article/index.php?GroupId=0')" onmouseover="this.className='span_hover';" onmouseout="this.className='span';">网站信息管理</span></li>
+								<li><span class="span" onclick="this.blur(); openWindows('win_article_group_1', this.innerHTML, 'develop/index.php')" onmouseover="this.className='span_hover';" onmouseout="this.className='span';">发展历程</span></li>
+								<li><span class="span" onclick="this.blur(); openWindows('win_article_group_1', this.innerHTML, 'article/honor.php')" onmouseover="this.className='span_hover';" onmouseout="this.className='span';">企业荣誉</span></li>
 								<li><span class="span" onclick="this.blur(); openWindows('win_article_group_1', this.innerHTML, 'article/index.php?GroupId=1')" onmouseover="this.className='span_hover';" onmouseout="this.className='span';">关于我们</span></li>
 								<li><span class="span" onclick="this.blur(); openWindows('win_article_group_2', this.innerHTML, 'article/index.php?GroupId=2')" onmouseover="this.className='span_hover';" onmouseout="this.className='span';">联系我们</span></li>
 					</ul>
