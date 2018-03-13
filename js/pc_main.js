@@ -2,6 +2,8 @@ $(function() {
 	var ul_hf = window.location.href;
 	var titles = document.title;
 	var n = 0;
+	var resolution=window.screen.width;
+	console.log(resolution);
 	//导航
 	$('.start').each(function() {
 		$(this).on({
@@ -116,6 +118,17 @@ $(function() {
 			$(this).css('color', '#f6f0e0');
 		})
 	});
+
+	switch (resolution){
+		case 1366:$('#lins').attr('href','css/pc_1366.css');
+			break;
+		case 1600:$('#lins').attr('href','css/pc_1600.css');
+			break;
+		case 1920:$('#lins').attr('href','css/pc_1920.css');
+			break;
+		default:$('#lins').attr('href','css/pc_1366.css');
+			break;	
+	}
 	navs();
 })
 

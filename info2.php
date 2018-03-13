@@ -26,13 +26,13 @@ $banner=$db->get_one('ad',"AId='7'");
 		<meta charset="utf-8" />
 		<title>心宝药业</title>
 		<link rel="stylesheet" type="text/css" href="css/nitialize.css" />
-		<link rel="stylesheet" type="text/css" href="css/pc_1600.css" />
+		<link rel="stylesheet" type="text/css" href="css/pc_1600.css" id="lins" />
 	</head>
 
 	<body>
 		<div class="xb_box overflow">
 			<?php include('top.php'); ?>
-			<div class="banner float width">
+			<div class="banner left width">
 				<img src="img/banner_01.jpg" class="img"/>
 			</div>
 			<section class="left overflow position">

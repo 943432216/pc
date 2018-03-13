@@ -34,7 +34,7 @@ foreach ($msg_all as $k => $v) {
 		<meta charset="utf-8" />
 		<title>心宝药业</title>
 		<link rel="stylesheet" type="text/css" href="css/nitialize.css" />
-		<link rel="stylesheet" type="text/css" href="css/pc_1600.css" />
+		<link rel="stylesheet" type="text/css" href="css/pc_1600.css" id="lins" />
 		<script type="text/javascript">
 			var btname=<?=$CateId?>;
 			var about_new=<?=json_encode($msg_all,JSON_UNESCAPED_UNICODE)?>;
@@ -45,7 +45,7 @@ foreach ($msg_all as $k => $v) {
 	<body>
 		<div class="xb_box overflow">
 			<?php include('top.php'); ?>
-			<div class="banner float width">
+			<div class="banner left width">
 				<img src="img/banner_01.jpg" class="img"/>
 			</div>
 			<div class="sec_titles left pro_titles">

@@ -76,6 +76,8 @@ section{width: 94%;padding:0 3%;}
 
 #marquee {width: 100%; position: relative;}
 #marquee li {float: left;}
+#marquee li {float: left;}
+#marquee li img{width: 100%;height:auto;max-width: 100%;float: left;display:block;}
 #marquee .dots {position: absolute;left:45%;bottom:20px;}
 #marquee .dots li {display: block; width:20px;height:4px;border: 1px solid #b30003;border-radius:5px;background: #fff;margin: 0 10px;}
 #marquee .dots li.active {background: #b30003;opacity: 1;}

@@ -21,13 +21,13 @@ $banner=$db->get_one('ad',"AId='1'");
 		<meta charset="utf-8" />
 		<title>心宝药业</title>
 		<link rel="stylesheet" type="text/css" href="css/nitialize.css" />
-		<link rel="stylesheet" type="text/css" href="css/pc_1600.css" />
+		<link rel="stylesheet" type="text/css" href="css/pc_1600.css" id="lins" />
 	</head>
 
 	<body>
 		<div class="xb_box overflow">
 			<?php include('top.php'); ?>
-			<div class="banner float width">
+			<div class="banner left width">
 				<div id="marquee">
 					<ul>
 						<?php
@@ -35,7 +35,7 @@ $banner=$db->get_one('ad',"AId='1'");
 							if(!is_file($site_root_path.$banner['PicPath_'.$i]))continue;
 						?>
 						<li>
-							<a href="<?=$banner['Url_'.$i]?>"><img src="<?=$banner['PicPath_'.$i]?>" class="img"></a>
+							<a href="<?=$banner['Url_'.$i]?>"><img src="<?=$banner['PicPath_'.$i]?>"></a>
 						</li>
 						<?php }?>
 					</ul>
@@ -153,8 +153,8 @@ $banner=$db->get_one('ad',"AId='1'");
 		<script src="js/pc_main.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
 			$(function() {
-			//banner轮播
-				$('#marquee ul li').height($('.img').height());
+				$('.banner').css('height','500px');
+				$('#marquee ul li').height($('#marquee ul li').find('img').height());
 				var unslider06 = $('#marquee').unslider({
 					dots: true,
 					fluid: true,
@@ -163,11 +163,6 @@ $banner=$db->get_one('ad',"AId='1'");
 				});
 				data06 = unslider06.data('unslider');
 			//产品轮播
-				var fbl=window.screen.width;
-				var heightd=0;
-//				if(fbl==1600){heightd=550;}
-//				if(fbl==1366){heightd=445;}
-// 				$('#product_mar ul li').css('height',heightd);
     			var unslider = $('#product_mar').unslider({
     				dots: true,
 					fluid: true,
