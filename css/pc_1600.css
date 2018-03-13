@@ -105,7 +105,7 @@ input[value='提交留言']{font-size:25px;width:168px;height:58px;color: #fff;b
 /*联系心宝*/
 
 /*产品中心*/
-.sec_pro{position: absolute;right:6%;top:140px;}
+.sec_pro{position: absolute;right:6%;top:140px;width: 65px;height: 187px;}
 .section_pro{width:90% !important;margin:0 5% 3% 5%;padding: 0 !important;}
 .pro_box{float: left;margin-right:70px;width: 372px;}
 .six_box{float: left;clear: both;margin: 16px 0;}
@@ -152,7 +152,7 @@ input[value='Go']{float: none;font-size: 18px;}
 .small_video span{float: left;width: 20%;margin: 0 2.5%;cursor:pointer;}
 .msg_box .msg_1:nth-last-of-type(1){border: 0;}
 /* index */
-.sec_proi{position: absolute;right:6%;top:140px;z-index: 999999;}
+.sec_proi{position: absolute;right:6%;top:140px;z-index: 999999;width: 65px;height: 187px;}
 .video_left,.video_right{cursor: pointer;position: absolute;top:45%;z-index: 99999;display: none;}
 .video_left{left:7%;}
 .video_right{right:7%;}

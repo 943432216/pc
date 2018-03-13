@@ -93,7 +93,7 @@ $banner=$db->get_one('ad',"AId='1'");
 					</div>
 				</div>
 			</section>
-			<section class="left position sec_bg">
+			<section class="left position sec_bg oc">
 				<div class="sec_proi"><img src="img/PC_product_tl.png" class="img"/></div>
 				<div class="index_dw"></div>
 				<a href="javascript:;" id="prev" class="unslider-arrow prev"></a>

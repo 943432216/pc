@@ -3,7 +3,7 @@ $(function() {
 	var titles = document.title;
 	var n = 0;
 	var resolution=window.screen.width;
-	console.log(resolution);
+//	console.log(resolution);
 	//导航
 	$('.start').each(function() {
 		$(this).on({

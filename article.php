@@ -32,6 +32,9 @@ $dev_str = json_encode($dev_arr, JSON_UNESCAPED_UNICODE);
 		<title>心宝药业</title>
 		<link rel="stylesheet" type="text/css" href="css/nitialize.css" />
 		<link rel="stylesheet" type="text/css" href="css/pc_1600.css" id="lins"/>
+		<script type="text/javascript">
+			var lcs=<?=$dev_str?>;
+		</script>
 	</head>
 
 	<body>
@@ -51,6 +54,8 @@ $dev_str = json_encode($dev_arr, JSON_UNESCAPED_UNICODE);
 					<div class="sec_box width left" style="display: block;">
 						<?php if($AId == 6) { ?>
 						<div class="XB_lc">
+							<!--<span class="lc_left"><h3>1984</h3><p><b><img src="img/e1804.png" class="img"/></b><b>被誉为“中国救心丸”的星辰牌“心宝丸”在广东省药物研究所震撼问世</b></p></span>
+							<span class="lc_right"><h3>1984</h3><p><b>被誉为“中国救心丸”的星辰牌“心宝丸”在广东省药物研究所震撼问世</b><b><img src="img/e1804.png" class="img"/></b></p></span>
 							<span class="lc_left">
 								<h3>1984</h3>
 								<p>
@@ -78,21 +83,7 @@ $dev_str = json_encode($dev_arr, JSON_UNESCAPED_UNICODE);
 									<b>被誉为“中国救心丸”的星辰牌“心宝丸”在广东省药物研究所震撼问世</b>
 									<b><img src="img/e1804.png" class="img"/></b>
 								</p>
-							</span>
-							<span class="lc_left">
-								<h3>1984</h3>
-								<p>
-									<b><img src="img/e1804.png" class="img"/></b>
-									<b>被誉为“中国救心丸”的星辰牌“心宝丸”在广东省药物研究所震撼问世</b>
-								</p>
-							</span>
-							<span class="lc_right">
-								<h3>1984</h3>
-								<p>
-									<b>被誉为“中国救心丸”的星辰牌“心宝丸”在广东省药物研究所震撼问世</b>
-									<b><img src="img/e1804.png" class="img"/></b>
-								</p>
-							</span>
+							</span>-->
 						</div>
 						<?php } ?>
 						<?php if($AId == 4) { ?>
@@ -126,15 +117,27 @@ $dev_str = json_encode($dev_arr, JSON_UNESCAPED_UNICODE);
 		<script type="text/javascript">
 			$(function() {
 				$('.abXB').find('a').eq(0).css('margin-left','22%');
-//				var uls=window.location.href;
-//				uls=uls.split('=')[1];
-//				if(uls=='3'){
-//					$('sec_con').find('*').removeAttr('style');
-//					$('sec_con').find('img').addClass('img')
-//					$('sec_con').find('div').css('float','left')
-//				}
 				$('.sec_box').find('*').removeAttr('style');
 				$('.sec_box').find('img').addClass('img')
+				console.log(lcs);
+				console.log(lcs.length);
+				var $lcleft='<span class="lc_left"><h3></h3><p><b><img src="" class="img"/></b><b></b></p></span>';
+				var $lcright='<span class="lc_right"><h3></h3><p><b></b><b><img src="" class="img"/></b></p></span>'
+				$.each(lcs,function(a,b){
+					console.log(b)
+					if(a%2==0){
+						$('.XB_lc').append($lcleft);
+						$('.XB_lc').children('span').eq(a).find('h3').html(b.time);
+						$('.XB_lc').children('span').eq(a).find('img').attr('src',b.pic_src);
+						$('.XB_lc').children('span').eq(a).find('b').eq(1).html(b.happen);
+					}else{
+						$('.XB_lc').append($lcright);
+						$('.XB_lc').children('span').eq(a).find('h3').html(b.time);
+						$('.XB_lc').children('span').eq(a).find('img').attr('src',b.pic_src);
+						$('.XB_lc').children('span').eq(a).find('b').eq(0).html(b.happen);
+					}
+					
+				})
 			})
 		</script>
 	</body>
