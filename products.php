@@ -59,7 +59,7 @@ $banner=$db->get_one('ad',"AId='6'");
 							<a href="/products.php?<?=$query_string?>&page=1" class="page_item hover">首页</a>
 					     	<?=turn_page_ext($page, $total_pages, $turn_page_query_string, $row_count, '上一页', '下一页', $website_url_type,1);?>
 					          <a href="/products.php?<?=$query_string?>&page=<?=$total_pages?>" class="page_item hover">尾页</a>
-					          <form action="/products.php?<?=query_string('page1')?>" method="GET">转到 <input class="page1" type="text" name="page1" onkeyup="set_number(this,0)" onpaste="set_number(this,0)" /> 页 <input type="submit" class="submit" onclick="return go_url();" value="Go" /></form>
+					          <form action="/products.php?<?=query_string('page1')?>" method="GET"><div class="left">转到 <input class="page1" type="text" name="page1" onkeyup="set_number(this,0)" onpaste="set_number(this,0)" /> 页</div> <input type="submit" class="submit" onclick="return go_url();" value="Go" /></form>
 					          <script type="text/javascript">
 					          	function go_url(){
 									var v = jQuery('.page1').val();

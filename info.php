@@ -38,7 +38,7 @@ $banner=$db->get_one('ad',"AId='5'");
 				<img src="img/banner_01.jpg" class="img"/>
 			</div>
 			<section class="left overflow position">
-				<div class="sec_stl"><img src="img/pc_msg.png"/></div>
+				<div class="sec_stl"><img src="img/pc_msg.png" class="img"/></div>
 				<div class="sec_titles left width">
 					<?php
 			            foreach((array)$info_cate as $item){
@@ -73,7 +73,7 @@ $banner=$db->get_one('ad',"AId='5'");
 							<a href="/info2.php?<?=$query_string?>&page=1" class="page_item hover">首页</a>
 							<?=turn_page_ext($page, $total_pages, $turn_page_query_string, $row_count, '上一页', '下一页', $website_url_type,1);?>
 							<a href="/info2.php?<?=$query_string?>&page=<?=$total_pages?>" class="page_item hover">未页</a>
-							<form action="/info2.php?<?=query_string('page')?>" method="GET">转到 <input class="pages" type="text" name="pages" onkeyup="set_number(this,0)" onpaste="set_number(this,0)" /> 页 <input type="submit" class="submit" onclick="return go_url();" value="Go" /></form>
+							<form action="/info2.php?<?=query_string('page')?>" method="GET"><div class="left">转到 <input class="pages" type="text" name="pages" onkeyup="set_number(this,0)" onpaste="set_number(this,0)" /> 页</div> <input type="submit" class="submit" onclick="return go_url();" value="Go" /></form>
 							<script type="text/javascript">
 								function go_url(){
 									var v = jQuery('.pages').val();
