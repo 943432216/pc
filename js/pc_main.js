@@ -350,10 +350,9 @@ function navt(data) {
 }
 
 function newcon() {
-	//	console.log(about_new);
+		console.log(about_new);
 //		console.log(read_new);
 	$.each(read_new, function(a, b) {
-//		console.log(b)
 		$('.donate_carousel ul').append('<li><a href="#"></a><b></b></li>');
 		$('.donate_carousel ul li').eq(a).find('a').html(b.Title);
 		$('.donate_carousel ul li').eq(a).find('a').attr('href', b.PageUrl);
@@ -361,7 +360,6 @@ function newcon() {
 	});
 	trim($('.donate_carousel ul li a').html());
 	$.each(about_new, function(a, b) {
-//		console.log(b)
 		$('.about_new ul').append('<li><a href="#"></a><b></b></li>');
 		$('.about_new ul li').eq(a).find('a').html(b.Title);
 		$('.about_new ul li').eq(a).find('a').attr('href', b.PageUrl);

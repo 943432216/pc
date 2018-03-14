@@ -24,7 +24,7 @@ foreach ($recommend as $k=>$v) {
 foreach ($msg_all as $k => $v) {
 	$msg_all[$k]['PageUrl'] = get_url('info', $v);
 }
-// var_dump($CateId);exit;
+// var_dump(json_encode($msg_all,JSON_UNESCAPED_UNICODE));exit;
 ?>
 <!DOCTYPE html>
 <html>
@@ -36,7 +36,10 @@ foreach ($msg_all as $k => $v) {
 		<link rel="stylesheet" type="text/css" href="css/pc_1600.css" id="lins" />
 		<script type="text/javascript">
 			var btname=<?=$CateId?>;
-//			console.log(btname);
+			var about_new=<?=json_encode($msg_all,JSON_UNESCAPED_UNICODE)?>;
+			var read_new=<?=json_encode($recommend,JSON_UNESCAPED_UNICODE)?>;
+			
+			
 		</script>
 	</head>
 
@@ -66,14 +69,14 @@ foreach ($msg_all as $k => $v) {
 				<div class="about_new">
 					<div class="about_tl">
 						<h2 class="left">最新资讯</h2>
-						<a href="/info2.php?CateId=9">更多 》》</a>
+						<a href="/info.php?CateId=1">更多 》》</a>
 					</div>
 					<ul>
+						<!--<li><a href="#">“心心相印”公益活动走进山西同仁康大药房 </a>2018-01-25</li>
 						<li><a href="#">“心心相印”公益活动走进山西同仁康大药房 </a>2018-01-25</li>
 						<li><a href="#">“心心相印”公益活动走进山西同仁康大药房 </a>2018-01-25</li>
 						<li><a href="#">“心心相印”公益活动走进山西同仁康大药房 </a>2018-01-25</li>
-						<li><a href="#">“心心相印”公益活动走进山西同仁康大药房 </a>2018-01-25</li>
-						<li><a href="#">“心心相印”公益活动走进山西同仁康大药房 </a>2018-01-25</li>
+						<li><a href="#">“心心相印”公益活动走进山西同仁康大药房 </a>2018-01-25</li>-->
 					</ul>
 				</div>
 				<div class="read_new">
@@ -83,11 +86,11 @@ foreach ($msg_all as $k => $v) {
 					</div>
 					<div class="donate_carousel">
 						<ul>
-							<li><a href="#">“心心相印”公益活动走进山西同仁康大药房 </a>2018-01-25</li>
+							<!--<li><a href="#">“心心相印”公益活动走进山西同仁康大药房 </a>2018-01-25</li>
 							<li><a href="#">“心心相印”公益活动走进山西同仁康大药房 </a>2018-01-26</li>
 							<li><a href="#">“心心相印”公益活动走进山西同仁康大药房 </a>2018-01-27</li>
 							<li><a href="#">“心心相印”公益活动走进山西同仁康大药房 </a>2018-01-28</li>
-							<li><a href="#">“心心相印”公益活动走进山西同仁康大药房 </a>2018-01-29</li>
+							<li><a href="#">“心心相印”公益活动走进山西同仁康大药房 </a>2018-01-29</li>-->
 						</ul>
 					</div>
 				</div>
@@ -149,8 +152,7 @@ foreach ($msg_all as $k => $v) {
 			        speed: 800,
 			        timer: 2000
    				 });
-			})
-			var sehei=window.screen.width;
+   				 var sehei=window.screen.width;
 				if(sehei==1920){
 					$('.sec_titles .shade_nav').each(function(a,b){
 						$(this).css('width','260px');
@@ -166,7 +168,13 @@ foreach ($msg_all as $k => $v) {
 					$('.sec_titles .shade a').each(function(){
 						$(this).css('width','220px')
 					})
+					
 				}
+//				navt(btname);
+				newcon();
+			})
+			
+				
 		</script>
 	</body>
 

@@ -67,7 +67,7 @@ if ($_SERVER['REQUEST_METHOD']=='POST') {
 			<section class="left overflow position">
 				<div class="sec_stls"><img src="img/contant.png" class="img"/></div>
 				<div class="sec_titles left width">
-					<div class="shade overflow">
+					<div class="shades overflow ctn">
 						<span class="shade_n1">联系心宝</span>
 					</div>
 				</div>
