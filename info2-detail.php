@@ -14,6 +14,16 @@ $banner=$db->get_one('ad',"AId='7'");
 
 $msg_all = $db->get_all('info2', 1, 'InfoId,Title,AccTime,PageUrl', 'InfoId desc');
 $recommend = $db->get_all('info2', "CateId=$cur_cate[CateId]", 'InfoId,Title,AccTime,PageUrl', 'InfoId desc');
+foreach ($recommend as $k=>$v) {
+	$recommend[$k]['PageUrl'] = get_url('info2', $v);
+	if ($v['InfoId']==$InfoId) {
+		$ls_next[] = $recommend[$k-1]['InfoId'];
+		$ls_next[] = $recommend[$k+1]['InfoId'];
+	}
+}
+foreach ($msg_all as $k => $v) {
+	$msg_all[$k]['PageUrl'] = get_url('info', $v);
+}
 // var_dump($CateId);exit;
 ?>
 <!DOCTYPE html>
@@ -48,15 +58,15 @@ $recommend = $db->get_all('info2', "CateId=$cur_cate[CateId]", 'InfoId,Title,Acc
 					<?=$info_detail;?>
 				</div>
 				<div class="details_bn left">
-					<a href="#">《《 上一篇</a>
-					<a href="#">下一篇 》》</a>
+					<a href="<?=$_SERVER['SCRIPT_NAME'] . '?InfoId=' . $ls_next[0];?>">《《 上一篇</a>
+					<a href="<?=$_SERVER['SCRIPT_NAME'] . '?InfoId=' . $ls_next[1];?>">下一篇 》》</a>
 				</div>
 			</section>
 			<div class="details_new left">
 				<div class="about_new">
 					<div class="about_tl">
 						<h2 class="left">最新资讯</h2>
-						<a href="#">更多 》》</a>
+						<a href="/info2.php?CateId=9">更多 》》</a>
 					</div>
 					<ul>
 						<li><a href="#">“心心相印”公益活动走进山西同仁康大药房 </a>2018-01-25</li>
@@ -69,7 +79,7 @@ $recommend = $db->get_all('info2', "CateId=$cur_cate[CateId]", 'InfoId,Title,Acc
 				<div class="read_new">
 					<div class="about_tl">
 						<h2 class="left">推荐阅读</h2>
-						<a href="#">更多 》》</a>
+						<a href="<?='/info.php?CateId='.$CateId?>">更多 》》</a>
 					</div>
 					<div class="donate_carousel">
 						<ul>

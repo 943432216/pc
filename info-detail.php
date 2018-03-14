@@ -25,7 +25,7 @@ foreach ($recommend as $k=>$v) {
 foreach ($msg_all as $k => $v) {
 	$msg_all[$k]['PageUrl'] = get_url('info', $v);
 }
-// var_dump($msg_all);exit;
+// var_dump($CateId);exit;
 ?>
 <!DOCTYPE html>
 <html>
@@ -75,7 +75,7 @@ foreach ($msg_all as $k => $v) {
 				<div class="about_new">
 					<div class="about_tl">
 						<h2 class="left">最新资讯</h2>
-						<a href="#">更多 》》</a>
+						<a href="/info.php?CateId=1">更多 》》</a>
 					</div>
 					<ul>
 						<!--<li><a href="#">“心心相印”公益活动走进山西同仁康大药房 </a>2018-01-25</li>
@@ -88,7 +88,7 @@ foreach ($msg_all as $k => $v) {
 				<div class="read_new">
 					<div class="about_tl">
 						<h2 class="left">推荐阅读</h2>
-						<a href="#">更多 》》</a>
+						<a href="<?='/info.php?CateId='.$CateId?>">更多 》》</a>
 					</div>
 					<div class="donate_carousel">
 						<ul>
