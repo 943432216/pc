@@ -108,7 +108,7 @@ $pic_src = json_encode($pic_src);
 					<ul>
 						<?php foreach($pro_cul_cate as $product) {?>
 						<li>
-							<a href="#">
+							<a href="<?=get_url('product',$product)?>">
 								<img src="<?=$product['PicPath_0']?>" />
 								<!--<p><?=$product['Name']?></p>-->
 							</a>							
