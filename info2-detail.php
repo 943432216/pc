@@ -12,7 +12,7 @@ if($CateId){
 $pageName='info2';
 $banner=$db->get_one('ad',"AId='7'");
 
-$msg_all = $db->get_all('info2', 1, 'InfoId,Title,AccTime,PageUrl', 'InfoId desc');
+$msg_all = $db->get_limit('info2', 1, 'InfoId,Title,AccTime,PageUrl', 'InfoId desc', 0, 5);
 $recommend = $db->get_all('info2', "CateId=$cur_cate[CateId]", 'InfoId,Title,AccTime,PageUrl', 'InfoId desc');
 foreach ($recommend as $k=>$v) {
 	$recommend[$k]['PageUrl'] = get_url('info2', $v);
