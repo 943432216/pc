@@ -23,6 +23,9 @@ if($GroupId==1){
 }
 $dev_arr = $db->get_all('develop', 1, 'dev_cate,time,pic_src,happen');
 $dev_str = json_encode($dev_arr, JSON_UNESCAPED_UNICODE);
+$hor_arr = $db->get_all('honor', 1, 'hor_src,hor_commend');
+$hor_str = json_encode($hor_arr, JSON_UNESCAPED_UNICODE);
+// var_dump($hor_arr);exit;
 ?>
 <!DOCTYPE html>
 <html>
@@ -100,7 +103,91 @@ $dev_str = json_encode($dev_arr, JSON_UNESCAPED_UNICODE);
 							<p>(&nbsp;董事长郭永周&nbsp;)</p>
 						</span>
 						<?php } ?>
-						<?php if($AId!=6 && $AId!=4) { 
+						<?php if($AId == 15) { ?>
+						<div class="XB_ry">
+							<span class="ry_box">
+								<img src="img/ry_img.png" class="img"/>
+								<p>星辰品牌心宝丸荣获中国药品市场消费者满意首选品牌</p>
+							</span>
+							<span class="ry_box">
+								<img src="img/ry_img.png" class="img"/>
+								<p>星辰品牌心宝丸荣获中国药品市场消费者满意首选品牌</p>
+							</span>
+							<span class="ry_box">
+								<img src="img/ry_img.png" class="img"/>
+								<p>星辰品牌心宝丸荣获中国药品市场消费者满意首选品牌</p>
+							</span>
+							<span class="ry_box">
+								<img src="img/ry_img.png" class="img"/>
+								<p>星辰品牌心宝丸荣获中国药品市场消费者满意首选品牌</p>
+							</span>
+							<span class="ry_box">
+								<img src="img/ry_img.png" class="img"/>
+								<p>星辰品牌心宝丸荣获中国药品市场消费者满意首选品牌</p>
+							</span>
+							<span class="ry_box">
+								<img src="img/ry_img.png" class="img"/>
+								<p>星辰品牌心宝丸荣获中国药品市场消费者满意首选品牌</p>
+							</span>
+							<span class="ry_box">
+								<img src="img/ry_img.png" class="img"/>
+								<p>星辰品牌心宝丸荣获中国药品市场消费者满意首选品牌</p>
+							</span>
+							<span class="ry_box">
+								<img src="img/ry_img.png" class="img"/>
+								<p>星辰品牌心宝丸荣获中国药品市场消费者满意首选品牌</p>
+							</span>
+							<span class="ry_box">
+								<img src="img/ry_img.png" class="img"/>
+								<p>星辰品牌心宝丸荣获中国药品市场消费者满意首选品牌</p>
+							</span>
+							<span class="ry_box">
+								<img src="img/ry_img.png" class="img"/>
+								<p>星辰品牌心宝丸荣获中国药品市场消费者满意首选品牌</p>
+							</span>
+							<span class="ry_box">
+								<img src="img/ry_img.png" class="img"/>
+								<p>星辰品牌心宝丸荣获中国药品市场消费者满意首选品牌</p>
+							</span>
+							<span class="ry_box">
+								<img src="img/ry_img.png" class="img"/>
+								<p>星辰品牌心宝丸荣获中国药品市场消费者满意首选品牌</p>
+							</span>
+							<span class="ry_box">
+								<img src="img/ry_img.png" class="img"/>
+								<p>星辰品牌心宝丸荣获中国药品市场消费者满意首选品牌</p>
+							</span>
+							<span class="ry_box">
+								<img src="img/ry_img.png" class="img"/>
+								<p>星辰品牌心宝丸荣获中国药品市场消费者满意首选品牌</p>
+							</span>
+							<span class="ry_box">
+								<img src="img/ry_img.png" class="img"/>
+								<p>星辰品牌心宝丸荣获中国药品市场消费者满意首选品牌</p>
+							</span>
+							<span class="ry_box">
+								<img src="img/ry_img.png" class="img"/>
+								<p>星辰品牌心宝丸荣获中国药品市场消费者满意首选品牌</p>
+							</span>
+							<span class="ry_box">
+								<img src="img/ry_img.png" class="img"/>
+								<p>星辰品牌心宝丸荣获中国药品市场消费者满意首选品牌</p>
+							</span>
+							<span class="ry_box">
+								<img src="img/ry_img.png" class="img"/>
+								<p>星辰品牌心宝丸荣获中国药品市场消费者满意首选品牌</p>
+							</span>
+							<span class="ry_box">
+								<img src="img/ry_img.png" class="img"/>
+								<p>星辰品牌心宝丸荣获中国药品市场消费者满意首选品牌</p>
+							</span>
+							<span class="ry_box">
+								<img src="img/ry_img.png" class="img"/>
+								<p>星辰品牌心宝丸荣获中国药品市场消费者满意首选品牌</p>
+							</span>
+						</div>
+						<?php } ?>
+						<?php if(!in_array($AId, array(4,6,15))) { 
 							echo $article_row['Contents'];
 						}
 						?>
