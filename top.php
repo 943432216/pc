@@ -6,8 +6,8 @@
 				<p>联系方式：（TEL）020-37924226 / 020-87817116 </p>
 				<p class="ewm"><img src="img/xewm.png"/></p>
 				<ul>
-					<li><a href="javascript:;">收藏本公司</a></li>
-					<li><a href="javascript:;">设为主页</a></li>
+					<li><a href="javascript:;" id="collect">收藏本公司</a></li>
+					<li><a href="javascript:;" id="homepage">设为主页</a></li>
 				</ul>
 			</span>
 	</div>

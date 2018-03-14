@@ -230,21 +230,21 @@ input[value='Go']{float: none;font-size: 18px;}
 .ry_box:nth-of-type(1){padding-left:33%;}
 /*荣誉*/
 
-.XB_lc{background: url(../img/PCfz.jpg) no-repeat;background-size:100% 100%;overflow: hidden;padding-bottom:5%;}
-.lc_left:nth-of-type(1){margin-top:10%;}
-.lc_left{float: left;margin: 0 50% 0 0;background: url(../img/timer.png) no-repeat right top;background-size:35px auto;}
-.lc_right{float: left;margin: 0 0 0 47.2%;background: url(../img/timer.png) no-repeat left top;background-size:35px auto;}
+.XB_lc{background: url(../img/PCfz.jpg) no-repeat;background-size:100% auto;overflow: hidden;padding-bottom:5%;}
+.lc_left:nth-of-type(1){margin-top:16%;}
+.lc_left{float: left;margin: 0 50% 0 0;background: url(../img/timer.png) no-repeat right top;background-size:35px auto;width: 50%;}
+.lc_right{float: left;margin: 0 0 0 47.5%;background: url(../img/timer.png) no-repeat left top;background-size:35px auto;width: 50%;}
 .lc_left p{float: left;color: #323232;font-size:17.5px;width:100%;text-align: right;margin-top:20px;}
 .lc_left h3{font-size: 25px;color: #b50005;text-align: right;width: 93%;margin: 0;padding-right:7%;height: 35px;line-height: 35px;}
 .lc_left b{float: left;text-align: right;}
-.lc_left b img{width:80%;}
+.lc_left b img{width: 125px;height: 80px;}
 .lc_left b:nth-of-type(1){width:30%;margin-left: 10%;}
 .lc_left b:nth-of-type(2){width:53%;padding-right: 7%;background: url(../img/hx.png) no-repeat 95% 20%;line-height: 180%;background-size: 25px 1px;}
 
 .lc_right p{float: left;color: #323232;font-size:17.5px;width:100%;text-align:left;margin-top:20px;}
 .lc_right h3{font-size: 25px;color: #b50005;text-align:left;width: 93%;margin: 0;padding-left:7%;height: 35px;line-height: 35px;}
 .lc_right b{float: left;text-align:left;}
-.lc_right b img{width:80%;}
+.lc_right b img{width: 125px;height: 80px;}
 .lc_right b:nth-of-type(2){width:30%;margin-right: 10%;}
 .lc_right b:nth-of-type(1){width:53%;padding-left: 7%;background: url(../img/hx.png) no-repeat 5% 20%;line-height: 180%;background-size: 25px 1px;}
 /*历程*/

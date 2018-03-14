@@ -3,7 +3,6 @@ $(function() {
 	var titles = document.title;
 	var n = 0;
 	var resolution=window.screen.width;
-//	console.log(resolution);
 	//导航
 	$('.start').each(function() {
 		$(this).on({
@@ -152,6 +151,7 @@ function AddFavorite(title, url) {
 			window.sidebar.addPanel(title, url, "");
 		} catch(e) {
 			alert("抱歉，您所使用的浏览器无法完成此操作。\n\n请使用快捷键Ctrl+D进行添加！");
+			return false;
 		}
 	}
 }
@@ -162,6 +162,7 @@ function SetHome(url) {
 		document.body.setHomePage(url);
 	} else {
 		alert("您好,您的浏览器不支持自动设置页面为首页功能,请您手动在浏览器里设置该页面为首页!");
+		return false;
 	}
 }
 
@@ -350,9 +351,9 @@ function navt(data) {
 
 function newcon() {
 	//	console.log(about_new);
-	//	console.log(read_new);
+//		console.log(read_new);
 	$.each(read_new, function(a, b) {
-		console.log(b)
+//		console.log(b)
 		$('.donate_carousel ul').append('<li><a href="#"></a><b></b></li>');
 		$('.donate_carousel ul li').eq(a).find('a').html(b.Title);
 		$('.donate_carousel ul li').eq(a).find('a').attr('href', b.PageUrl);
@@ -360,7 +361,7 @@ function newcon() {
 	});
 	trim($('.donate_carousel ul li a').html());
 	$.each(about_new, function(a, b) {
-		console.log(b)
+//		console.log(b)
 		$('.about_new ul').append('<li><a href="#"></a><b></b></li>');
 		$('.about_new ul li').eq(a).find('a').html(b.Title);
 		$('.about_new ul li').eq(a).find('a').attr('href', b.PageUrl);

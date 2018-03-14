@@ -232,8 +232,8 @@ input[value='Go']{float:left;font-size: 18px;padding: 4px 0;}
 .ry_box:nth-of-type(1){padding-left:33%;}
 /*荣誉*/
 
-.XB_lc{background: url(../img/PCfz.jpg) no-repeat;background-size:100% 100%;overflow: hidden;padding-bottom:5%;}
-.lc_left:nth-of-type(1){margin-top:10%;}
+.XB_lc{background: url(../img/PCfz.jpg) no-repeat;background-size:100% auto;overflow: hidden;padding-bottom:5%;}
+.lc_left:nth-of-type(1){margin-top:15%;}
 .lc_left{float: left;margin: 0 50% 0 0;background: url(../img/timer.png) no-repeat right top;background-size:35px auto;width: 50%;}
 .lc_right{float: left;margin: 0 0 0 46.5%;background: url(../img/timer.png) no-repeat left top;background-size:35px auto;width: 53.5%;}
 .lc_left p{float: left;color: #323232;font-size:15px;width:100%;text-align: right;margin-top:20px;}
