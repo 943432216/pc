@@ -140,6 +140,23 @@ $recommend = $db->get_all('info2', "CateId=$cur_cate[CateId]", 'InfoId,Title,Acc
 			        timer: 2000
    				 });
 			})
+			var sehei=window.screen.width;
+				if(sehei==1920){
+					$('.sec_titles .shade_nav').each(function(a,b){
+						$(this).css('width','260px');
+						if (a==0) {
+							$(this).css('margin-left','31% !important');
+							$(this).css('padding-left','30px')
+						}
+						if (a==1) {
+							$(this).find('a').css('margin-left','20px');
+						}
+					
+					})
+					$('.sec_titles .shade a').each(function(){
+						$(this).css('width','220px')
+					})
+				}
 		</script>
 	</body>
 

@@ -203,7 +203,12 @@ $hor_str = json_encode($hor_arr, JSON_UNESCAPED_UNICODE);
 		<script src="js/pc_main.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
 			$(function() {
-				$('.abXB').find('a').eq(0).css('margin-left','22%');
+				var sehei=window.screen.width;
+				if(sehei==1920){
+					$('.abXB').find('a').eq(0).css('margin-left','26%');
+				}else{
+					$('.abXB').find('a').eq(0).css('margin-left','22%');
+				}
 				$('.sec_box').find('*').removeAttr('style');
 				$('.sec_box').find('img').addClass('img')
 				console.log(lcs);

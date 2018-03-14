@@ -36,7 +36,7 @@ $banner=$db->get_one('ad',"AId='7'");
 				<img src="img/banner_01.jpg" class="img"/>
 			</div>
 			<section class="left overflow position">
-				<div class="sec_stl"><img src="img/pc_heart.png"/></div>
+				<div class="sec_stl"><img src="img/pc_heart.png" class="img"/></div>
 				<div class="sec_titles left width">
 					<?php foreach((array)$info2_cate as $item){?>
 					<div class="shade overflow shade_nav">
@@ -93,6 +93,23 @@ $banner=$db->get_one('ad',"AId='7'");
 		<script src="js/pc_main.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
 			$(function(){
+				var sehei=window.screen.width;
+				if(sehei==1920){
+					$('.sec_titles .shade_nav').each(function(a,b){
+						$(this).css('width','260px');
+						if (a==0) {
+							$(this).css('margin-left','31%');
+						}
+						if (a==1) {
+							$(this).find('a').css('margin-left','20px');
+						}
+					
+					})
+					$('.sec_titles .shade a').each(function(){
+						$(this).css('width','220px')
+					})
+				}
+				
 				$('.contents').find('*').removeAttr('style');
 				$('.contents').find('img').addClass('img');
 				$('.contents').find('strong').css({
