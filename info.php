@@ -9,7 +9,7 @@ $query_string=query_string('page');
 $turn_page_query_string=$website_url_type==0?"?$query_string&page=":'page-';
 
 if(!isset($info_row)){
-	$page_count=20;
+	$page_count=10;
 	$where='Language=0';
 	include($site_root_path.'/inc/lib/info/get_list_row.php');
 }

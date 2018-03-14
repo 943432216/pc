@@ -91,8 +91,8 @@ $pic_src = json_encode($pic_src);
 					</div>
 				</div>
 				<div class="details_con">
-					<span class="con_title">主治功能</span>
-					<span class="avts con_title">注意事项</span>
+					<span class="con_title avts">主治功能</span>
+					<span class="con_title">注意事项</span>
 					<span class="con_title">产品说明书</span>
 					<div><?=$product_description['MainTreat']?></div>
 					<div><?=$product_description['CarefulThings']?></div>
@@ -110,7 +110,7 @@ $pic_src = json_encode($pic_src);
 						<li>
 							<a href="#">
 								<img src="<?=$product['PicPath_0']?>" />
-								<p><?=$product['Name']?></p>
+								<!--<p><?=$product['Name']?></p>-->
 							</a>							
 						</li>
 						<?php } ?>
@@ -128,11 +128,11 @@ $pic_src = json_encode($pic_src);
 				$('.abXBs').children('a').eq(0).css('margin-left','30%');
 				navt(btname);
 				product_pic();
-				$('.lefts').click(function(){
+				$('.rights').click(function(){
 					$('.spic div').animate({
 						'margin-left':'-150px'
 					},'200','linear');
-				}),$('.rights').click(function(){
+				}),$('.lefts').click(function(){
 					$('.spic div').animate({
 						'margin-left':'0'
 					},'200','linear');

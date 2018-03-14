@@ -104,7 +104,7 @@ $banner=$db->get_one('ad',"AId='1'");
 							<?php foreach($recommend_1 as $item) { ?>
 							<a href="<?=get_url('product',$item)?>" class="pro_box">
 								<div class="six_box position">
-									<p class="pro_name"><?=$item['Name']?></p>
+									<!--<p class="pro_name"><?=$item['Name']?></p>-->
 									<div class="bx_1"></div>
 									<div class="bx_2"><img src="<?=$item['PicPath_0']?>" /></div>
 									<div class="bx_3"></div>
@@ -116,7 +116,7 @@ $banner=$db->get_one('ad',"AId='1'");
 							<?php foreach($recommend_2 as $item) { ?>
 							<a href="<?=get_url('product',$item)?>" class="pro_box">
 								<div class="six_box position">
-									<p class="pro_name"><?=$item['Name']?></p>
+									<!--<p class="pro_name"><?=$item['Name']?></p>-->
 									<div class="bx_1"></div>
 									<div class="bx_2"><img src="<?=$item['PicPath_0']?>" /></div>
 									<div class="bx_3"></div>
@@ -131,7 +131,7 @@ $banner=$db->get_one('ad',"AId='1'");
 							<?php foreach($recommend_3 as $item) { ?>
 							<div class="pro_box">
 								<a href="<?=get_url('product',$item)?>" class="six_box position">
-									<p class="pro_name"><?=$item['Name']?></p>
+									<!--<p class="pro_name"><?=$item['Name']?></p>-->
 									<div class="bx_1"></div>
 									<div class="bx_2"><img src="<?=$item['PicPath_0']?>" /></div>
 									<div class="bx_3"></div>
