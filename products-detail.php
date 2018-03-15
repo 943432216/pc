@@ -62,9 +62,11 @@ $pic_src = json_encode($pic_src);
 				<?php }?>
 			</div>
 			<section class="left position con_bg" >
-				<div class="details_top">
-					<div class="details_tle left">
-						<img src="<?=str_replace('s_', "411X317_", $product_row['PicPath_0']);?>"/>
+				<div class="details_top position">
+					<div class="glass"></div>
+					<div class="details_tle left position">
+						<div class="movebox"></div>
+						<img src=""/>
 					</div>
 					<div class="details_tri left">
 						<h1><?=$product_row['Name']?></h1>
@@ -81,11 +83,7 @@ $pic_src = json_encode($pic_src);
 						<p class="rights"></p>
 						<div class="spic overflow">
 							<div>
-								<?php for($i=0;$i<4;$i++){
-									if(!is_file($site_root_path.$product_row['PicPath_'.$i]))continue;	 
-								?>
-								<span><img src="<?=str_replace('s_', '111X85_', $product_row['PicPath_'.$i]);?>"/></span>
-								<?php }?>
+								
 							</div>
 						</div>
 					</div>
