@@ -159,6 +159,7 @@ foreach ($msg_all as $k => $v) {
 						if (a==0) {
 							$(this).css('margin-left','31% !important');
 							$(this).css('padding-left','30px')
+							$(this).css('width','223px');
 						}
 						if (a==1) {
 							$(this).find('a').css('margin-left','20px');
@@ -170,7 +171,6 @@ foreach ($msg_all as $k => $v) {
 					})
 					
 				}
-//				navt(btname);
 				newcon();
 			})
 			

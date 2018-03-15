@@ -146,6 +146,14 @@ foreach ($msg_all as $k => $v) {
    				 });
 				navt(btname);
 				newcon();
+				 var sehei=window.screen.width;
+				if(sehei==1920){
+					$('.shade_nav').each(function(a,b){
+						if (a==0) {
+							$(this).children('a').css('margin-left','30px');
+						}
+					})	
+				}
 			})
 		</script>
 	</body>
