@@ -4,107 +4,86 @@ include('../../inc/set/ext_var.php');
 include('../../inc/fun/mysql.php');
 include('../../inc/function.php');
 include('../../inc/manage/config.php');
-include('../../inc/manage/do_check.php');
 
-$GroupId=(int)$_GET['GroupId']?(int)$_GET['GroupId']:(int)$_POST['GroupId'];
-check_permit('article_group_'.$GroupId);
-$Group='group_'.$GroupId;
+$DevID = htmlentities($_GET['DevID']);
+$info = $db->get_one('develop', "DevID=$DevID");
 
-if($_POST){
-	$save_dir=get_cfg('ly200.up_file_base_dir').'article/'.date('y_m_d/', $service_time);
-	$AId=(int)$_POST['AId'];
-	$Title=in_array($Group, get_cfg('article.amdo'))?$_POST['Title']:addslashes($db->get_value('article', "AId='$AId'", 'Title'));
-	$SeoTitle=$_POST['SeoTitle'];
-	$SeoKeywords=$_POST['SeoKeywords'];
-	$SeoDescription=$_POST['SeoDescription'];
-	$Contents=save_remote_img($_POST['Contents'], $save_dir);
-	
-	$db->update('article', "AId='$AId'", array(
-			'GroupId'		=>	$GroupId,
-			'Title'			=>	$Title,
-			'SeoTitle'		=>	$SeoTitle,
-			'SeoKeywords'	=>	$SeoKeywords,
-			'SeoDescription'=>	$SeoDescription,
-			'Contents'		=>	$Contents
-		)
-	);
-	
-	//保存另外的语言版本的数据
-	if(count(get_cfg('ly200.lang_array'))>1){
-		add_lang_field('article', array('Title', 'Contents', 'SeoTitle', 'SeoKeywords', 'SeoDescription'));
-		
-		for($i=1; $i<count(get_cfg('ly200.lang_array')); $i++){
-			$field_ext='_'.get_cfg('ly200.lang_array.'.$i);
-			$TitleExt=in_array($Group, get_cfg('article.amdo'))?$_POST['Title'.$field_ext]:addslashes($db->get_value('article', "AId='$AId'", 'Title'.$field_ext));
-			$SeoTitleExt=$_POST['SeoTitle'.$field_ext];
-			$SeoKeywordsExt=$_POST['SeoKeywords'.$field_ext];
-			$SeoDescriptionExt=$_POST['SeoDescription'.$field_ext];
-			$ContentsExt=save_remote_img($_POST['Contents'.$field_ext], $save_dir);
-			$db->update('article', "AId='$AId'", array(
-					'Title'.$field_ext			=>	$TitleExt,
-					'SeoTitle'.$field_ext		=>	$SeoTitleExt,
-					'SeoKeywords'.$field_ext	=>	$SeoKeywordsExt,
-					'SeoDescription'.$field_ext	=>	$SeoDescriptionExt,
-					'Contents'.$field_ext		=>	$ContentsExt
-				)
-			);
-		}
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+	if ((($_FILES["pic_src"]["type"] == "image/gif")
+	|| ($_FILES["pic_src"]["type"] == "image/jpeg")
+	|| ($_FILES["pic_src"]["type"] == "image/pjpeg")
+	|| ($_FILES["pic_src"]["type"] == "image/png"))
+	&& ($_FILES["pic_src"]["size"] < 11000000)) {
+	  if ($_FILES["pic_src"]["error"] > 0)
+	    {
+	    echo "Return Code: " . $_FILES["pic_src"]["error"] . "<br />";
+	    header('Location:index.php');
+	    }
+	  else
+	    {
+	      $dex = explode('.', $_FILES["pic_src"]["name"]);
+	      $pic_name = time() . mt_rand(1, 1000) . '.' . $dex[count($dex)-1];
+	      $pic_src = dirname(dirname(dirname(__FILE__))) . '/u_file/develop/' . $pic_name;
+	      move_uploaded_file($_FILES["pic_src"]["tmp_name"], $pic_src);
+	      }
+	} else {
+	  echo "Invalid file";
+	  header('Location:index.php');
 	}
-	
-	set_page_url('article', "AId='$AId'", get_cfg('article.page_url'), 1, 0, 0);
-	
-	save_manage_log( '编辑信息页：'.$Title);
-	
-	header('Location: index.php?GroupId='.$GroupId);
-	exit;
+
+	$arr = array(
+		'dev_cate' => htmlentities($_POST['dev_cate']),
+		'time' => htmlentities($_POST['time']),
+		'pic_src' => '/u_file/develop/' . $pic_name,
+		'happen' => htmlentities($_POST['happen']),
+		'add_time' => time()
+		);
+	$db->update('develop', "$DevID=$DevID", $arr);
 }
 
-$AId=(int)$_GET['AId'];
-$article_row=$db->get_one('article', "AId='$AId'");
+// var_dump($info['happen']);exit;
 
 include('../../inc/manage/header.php');
 ?>
-<div class="header"><?=get_lang('ly200.current_location');?>:<a href="index.php?GroupId=<?=$GroupId;?>"><?=get_lang('article.group_'.$GroupId);?></a>&nbsp;-&gt;&nbsp;<a href="mod.php?AId=<?=$AId;?>&GroupId=<?=$GroupId;?>"><?=$article_row['Title'];?></a>&nbsp;-&gt;&nbsp;<?=get_lang('ly200.mod');?></div>
-<form method="post" name="act_form" id="act_form" class="act_form" action="mod.php" enctype="multipart/form-data" onsubmit="return checkForm(this);">
+<div class="header"><?=get_lang('ly200.current_location');?>:<a href="index.php">发展历程</a>&nbsp;-&gt;&nbsp;编辑</div>
+<form method="post" name="act_form" id="act_form" class="act_form" action="mod.php" enctype="multipart/form-data">
 <table width="100%" border="0" cellpadding="0" cellspacing="1" id="mouse_trBgcolor_table">
-	<?php for($i=0; $i<count(get_cfg('ly200.lang_array')); $i++){?>
-		<tr style="display:<?=in_array($Group, get_cfg('article.amdo'))?'':'none';?>;"> 
-			<td width="5%" nowrap><?=get_lang('ly200.title').lang_name($i, 0);?>:</td>
-			<td width="95%"><input name="Title<?=lang_name($i, 1);?>" type="text" value="<?=htmlspecialchars($article_row['Title'.lang_name($i, 1)]);?>" class="form_input" size="30" maxlength="100" check="<?=get_lang('ly200.filled_out').get_lang('ly200.title');?>!~*"></td>
-		</tr>
-	<?php }?>
-	<?php if(get_cfg('article.seo_tkd')){?>
-		<?php for($i=0; $i<count(get_cfg('ly200.lang_array')); $i++){?>
-			<tr>
-				<td nowrap><?=get_lang('ly200.seo.seo').lang_name($i, 0);?>:</td>
-				<td>
-					<table width="100%" border="0" cellspacing="0" cellpadding="0">
-					  <tr>
-						<td width="5%" nowrap="nowrap"><?=get_lang('ly200.seo.title');?>:</td>
-						<td width="95%"><input name="SeoTitle<?=lang_name($i, 1);?>" type="text" value="<?=htmlspecialchars($article_row['SeoTitle'.lang_name($i, 1)]);?>" class="form_input" size="70" maxlength="200"></td>
-					  </tr>
-					  <tr>
-						<td nowrap="nowrap"><?=get_lang('ly200.seo.keywords');?>:</td>
-						<td><input name="SeoKeywords<?=lang_name($i, 1);?>" type="text" value="<?=htmlspecialchars($article_row['SeoKeywords'.lang_name($i, 1)]);?>" class="form_input" size="70" maxlength="200"></td>
-					  </tr>
-					  <tr>
-						<td nowrap="nowrap"><?=get_lang('ly200.seo.description');?>:</td>
-						<td><input name="SeoDescription<?=lang_name($i, 1);?>" type="text" value="<?=htmlspecialchars($article_row['SeoDescription'.lang_name($i, 1)]);?>" class="form_input" size="70" maxlength="200"></td>
-					  </tr>
-					</table>
-				</td>
-			</tr>
-		<?php }?>
-	<?php }?>
-	<?php for($i=0; $i<count(get_cfg('ly200.lang_array')); $i++){?>
-		<tr>
-			<td width="5%" nowrap><?=get_lang('ly200.contents').lang_name($i, 0);?>:</td>
-			<td width="95%" class="<?=$GroupId!=0?' ck_editor':''?>"><textarea class="<?=$GroupId!=0?' ckeditor':'form_area'?>" name="Contents<?=lang_name($i, 1);?>" <?=$GroupId!=0?' ':'rows="10" cols="100"'?>><?=htmlspecialchars($article_row['Contents'.lang_name($i, 1)]);?></textarea></td>
-		</tr>
-	<?php }?>
+	<tr>
+		<td nowrap><?=get_lang('ly200.category');?>:</td>
+		<td>
+			<select name="dev_cate">
+				<?php 
+					switch ($info['dev_cate']) {
+						case '1':
+							echo '<option value="1">一级节点</option>';
+							break;						
+						default:
+							echo '<option value="2">二级节点</option>';
+							break;
+					}
+				?>			
+			</select>
+		</td>
+	</tr>
+	<tr> 
+		<td width="5%" nowrap>节点日期:</td>
+		<td width="95%"><input type="text" name="time" id="datepicker" value="<?=$info['time']?>"></td>
+	</tr>
+	
+	<tr>
+		<td nowrap>图片:</td>
+		<td>
+			<input type="file" name="pic_src"/>&nbsp;&nbsp;<span>支持格式：gif、jpeg、pjpeg、png&nbsp;大小：10M以内</span>
+		</td>
+	</tr>
+
+	<tr>
+		<td nowrap><?=get_lang('ly200.description').lang_name($i, 0);?>:</td>
+		<td class="ck_editor"><textarea style="width: 500px;height: 200px;" name="happen"><?=$info['happen']?></textarea></td>
+	</tr>
 	<tr>
 		<td>&nbsp;</td>
-		<td><input type="submit" value="<?=get_lang('ly200.mod');?>" name="submit" class="form_button"><a href='index.php?GroupId=<?=$GroupId;?>' class="return"><?=get_lang('ly200.return');?></a><input type="hidden" name="AId" value="<?=$AId;?>" /><input type="hidden" name="GroupId" value="<?=$GroupId;?>" /></td>
+		<td><input type="submit" value="保存" name="submit" class="form_button"><a href='index.php' class="return"><?=get_lang('ly200.return');?></a></td>
 	</tr>
 </table>
 </form>

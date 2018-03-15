@@ -67,7 +67,7 @@ include('../../inc/manage/header.php');
 
 	<tr>
 		<td nowrap><?=get_lang('ly200.description').lang_name($i, 0);?>:</td>
-		<td class="ck_editor"><textarea class="ckeditor" name="happen"></textarea></td>
+		<td class="ck_editor"><textarea style="width: 500px;height: 200px;" name="happen"></textarea></td>
 	</tr>
 	<tr>
 		<td>&nbsp;</td>
