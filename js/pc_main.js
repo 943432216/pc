@@ -392,7 +392,7 @@ function product_pic() {
 		}
 	}
 	$('.spic div span').each(function(a, b) {
-		if($(this).children('img').attr('src')==''){
+		if($(this).children('img').attr('src') == '') {
 			$(this).remove();
 		}
 		$(this).children('img').click(function() {
@@ -426,4 +426,4 @@ function ts(timestamp) {
 	return Y + M + D;
 }
 
-
+  

@@ -58,18 +58,18 @@
 
 section{width: 94%;padding:0 3%;}
 .sec_title,.sec_titles{margin:30px 0 18px 0;background: url(../img/bgs.png)no-repeat;height: 60px;background-size:100%;background-position:left center;}
-.sec_title span,.sec_titles span,.sec_title a,.sec_titles a{cursor:pointer;float: left;display: block;width: 150px;height:50px;line-height:50px;text-align: center;background: #c49858;border: 1px solid #C49858;border-radius:30px;margin: 0 10px;font-size:20px;color: white;}
+.sec_title span,.sec_titles span,.sec_title a,.sec_titles a{cursor:pointer;float: left;display: block;width: 150px;height:50px;line-height:50px;text-align: center;background: #c49858;border: 1px solid #C49858;border-radius:30px;margin: 0 10px;font-size:18px;color: white;}
 .sec_title span:nth-of-type(1){margin-left:22%;}
 .sec_A{background: #d13600 !important;}
 .sec_box{display:none;}
 .sec_con{float: left;width:80%;padding: 0 10% 3% 10%;}
 .sec_stl{position: absolute;left:7%;top:105px;}
 .sec_stls{position: absolute;left:5%;top:105px;}
-.shade{background: #fff;padding:0 15px;margin-left:45%;height:50px;width: 152px;}
+.shade{background: #fff;padding:0 15px;height:50px;width: 152px;}
 .shade_n1{background: #D13600 !important;display: block;margin: 0 !important;}
 .pro_title,.pro_titles{width:94%;margin: 10px 3%  10px 3%;}
 .pro_title a:nth-of-type(1) {margin-left: 26%;}
-.sec_stl, .sec_stls, sec_pro img {width: 65px;height: 187px;}
+.sec_stl, .sec_stls, .sec_pro{width: 65px;height: 187px;}
 
 /*中间内容*/
 
@@ -124,12 +124,12 @@ input[value='提交留言']{font-size:25px;width:168px;height:58px;color: #fff;b
 .page input[type='text']{clear: both;width: 43px;height: 30px;background: rgba(255,255,255,0);border: 1px solid #fff;border-radius:25px;text-align: center;margin: 0 4px;}
 .avt{background: #D13600 !important;color: #fff !important;border-color:#D13600 !important;}
 .pro_title,.pro_titles{width:94%;margin: 10px 3%  10px 3%;}
-.pro_title a:nth-of-type(1){margin-left: 26%;}
+.pro_title a:nth-of-type(1){margin-left: 29%;}
 input[value='Go']{float: none;font-size: 18px;}
 /*new*/
 
-.shade_nav,.shade_navd{margin: 0 !important;float: left;}
-.shade_nav:nth-of-type(1),.shade_navd:nth-of-type(1){margin: 0 0 0 33% !important;}
+.shade_nav,.shade_navd{float: left;}
+.shade_nav:nth-of-type(1),.shade_navd:nth-of-type(1){margin: 0 0 0 33%;}
 .shade_nav span,.shade_navd span{background: #C49858;margin: 0;}
 .msg_box,.msg_boxs{width: 100%;float: left;overflow: hidden;}
 .msg_boxs{display: none;}
@@ -249,3 +249,8 @@ input[value='Go']{float: none;font-size: 18px;}
 /*历程*/
 .shades:nth-last-of-type(1){margin-left:45% !important;width: 200px;background: #fff;}
 .ctn span{margin-left: 12% !important;}
+
+
+
+.glass{position: absolute;width:400px;height:400px;background: #fff;left:42%;top: 0;display: none;}
+.movebox{position: absolute;width: 100px;height: 100px;background: rgba(255,255,255,0.5);display: none;}

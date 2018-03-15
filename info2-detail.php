@@ -152,13 +152,12 @@ foreach ($msg_all as $k => $v) {
 			        timer: 2000
    				 });
    				 var sehei=window.screen.width;
+				var sehei=window.screen.width;
 				if(sehei==1920){
 					$('.sec_titles .shade_nav').each(function(a,b){
 						$(this).css('width','260px');
 						if (a==0) {
-							$(this).css('margin-left','31% !important');
-							$(this).css('padding-left','30px')
-							$(this).css('width','223px');
+							$(this).css('margin-left','31%');
 						}
 						if (a==1) {
 							$(this).find('a').css('margin-left','20px');
@@ -168,6 +167,20 @@ foreach ($msg_all as $k => $v) {
 					$('.sec_titles .shade a').each(function(){
 						$(this).css('width','220px')
 					})
+				}else if((sehei>=1360&&sehei<=1366)||sehei>1921){
+					$('.shade a').each(function(a,b){
+						$(this).css('width','160px');
+						$(this).parents('.shade').css('width','166px');
+						
+					})
+				}else if(sehei==1600){
+					$('.shade a').each(function(a,b){
+						$(this).css('width','180px');
+						$(this).parents('.shade').css('width','192px');
+						if (a==0) {
+							$(this).parents('.shade').css('margin-left','29%')
+						}
+					});
 					
 				}
 				newcon();

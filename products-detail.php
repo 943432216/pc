@@ -63,7 +63,7 @@ $pic_src = json_encode($pic_src);
 			</div>
 			<section class="left position con_bg" >
 				<div class="details_top position">
-					<div class="glass"></div>
+					<div class="glass"><img src=""/></div>
 					<div class="details_tle left position">
 						<div class="movebox"></div>
 						<img src=""/>

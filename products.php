@@ -44,6 +44,7 @@ $banner=$db->get_one('ad',"AId='6'");
 						?>
 						<div class="pro_box">
 							<div class="six_box position">
+								<p class="pro_name"><?=$item['Name']?></p>
 								<div class="bx_1"></div>
 								<div class="bx_2"><a href="<?=$url?>"><img src="<?=$item['PicPath_0']?>"/></a></div>
 								<div class="bx_3"></div>

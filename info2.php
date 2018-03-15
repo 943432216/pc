@@ -108,6 +108,21 @@ $banner=$db->get_one('ad',"AId='7'");
 					$('.sec_titles .shade a').each(function(){
 						$(this).css('width','220px')
 					})
+				}else if((sehei>=1360&&sehei<=1366)||sehei>1921){
+					$('.shade a').each(function(a,b){
+						$(this).css('width','160px');
+						$(this).parents('.shade').css('width','166px');
+						
+					})
+				}else if(sehei==1600){
+					$('.shade a').each(function(a,b){
+						$(this).css('width','180px');
+						$(this).parents('.shade').css('width','192px');
+						if (a==0) {
+							$(this).parents('.shade').css('margin-left','29%')
+						}
+					});
+					
 				}
 				
 				$('.contents').find('*').removeAttr('style');

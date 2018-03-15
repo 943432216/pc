@@ -68,7 +68,7 @@ section{width: 94%;padding:0 3%;}
 .sec_con{float: left;width:80%;padding: 0 10% 3% 10%;}
 .sec_stl{position: absolute;left:7%;top:112px;width: 55px;height: 160px;}
 .sec_stls{position: absolute;left:5%;top:100px;width: 55px;height: 160px;}
-.shade,.shades{background: #fff;padding:0 5px 0 15px;margin-left:45%;height:50px;width:130px;}
+.shade,.shades{background: #fff;padding:0 5px 0 15px;;height:50px;width:130px;}
 .shade_n1{background: #D13600 !important;display: block;margin: 0 !important;}
 .pro_title,.pro_titles{width:94%;margin: 10px 3%  10px 3%;}
 .pro_title a:nth-of-type(1) {margin-left: 26%;}
@@ -130,7 +130,7 @@ input[value='提交留言']{font-size:19px;width:143px;height:48px;color: #fff;b
 input[value='Go']{float:left;font-size: 18px;padding: 4px 0;}
 /*new*/
 
-.shade_nav,.shade_navd{margin: 0 !important;float: left;}
+.shade_nav,.shade_navd{float: left;}
 .shade_nav:nth-of-type(1),.shade_navd:nth-of-type(1){margin: 0 0 0 33% !important;}
 .shade_nav span,.shade_navd span{background: #C49858;margin: 0;}
 .msg_box,.msg_boxs{width: 100%;float: left;overflow: hidden;}
@@ -251,5 +251,5 @@ input[value='Go']{float:left;font-size: 18px;padding: 4px 0;}
 .lc_right b:nth-of-type(2){width:30%;margin-right: 10%;text-align: left;float: left;}
 .lc_right b:nth-of-type(1){width:50%;padding-left: 8%;background: url(../img/hx.png) no-repeat 6% 20%;background-size: 21px 1px;height: 80px;overflow: hidden;float: left;line-height: 130%;}
 /*历程*/
-.shades:nth-last-of-type(1){margin-left:45% !important;width:180px;background:#fff;}
-.ctn span{margin-left: 13% !important;}
+.shades:nth-of-type(1){margin-left:45% !important;width:160px;background:#fff;}
+.ctn span{margin-left:7% !important;}

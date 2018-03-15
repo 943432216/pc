@@ -206,6 +206,8 @@ $hor_str = json_encode($hor_arr, JSON_UNESCAPED_UNICODE);
 				var sehei=window.screen.width;
 				if(sehei==1920){
 					$('.abXB').find('a').eq(0).css('margin-left','26%');
+				}else if(sehei==1600){
+					$('.abXB').find('a').eq(0).css('margin-left','24%');
 				}else{
 					$('.abXB').find('a').eq(0).css('margin-left','22%');
 				}
