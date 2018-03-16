@@ -6,47 +6,38 @@ include('../../inc/function.php');
 include('../../inc/manage/config.php');
 
 $DevID = htmlentities($_GET['DevID']);
-$info = $db->get_one('develop', "DevID=$DevID");
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-	if ((($_FILES["pic_src"]["type"] == "image/gif")
+	if (isset($_FILES) && (($_FILES["pic_src"]["type"] == "image/gif")
 	|| ($_FILES["pic_src"]["type"] == "image/jpeg")
 	|| ($_FILES["pic_src"]["type"] == "image/pjpeg")
 	|| ($_FILES["pic_src"]["type"] == "image/png"))
-	&& ($_FILES["pic_src"]["size"] < 11000000)) {
-	  if ($_FILES["pic_src"]["error"] > 0)
-	    {
-	    echo "Return Code: " . $_FILES["pic_src"]["error"] . "<br />";
-	    header('Location:index.php');
-	    }
-	  else
-	    {
-	      $dex = explode('.', $_FILES["pic_src"]["name"]);
-	      $pic_name = time() . mt_rand(1, 1000) . '.' . $dex[count($dex)-1];
-	      $pic_src = dirname(dirname(dirname(__FILE__))) . '/u_file/develop/' . $pic_name;
-	      move_uploaded_file($_FILES["pic_src"]["tmp_name"], $pic_src);
-	      }
-	} else {
-	  echo "Invalid file";
-	  header('Location:index.php');
+	&& ($_FILES["pic_src"]["size"] < 11000000) && $_FILES["pic_src"]["error"] == 0) {
+      $dex = explode('.', $_FILES["pic_src"]["name"]);
+      $pic_name = time() . mt_rand(1, 1000) . '.' . $dex[count($dex)-1];
+      $pic_src = dirname(dirname(dirname(__FILE__))) . '/u_file/develop/' . $pic_name;
+      move_uploaded_file($_FILES["pic_src"]["tmp_name"], $pic_src);	
 	}
 
 	$arr = array(
 		'dev_cate' => htmlentities($_POST['dev_cate']),
 		'time' => htmlentities($_POST['time']),
-		'pic_src' => '/u_file/develop/' . $pic_name,
 		'happen' => htmlentities($_POST['happen']),
 		'add_time' => time()
 		);
-	$db->update('develop', "$DevID=$DevID", $arr);
+	isset($pic_name) ? $arr['pic_src'] = '/u_file/develop/' . $pic_name : false;
+	$db->update('develop', "DevID=$DevID", $arr);
+	echo "<script>alert('修改成功！');</script>";
+	header('Location:index.php');
+} else {
+	$info = $db->get_one('develop', "DevID=$DevID");
 }
-
 // var_dump($info['happen']);exit;
 
 include('../../inc/manage/header.php');
 ?>
 <div class="header"><?=get_lang('ly200.current_location');?>:<a href="index.php">发展历程</a>&nbsp;-&gt;&nbsp;编辑</div>
-<form method="post" name="act_form" id="act_form" class="act_form" action="mod.php" enctype="multipart/form-data">
+<form method="post" name="act_form" id="act_form" class="act_form" action="<?=$_SERVER['SCRIPT_NAME'].'?DevID='.$DevID?>" enctype="multipart/form-data">
 <table width="100%" border="0" cellpadding="0" cellspacing="1" id="mouse_trBgcolor_table">
 	<tr>
 		<td nowrap><?=get_lang('ly200.category');?>:</td>

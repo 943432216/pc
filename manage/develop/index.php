@@ -32,7 +32,7 @@ include('../../inc/manage/header.php');
 		<td class="break_all"><?php if($item['dev_cate']==1) {echo "一级节点";} else {echo "二级节点";} ?></td>
 		<td align="left" class="flh_150"><?= $item['time']?></td>
 		<td nowrap><?=date('Y-m-d H:i:s', $item['add_time'])?></td>
-		<td nowrap><a href="mod.php?DevID=<?=$item['DevID']?>"><img src="../images/mod.gif" alt=""></a>&nbsp;&nbsp;<a href="copy.php?ProId=<?=$product_row[$i]['ProId']?>"><img src="../images/copy.gif" alt=""></a></td>
+		<td nowrap><a href="mod.php?DevID=<?=$item['DevID']?>"><img src="../images/mod.gif" alt=""></a>&nbsp;&nbsp;<a href="del.php?DevID=<?=$item['DevID']?>"><img src="../images/copy.gif" alt=""></a></td>
 	</tr>
 	<?php }?>
 </table>
