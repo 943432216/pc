@@ -216,7 +216,7 @@ function turn_page_ext($page, $total_pages, $query_string, $row_count, $pre_page
 	for($i=$i_start; $i<=$i_end; $i++){
 		$turn_page_str.=$page!=$i?"<a href='{$query_string}{$i}{$html_ext}' class='page_item pagenum'>$i</a>&nbsp;":"<font class='page_item_current pagenum'>$i</font>&nbsp;";
 		$cou_i++;
-		if ($cou_i == 3) {
+		if ($cou_i == 3 && $total_pages-$i_end >1) {
 			$turn_page_str .= "<a class='page_item pagenum'>...</a>";
 		}
 	}
