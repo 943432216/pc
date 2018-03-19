@@ -25,7 +25,7 @@ $dev_arr = $db->get_all('develop', 1, 'dev_cate,time,pic_src,happen');
 $dev_str = json_encode($dev_arr, JSON_UNESCAPED_UNICODE);
 $hor_arr = $db->get_all('honor', 1, 'hor_src,hor_commend');
 $hor_str = json_encode($hor_arr, JSON_UNESCAPED_UNICODE);
-// var_dump($hor_arr);exit;
+// var_dump($banner);exit;
 ?>
 <!DOCTYPE html>
 <html>
@@ -45,7 +45,12 @@ $hor_str = json_encode($hor_arr, JSON_UNESCAPED_UNICODE);
 		<div class="xb_box overflow">
 			<?php include('top.php'); ?>
 			<div class="banner left width">
-				<img src="img/banner_01.jpg" class="img"/>
+				<?php
+			    for($i=0;$i<5;$i++){
+					if(!is_file($site_root_path.$banner['PicPath_'.$i]))continue;
+				?>
+				<img src="<?=$banner['PicPath_'.$i]?>" style="<?=$i==0?'':'display:none;'?>" class="img"/>
+				<?php }?>
 			</div>
 			<section class="left position" >
 				<div class="sec_stl"><img src="img/stl.png" class="img"/></div>

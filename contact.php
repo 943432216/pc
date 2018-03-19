@@ -47,6 +47,7 @@ if ($_SERVER['REQUEST_METHOD']=='POST') {
 } else {
 	$error = 0;
 }
+$banner=$db->get_one('ad',"AId='8'");
 ?>
 <!DOCTYPE html>
 <html>
@@ -62,7 +63,12 @@ if ($_SERVER['REQUEST_METHOD']=='POST') {
 		<div class="xb_box overflow">
 			<?php include('top.php'); ?>
 			<div class="banner left width">
-				<img src="img/banner_01.jpg" class="img"/>
+				<?php
+			    for($i=0;$i<5;$i++){
+				if(!is_file($site_root_path.$banner['PicPath_'.$i]))continue;
+				?>
+				<img src="<?=$banner['PicPath_'.$i]?>" class="img" style="<?=$i==0?'':'display:none;'?>"/>
+				<?php }?>
 			</div>
 			<section class="left overflow position">
 				<div class="sec_stls"><img src="img/contant.png" class="img"/></div>

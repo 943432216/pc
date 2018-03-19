@@ -25,7 +25,12 @@ $banner=$db->get_one('ad',"AId='6'");
 		<div class="xb_box overflow">
 			<?php include('top.php'); ?>
 			<div class="banner left width">
-				<img src="img/banner_01.jpg" class="img"/>
+				<?php
+			    for($i=0;$i<5;$i++){
+				if(!is_file($site_root_path.$banner['PicPath_'.$i]))continue;
+				?>
+				<img src="<?=$banner['PicPath_'.$i]?>" class="img" style="<?=$i==0?'':'display:none;'?>"/>
+				<?php }?>
 			</div>
 			<div class="sec_title left pro_title">
 				<?php foreach((array)$product_cate as $item){?>
