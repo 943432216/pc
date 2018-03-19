@@ -28,7 +28,7 @@
 .ewmx img{width: 140px;height: 150px;}
 .ewmx{position: absolute;top:48px;z-index: 9999;right: 12.8%;display: none;}
 .nav2 ul li:nth-last-of-type(1) a{border: none;}
-.ff{font-family:'newfamily';}
+/*.ff{font-family:'newfamily';}*/
 .china_bg{background:url(../img/new.jpg) no-repeat;background-size:100%;background-position: left bottom; }
 .pageavt{background: #D13600 !important;color: #fff !important;}
 .pageavts{background: #D13600 !important;}
