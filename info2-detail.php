@@ -109,7 +109,6 @@ foreach ($msg_all as $k => $v) {
 		<script src="js/pc_main.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
 			$(function(){
-				$('.shade').find('a').css('margin-left','0')
 				$('.contents').find('*').removeAttr('style');
 				$('.contents').find('span,strong,p,div,tr,td,table').addClass('width');
 				var $str=$('.contents').html();
@@ -163,9 +162,10 @@ foreach ($msg_all as $k => $v) {
 						$(this).css('width','260px');
 						if (a==0) {
 							$(this).css('margin-left','31%');
+							$(this).find('a').css('margin-left','25px');
 						}
 						if (a==1) {
-							$(this).find('a').css('margin-left','20px');
+							$(this).find('a').css('margin-left','10px');
 						}
 					
 					})
@@ -176,9 +176,10 @@ foreach ($msg_all as $k => $v) {
 					$('.shade a').each(function(a,b){
 						$(this).css('width','160px');
 						$(this).parents('.shade').css('width','166px');
-						
+						$('.shade').find('a').css('margin-left','0')
 					})
 				}else if(sehei==1600){
+					$('.shade').find('a').css('margin-left','0')
 					$('.shade a').each(function(a,b){
 						$(this).css('width','180px');
 						$(this).parents('.shade').css('width','192px');

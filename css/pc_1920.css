@@ -131,7 +131,7 @@ input[value='Go']{float: none;font-size: 18px;}
 /*new*/
 
 .shade_nav,.shade_navd{float: left;width: 210px;}
-.shade:nth-of-type(1),.shade_navd:nth-of-type(1){margin: 0 0 0 32% !important;}
+.shade:nth-of-type(1),.shade_navd:nth-of-type(1){margin: 0 0 0 32%}
 .shade_nav span,.shade_navd span{background: #C49858;margin: 0;}
 .msg_box,.msg_boxs{width: 100%;float: left;overflow: hidden;}
 .msg_boxs{display: none;}
