@@ -37,6 +37,7 @@ $hor_str = json_encode($hor_arr, JSON_UNESCAPED_UNICODE);
 		<link rel="stylesheet" type="text/css" href="css/pc_1600.css" id="lins"/>
 		<script type="text/javascript">
 			var lcs=<?=$dev_str?>;
+			var ry=<?=$hor_str?>;
 		</script>
 	</head>
 
@@ -105,6 +106,7 @@ $hor_str = json_encode($hor_arr, JSON_UNESCAPED_UNICODE);
 						<?php } ?>
 						<?php if($AId == 15) { ?>
 						<div class="XB_ry">
+							<!--<span class="ry_box"><img src="img/ry_img.png" class="img"/><p>星辰品牌心宝丸荣获中国药品市场消费者满意首选品牌</p></span>
 							<span class="ry_box">
 								<img src="img/ry_img.png" class="img"/>
 								<p>星辰品牌心宝丸荣获中国药品市场消费者满意首选品牌</p>
@@ -180,11 +182,7 @@ $hor_str = json_encode($hor_arr, JSON_UNESCAPED_UNICODE);
 							<span class="ry_box">
 								<img src="img/ry_img.png" class="img"/>
 								<p>星辰品牌心宝丸荣获中国药品市场消费者满意首选品牌</p>
-							</span>
-							<span class="ry_box">
-								<img src="img/ry_img.png" class="img"/>
-								<p>星辰品牌心宝丸荣获中国药品市场消费者满意首选品牌</p>
-							</span>
+							</span>-->
 						</div>
 						<?php } ?>
 						<?php if(!in_array($AId, array(4,6,15))) { 
@@ -213,8 +211,6 @@ $hor_str = json_encode($hor_arr, JSON_UNESCAPED_UNICODE);
 				}
 				$('.sec_box').find('*').removeAttr('style');
 				$('.sec_box').find('img').addClass('img')
-				console.log(lcs);
-				console.log(lcs.length);
 				var $lcleft='<span class="lc_left"><h3></h3><p><b><img src="" class="img"/></b><b></b></p></span>';
 				var $lcright='<span class="lc_right"><h3></h3><p><b></b><b><img src="" class="img"/></b></p></span>'
 				$.each(lcs,function(a,b){
@@ -231,7 +227,8 @@ $hor_str = json_encode($hor_arr, JSON_UNESCAPED_UNICODE);
 						$('.XB_lc').children('span').eq(a).find('b').eq(0).html(b.happen);
 					}
 					
-				})
+				});
+				glory('.XB_ry',ry)
 			})
 		</script>
 	</body>

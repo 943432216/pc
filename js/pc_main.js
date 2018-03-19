@@ -410,7 +410,15 @@ function product_pic() {
 		})
 	})
 }
-
+function glory(el,data){
+	var $rybox='<span class="ry_box"><img src="" class="img"/><p></p></span>';
+	console.log(data);
+	$.each(data, function(a,b) {
+		$(el).append($rybox);
+		$(el).children('span').eq(a).find('img').attr('src',b.hor_src);
+		$(el).children('span').eq(a).find('p').html(b.hor_commend);
+	});
+}
 function trim(str) {
 	return str.replace(/(^\s+)|(\s+$)/g, "");
 }
