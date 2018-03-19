@@ -93,10 +93,10 @@ $banner=$db->get_one('ad',"AId='5'");
 							其他视频
 						</div>
 						<div class="small_video">
-							<span><img src="img/videosd.png" class="img"/></span>
-							<span><img src="img/videosd.png" class="img"/></span>
-							<span><img src="img/videosd.png" class="img"/></span>
-							<span><img src="img/videosd.png" class="img"/></span>
+							<span><img src="img/video3.jpg" class="img"/></span>
+							<span><img src="img/video2.jpg" class="img"/></span>
+							<span><img src="img/video1.jpg" class="img"/></span>
+							<span><img src="img/video4.jpg" class="img"/></span>
 						</div>
 					</div>
 					<?php } ?>
