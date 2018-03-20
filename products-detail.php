@@ -106,7 +106,7 @@ $pic_src = json_encode($pic_src);
 				<div class="product_details">
 					<div class="about_tl">
 						<h2 class="left">相关产品</h2>
-						<a href="#">更多 》》</a>
+						<a href="/products.php?CateId=<?=$CateId?>">更多 》》</a>
 					</div>
 					<ul>
 						<?php foreach($pro_cul_cate as $product) {?>
