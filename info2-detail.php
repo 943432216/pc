@@ -22,7 +22,7 @@ foreach ($recommend as $k=>$v) {
 	}
 }
 foreach ($msg_all as $k => $v) {
-	$msg_all[$k]['PageUrl'] = get_url('info', $v);
+	$msg_all[$k]['PageUrl'] = get_url('info2', $v);
 }
 // var_dump(json_encode($msg_all,JSON_UNESCAPED_UNICODE));exit;
 ?>
