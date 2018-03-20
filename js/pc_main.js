@@ -373,7 +373,8 @@ function newcon() {
 	});
 	trim($('.about_new ul li a').html());
 	var outheight=$('.donate_carousel ul li').outerHeight();
-	$('.donate_carousel').css('height',outheight*6);
+	$('.donate_carousel').css('height','192px');
+	console.log(outheight);
 }
 
 function product_pic() {
