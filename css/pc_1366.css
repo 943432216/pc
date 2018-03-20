@@ -227,7 +227,7 @@ input[value='Go']{float:left;font-size: 18px;padding: 4px 0;}
 
 .XB_ry{width: 96%;margin:30px 2%;background: url(../img/ry.jpg) no-repeat;background-size:100% 1480px;overflow: hidden;padding: 7% 0 0% 0;;}
 .ry_box{float: left;width: 30%;margin: 3% 1.5%;}
-.ry_box img{width: 80%;margin: 0 10%;float: left;}
+.ry_box img{width: 80%;margin: 0 10%;float: left;height: 400px;}
 .ry_box p{width:76%;text-align: center;padding:0 12%;margin: 10px 0;float: left;font-size:18px;color: #323232;line-height: 160%;}
 .ry_box:nth-of-type(1){padding-left:33%;}
 /*荣誉*/
