@@ -241,7 +241,7 @@ input[value='Go']{float:left;font-size: 18px;padding: 4px 0;}
 .lc_left b{float: left;text-align: right;}
 .lc_left b img{width: 125px;height: 80px;display: block;margin-left:10%;}
 .lc_left b:nth-of-type(1){width:30%;margin-left: 10%;text-align: right;}
-.lc_left b:nth-of-type(2){width:53%;padding-right:6%;background: url(../img/hx.png) no-repeat 96% 20%;background-size: 19px 1px;height: 80px;overflow: hidden;line-height: 130%;}
+.lc_left b:nth-of-type(2){width:53%;padding-right:6%;background: url(../img/hx.png) no-repeat 96% 20%;background-size: 19px 1px;height: 80px;overflow: hidden;line-height: 130%;padding-left: 2%;}
 
 .lc_right p{float: left;color: #323232;font-size:15px;width:100%;text-align:left;margin-top:20px;}
 .lc_right h3{font-size: 25px;color: #b50005;text-align:left;width: 90%;margin: 0;padding-left:10%;height: 35px;line-height: 35px;}
@@ -249,7 +249,7 @@ input[value='Go']{float:left;font-size: 18px;padding: 4px 0;}
 .lc_right b img{width: 125px;height: 80px;}
 .lc_right b img{width: 125px;height: 80px;display: block;}
 .lc_right b:nth-of-type(2){width:30%;margin-right: 10%;text-align: left;float: left;}
-.lc_right b:nth-of-type(1){width:50%;padding-left: 8%;background: url(../img/hx.png) no-repeat 6% 20%;background-size: 21px 1px;height: 80px;overflow: hidden;float: left;line-height: 130%;}
+.lc_right b:nth-of-type(1){width:48%;padding-left: 8%;background: url(../img/hx.png) no-repeat 6% 20%;background-size: 21px 1px;height: 80px;overflow: hidden;float: left;line-height: 130%;padding-right: 2%;}
 /*历程*/
 .shades:nth-of-type(1){margin-left:45% !important;width:160px;background:#fff;}
 .ctn span{margin-left:7% !important;}
