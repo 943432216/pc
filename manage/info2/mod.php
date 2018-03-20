@@ -62,7 +62,27 @@ if($_POST){
 			$SmallPicPath=$S_PicPath;
 		}
 	}
-	
+	if ($_FILES['thumb']['error'] == UPLOAD_ERR_OK && $_FILES['thumb']['size']/1024 < 5*1024) {
+		$r_path = dirname(dirname(dirname(__FILE__)));
+		$dir_name = date('Y-m-d');
+		$dir = $r_path . '/u_file/thumb/' . $dir_name;
+		if (!file_exists($dir)) {
+			//var_dump($dir);exit;
+			mkdir($dir);
+		}
+		$f_name_arr = explode('.', $_FILES['thumb']['name']);
+		$pic_format_index = count($f_name_arr) - 1;
+
+		$chars = 'abcdefghijklmnopqrstuvwxyz0123456789';
+		$new_pic_name = ''; 
+		for ($i = 0; $i < 12; $i++) { 
+			$new_pic_name .= $chars[mt_rand(0, strlen($chars) - 1)]; 
+		} 
+		$new_pic_name = $new_pic_name . '.' . $f_name_arr[$pic_format_index];
+		$new_pic_path = $dir . '/' . $new_pic_name;
+		//var_dump($new_pic_path);exit;
+		move_uploaded_file($_FILES['thumb']['tmp_name'], $new_pic_path);
+	}
 	$db->update('info2', "InfoId='$InfoId'", array(
 			'CateId'			=>	$CateId,
 			'Title'				=>	$Title,
@@ -78,7 +98,8 @@ if($_POST){
 			'SeoKeywords'		=>	$SeoKeywords,
 			'SeoDescription'	=>	$SeoDescription,
 			'AccTime'			=>	$AccTime,
-			'Language'			=>	$Language
+			'Language'			=>	$Language,
+			'ThumbPic'			=>	'/u_file/thumb/' . $dir_name . '/' . $new_pic_name
 		)
 	);
 	$db->update('info2_contents', "InfoId='$InfoId'", array(
@@ -139,6 +160,10 @@ include('../../inc/manage/header.php');
 			</td>
 		</tr>
 	<?php }?>
+	<tr>
+		<td>缩略图</td>
+		<td><input type="file" name="thumb"></td>
+	</tr>
 	<?php if(get_cfg('info2.ext_url')){?>
 		<tr>
 			<td nowrap><?=get_lang('info2.ext_url');?>:</td>

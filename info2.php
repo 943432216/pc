@@ -62,7 +62,7 @@ $banner=$db->get_one('ad',"AId='7'");
 						?>
 						<div class="msg_1">
 							<div class="msg_img">
-								<img src="<?=$info_row['ThumbPic']?>" class="img"/>
+								<img src="<?=$info_row[$i]['ThumbPic']?>" class="img"/>
 							</div>
 							<div class="msg_con">
 								<h2><?=$info_row[$i]['Title'];?></h2>
