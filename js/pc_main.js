@@ -356,8 +356,6 @@ function navt(data) {
 }
 
 function newcon() {
-//	console.log(about_new);
-	//		console.log(read_new);
 	$.each(read_new, function(a, b) {
 		$('.donate_carousel ul').append('<li><a href="#"></a><b></b></li>');
 		$('.donate_carousel ul li').eq(a).find('a').html(b.Title);
@@ -374,7 +372,7 @@ function newcon() {
 	trim($('.about_new ul li a').html());
 	var outheight=$('.donate_carousel ul li').outerHeight();
 	$('.donate_carousel').css('height','192px');
-	console.log(outheight);
+//	console.log(outheight);
 }
 
 function product_pic() {
