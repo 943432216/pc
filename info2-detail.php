@@ -190,7 +190,6 @@ foreach ($msg_all as $k => $v) {
 					
 				}
 				newcon();
-				console.log(about_new)
 			})
 			
 				
