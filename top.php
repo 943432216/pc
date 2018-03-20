@@ -34,7 +34,6 @@
 							<?php foreach((array)$art_group[1] as $item){?>						
 							<li>
 								<a href="<?=get_url('article',$item)?>" target="_blank"><?=$item['Title']?></a>
-								<a href=""target="_blank"></a>
 							</li>
 							<?php }?>
 						</ul>
