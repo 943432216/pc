@@ -129,7 +129,7 @@ foreach ($msg_all as $k => $v) {
 					'font-weight':'600',
 					'text-align':'center',
 					'display':'block',
-					'margin':'10px 0',
+					'margin':'10px 0'
 				});
 				$('.contents').find('p,span,div').css('line-height','180%');
 				$('.contents').find('p,span,div').css('text-indent','2em');

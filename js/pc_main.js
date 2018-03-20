@@ -131,6 +131,7 @@ $(function() {
 		$('#lins').attr('href', 'css/pc_1366.css');
 	}
 	navs();
+	tzs()
 })
 
 function videold(num) {
@@ -355,7 +356,7 @@ function navt(data) {
 }
 
 function newcon() {
-	console.log(about_new);
+//	console.log(about_new);
 	//		console.log(read_new);
 	$.each(read_new, function(a, b) {
 		$('.donate_carousel ul').append('<li><a href="#"></a><b></b></li>');
@@ -371,7 +372,8 @@ function newcon() {
 		$('.about_new ul li').eq(a).find('b').html(ts(b.AccTime))
 	});
 	trim($('.about_new ul li a').html());
-
+	var outheight=$('.donate_carousel ul li').outerHeight();
+	$('.donate_carousel').css('height',outheight*6);
 }
 
 function product_pic() {
@@ -436,7 +438,7 @@ function ts(timestamp) {
 	return Y + M + D;
 }
 
-(function browserRedirect() {
+function tzs() {
 	var sUserAgent = navigator.userAgent.toLowerCase();
 	var bIsIpad = sUserAgent.match(/ipad/i) == 'ipad';
 	var bIsIphone = sUserAgent.match(/iphone os/i) == 'iphone os';
@@ -450,4 +452,4 @@ function ts(timestamp) {
 	if(bIsIpad || bIsIphone || bIsMidp || bIsUc7 || bIsUc || bIsCE || bIsWM || bIsAndroid) {
 		window.location.href = 'http://wapxb.yizhels.cn';
 	}
-})();
+}

@@ -74,7 +74,7 @@ foreach ($msg_all as $k => $v) {
 				<div class="about_new">
 					<div class="about_tl">
 						<h2 class="left">最新资讯</h2>
-						<a href="/info2.php?CateId=1">更多 》》</a>
+						<a href="/info.php?CateId=1">更多 》》</a>
 					</div>
 					<ul>
 						<!--<li><a href="#">“心心相印”公益活动走进山西同仁康大药房 </a>2018-01-25</li>
