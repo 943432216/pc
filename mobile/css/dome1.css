@@ -1,0 +1,101 @@
+.banner {
+  overflow: hidden;
+}
+.banner_nav {
+  width: 100%;
+  height: 0.88rem;
+  float: left;
+  background: #f7f7f7;
+}
+.banner_nav ul li {
+  float: left;
+  width: 33%;
+}
+.banner_nav ul li a {
+  float: left;
+  width: 100%;
+  text-align: center;
+  height: 0.76rem;
+  line-height: 0.76rem;
+  color: #1a1a1a;
+  font-size: 0.36rem;
+}
+.banners {
+  float: left;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.banner_navs {
+  width: 100%;
+  height: 0.88rem;
+  float: left;
+  background: #f7f7f7;
+}
+.banner_navs ul li {
+  float: left;
+  width: 25%;
+}
+.banner_navs ul li a {
+  float: left;
+  width: 100%;
+  text-align: center;
+  height: 0.76rem;
+  line-height: 0.76rem;
+  color: #1a1a1a;
+  font-size: 0.36rem;
+}
+.banner_box {
+  padding: 0 3%;
+  background: #F7F7F7;
+  float: left;
+  width: 94%;
+}
+.banner_ts {
+  width: 98%;
+  background: #fff;
+  padding: 0 0 0 2%;
+  overflow: hidden;
+}
+.product_name {
+  width: 96%;
+  float: left;
+  padding: 0.5rem 2% 0.2rem 2%;
+  background: #fff;
+  margin-bottom: 0.3rem;
+}
+.product_name h5 {
+  color: #232323;
+  width: 100%;
+  font-size: 0.56rem;
+  padding: 0;
+  margin: 0;
+}
+.product_name p {
+  color: #999;
+  float: left;
+  width: 100%;
+  font-size: 0.4rem;
+  margin-top: 0.16rem;
+}
+.company_bn {
+  margin-top: 0.2rem;
+  background: #fff;
+  padding: 0 3%;
+  width: 94%;
+}
+.company_bn p {
+  float: left;
+  width: 100%;
+  overflow: hidden;
+  font-size: 0.48rem;
+  color: #232323;
+  text-indent: 2em;
+  line-height: 150%;
+}
+.company_bn h4 {
+  float: left;
+  text-indent: 1em;
+  font-size: 0.48rem;
+  margin: 0.16rem 0;
+}

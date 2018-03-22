@@ -449,6 +449,6 @@ function tzs() {
 	var bIsAndroid = sUserAgent.match(/android/i) == 'android';
 
 	if(bIsIpad || bIsIphone || bIsMidp || bIsUc7 || bIsUc || bIsCE || bIsWM || bIsAndroid) {
-		window.location.href = 'http://wapxb.yizhels.cn';
+		//window.location.href = 'http://wapxb.yizhels.cn';
 	}
 }
