@@ -269,7 +269,7 @@ $hor_str = json_encode($hor_arr, JSON_UNESCAPED_UNICODE);
 	</body>
 	<script src="js/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/unslider.min.js" type="text/javascript" charset="utf-8"></script>
-	<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/main.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript">
 		$(function() {
 			$('._con').find('*').removeAttr('style');

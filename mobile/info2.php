@@ -114,14 +114,14 @@ switch ($_GET['CateId']) {
 	</body>
 	<script src="js/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/unslider.min.js" type="text/javascript" charset="utf-8"></script>
-	<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/main.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript">
 		$(function() {
 			$('.company_bn').find('img').removeAttr('style');
 			$('.company_bn').find('img').addClass('img');
 			linkages('info','#t3');
 			cj(xs_state);
-			starts()
+//			starts()
 		})
 	</script>
 

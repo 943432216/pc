@@ -370,9 +370,9 @@ function newcon() {
 		$('.about_new ul li').eq(a).find('b').html(ts(b.AccTime))
 	});
 	trim($('.about_new ul li a').html());
-	var outheight=$('.donate_carousel ul li').outerHeight();
-	$('.donate_carousel').css('height','192px');
-//	console.log(outheight);
+	var outheight = $('.donate_carousel ul li').outerHeight();
+	$('.donate_carousel').css('height', '192px');
+	//	console.log(outheight);
 }
 
 function product_pic() {
@@ -438,6 +438,29 @@ function ts(timestamp) {
 }
 
 function tzs() {
+	var urlt = window.location.href;
+	var a=null;var b=null; var c=null;var d=null;
+	console.log(urlt);
+	a = urlt.split('cn/')[1];
+	d = a.split('&')[0];
+	b = $('.navstax a').html();
+	switch(b) {
+		case '关于心宝':
+			c = 't1';
+			break;
+		case '联系心宝':
+			c = 't5';
+			break;
+		case '最新动态':
+			c = 't4';
+			break;
+		case '心肾同治':
+			c = 't3';
+			break;
+		case '产品中心':
+			c = 't2';
+			break;
+	}
 	var sUserAgent = navigator.userAgent.toLowerCase();
 	var bIsIpad = sUserAgent.match(/ipad/i) == 'ipad';
 	var bIsIphone = sUserAgent.match(/iphone os/i) == 'iphone os';
@@ -447,8 +470,21 @@ function tzs() {
 	var bIsCE = sUserAgent.match(/windows ce/i) == 'windows ce';
 	var bIsWM = sUserAgent.match(/windows mobile/i) == 'windows mobile';
 	var bIsAndroid = sUserAgent.match(/android/i) == 'android';
-
+	
 	if(bIsIpad || bIsIphone || bIsMidp || bIsUc7 || bIsUc || bIsCE || bIsWM || bIsAndroid) {
-		//window.location.href = 'http://wapxb.yizhels.cn';
+		if(c==null){
+			window.location.href = '../mobile/'+a;
+		}else if(c=='t1'){
+			window.location.href = '../mobile/'+d+'&a='+c;
+		}else if(c=='t5'){
+			window.location.href = '../mobile/'+d+'&a='+c;
+		}else if(c=='t2'){
+			window.location.href = '../mobile/'+d+'&a='+c;
+		}else if(c=='t3'){
+			window.location.href = '../mobile/'+d+'&a='+c;
+		}else if(c=='t4'){
+			window.location.href = '../mobile/'+d+'&a='+c;
+		}
+		
 	}
 }

@@ -161,7 +161,7 @@ if ($_SERVER['REQUEST_METHOD']=='POST') {
 	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=2D4K3ZUZECvi34iAleP0hMc9PtshuhdI"></script>
 	<script src="js/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/unslider.min.js" type="text/javascript" charset="utf-8"></script>
-	<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/main.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript">
 		var map = new BMap.Map("map"); // 创建Map实例
 		map.centerAndZoom(new BMap.Point(113.521275,23.151634), 17); // 初始化地图,设置中心点坐标和地图级别

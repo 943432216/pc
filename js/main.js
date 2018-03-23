@@ -4,7 +4,7 @@ function cj(data) {
 		$('.new_boxs').append(sn);
 	});
 	for(var i = 0; i < $('.new_s').length; i++) {
-		$('.new_s').eq(i).find('a').attr('href', data[i].state_url);
+		$('.new_s').eq(i).find('a').attr('href', '/mobile'+data[i].state_url);
 		$('.new_s').eq(i).children('.new_left').children('img').attr('src', data[i].ThumbPic);
 		$('.new_s').eq(i).children('.new_right').find('li').eq(0).children('a').html(data[i].Title);
 		$('.new_s').eq(i).children('.new_right').find('li').eq(1).children('a').html(data[i].BriefDescription);
@@ -393,6 +393,12 @@ $(function() {
 })
 
 function tzs() {
+	var ursd=window.location.href;
+	console.log(ursd);
+	var a,b;
+	a=ursd.split('mobile/')[1];
+	b=a.split('&')[0];
+	console.log(b);
 	var sUserAgent = navigator.userAgent.toLowerCase();
 	var bIsIpad = sUserAgent.match(/ipad/i) == 'ipad';
 	var bIsIphone = sUserAgent.match(/iphone os/i) == 'iphone os';
@@ -404,6 +410,6 @@ function tzs() {
 	var bIsAndroid = sUserAgent.match(/android/i) == 'android';
 
 	if(!(bIsIpad || bIsIphone || bIsMidp || bIsUc7 || bIsUc || bIsCE || bIsWM || bIsAndroid)) {
-		//window.location.href = 'http://pcxb.yizhels.cn/';
+		window.location.href = '../'+b;
 	}
 };
