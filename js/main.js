@@ -24,6 +24,7 @@ function AutoScroll() {
 	$('.new_boxs').animate({
 		top: -$hei + 10 + 'px'
 	}, 300000, 'linear', function() {
+		$(this).stop();
 		$(this).css('top', 0);
 		aul();
 	});
@@ -47,6 +48,7 @@ function aul() {
 	$('.new_boxs').animate({
 		top: -$hei + 10 + 'px'
 	}, 300000, 'linear', function() {
+		$(this).stop();
 		$(this).css('top', 0);
 		aul();
 	});

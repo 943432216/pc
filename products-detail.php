@@ -97,7 +97,7 @@ $pic_src = json_encode($pic_src);
 					<span class="con_title avts">主治功能</span>
 					<span class="con_title">注意事项</span>
 					<span class="con_title">产品说明书</span>
-					<div><?=$product_description['MainTreat']?></div>
+					<div style="display: block;"><?=$product_description['MainTreat']?></div>
 					<div><?=$product_description['CarefulThings']?></div>
 					<div><?=$product_description['Description']?></div>
 				</div>
