@@ -46,7 +46,7 @@ function aul() {
 	var $hei = $('.new_boxs').height();
 	$('.new_boxs').animate({
 		top: -$hei + 10 + 'px'
-	}, 20000, 'linear', function() {
+	}, 300000, 'linear', function() {
 		$(this).css('top', 0);
 		aul();
 	});
