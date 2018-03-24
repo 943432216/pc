@@ -162,6 +162,8 @@ $banner=$db->get_one('ad',"AId='8'");
 				var err;
 				if (errors==0) {
 					
+				}else if(errors==1){
+					alert('提交成功');
 				}else{
 					$.each(errors, function(a,b) {
 						err+=errors[a]+'\n';
@@ -169,7 +171,7 @@ $banner=$db->get_one('ad',"AId='8'");
 					});
 					alert(err.split('undefined')[1]);
 				}
-				 
+				
 			})
 		</script>
 	</body>

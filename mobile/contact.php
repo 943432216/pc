@@ -187,6 +187,8 @@ if ($_SERVER['REQUEST_METHOD']=='POST') {
 			})
 			if (errors==0) {
 				
+			}else if(errors==1){
+					alert('提交成功');
 			}else{
 				$.each(errors, function(a,b) {
 					err+=errors[a]+'\n';
