@@ -121,7 +121,7 @@ switch ($_GET['CateId']) {
 			$('.company_bn').find('img').addClass('img');
 			linkages('info','#t3');
 			cj(xs_state);
-//			starts()
+			starts()
 		})
 	</script>
 

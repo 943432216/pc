@@ -191,7 +191,7 @@ $fresh_state = json_encode($fresh_state, JSON_UNESCAPED_UNICODE);
 		$(function() {
 			linkages('product','#t4');
 			cj(fresh_state);
-//			starts()
+			starts()
 		})
 	</script>
 

@@ -139,7 +139,7 @@ foreach ($msg_all as $k => $v) {
 					'display':'block'
 				});
 				$('.contents').find('img').each(function(){
-					if($(this).attr('alt')=='打印'||$(this).attr('alt')=='下载'){
+					if($(this).attr('alt')=='打印'||$(this).attr('alt')=='下载'||$(this).attr('alt')=='分享到新浪微博'||$(this).attr('alt')=='分享到腾讯微博'||$(this).attr('alt')=='分享到QQ空间'||$(this).attr('alt')=='分享到微信'||){
 						$(this).removeClass('img');
 						
 					}
