@@ -13,7 +13,10 @@ for ($i=0; $i<20; $i++) {
 	$company_state[$i]['state_url'] = '/info-detail.php?InfoId=' . $company_state[$i]['InfoId'];
 }
 $company_state = json_encode($company_state, JSON_UNESCAPED_UNICODE);
-//var_dump($company_state);exit;
+$banner=$db->get_one('ad',"AId='13'");
+
+$site_root_path = dirname($site_root_path);
+// var_dump($site_root_path.$banner['PicPath_0']);exit;
 ?>
 <!DOCTYPE html>
 <html>
@@ -49,15 +52,13 @@ $company_state = json_encode($company_state, JSON_UNESCAPED_UNICODE);
 				<div id="marquee">
 					<ul>
 						<?php
-						if($pageName=='index'){
-							$banner=$db->get_one('ad',"AId='1'");
-							for($i=0;$i<5;$i++){
-								if(!is_file($site_root_path.$banner['PicPath_'.$i]))continue;
-						?>
+					     for($i=0;$i<5;$i++){
+							if(!is_file($site_root_path.$banner['PicPath_'.$i]))continue;
+						?>					
 						<li>
 							<a href="javascript:;"><img src="<?=$banner['PicPath_'.$i]?>" class="img"></a>
 						</li>
-						<?php }}?>
+						<?php }?>
 					</ul>
 				</div>
 			</div>

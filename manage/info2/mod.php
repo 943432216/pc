@@ -62,7 +62,7 @@ if($_POST){
 			$SmallPicPath=$S_PicPath;
 		}
 	}
-	if ($_FILES['thumb']['error'] == UPLOAD_ERR_OK && $_FILES['thumb']['size']/1024 < 5*1024) {
+	if ($_FILES['thumb']['error'] == UPLOAD_ERR_OK) {
 		$r_path = dirname(dirname(dirname(__FILE__)));
 		$dir_name = date('Y-m-d');
 		$dir = $r_path . '/u_file/thumb/' . $dir_name;
