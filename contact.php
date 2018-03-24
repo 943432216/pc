@@ -40,6 +40,7 @@ if ($_SERVER['REQUEST_METHOD']=='POST') {
 			'PostTime'	=>	$service_time
 			)
 		);
+		$error = 1;
 		//var_dump($ret);exit;
 	}
 	$error = json_encode($error, JSON_UNESCAPED_UNICODE);
