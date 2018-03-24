@@ -396,11 +396,9 @@ $(function() {
 
 function tzs() {
 	var ursd=window.location.href;
-	console.log(ursd);
 	var a,b;
 	a=ursd.split('mobile/')[1];
 	b=a.split('&')[0];
-	console.log(b);
 	var sUserAgent = navigator.userAgent.toLowerCase();
 	var bIsIpad = sUserAgent.match(/ipad/i) == 'ipad';
 	var bIsIphone = sUserAgent.match(/iphone os/i) == 'iphone os';

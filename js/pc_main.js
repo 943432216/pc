@@ -440,7 +440,6 @@ function ts(timestamp) {
 function tzs() {
 	var urlt = window.location.href;
 	var a=null;var b=null; var c=null;var d=null;
-	console.log(urlt);
 	a = urlt.split('cn/')[1];
 	d = a.split('&')[0];
 	b = $('.navstax a').html();
