@@ -160,7 +160,7 @@ $banner=$db->get_one('ad',"AId='8'");
 				var arr=[];
 				var err;
 				if (errors==0) {
-				
+					
 				}else{
 					$.each(errors, function(a,b) {
 						err+=errors[a]+'\n';
@@ -168,6 +168,7 @@ $banner=$db->get_one('ad',"AId='8'");
 					});
 					alert(err.split('undefined')[1]);
 				}
+				 
 			})
 		</script>
 	</body>
