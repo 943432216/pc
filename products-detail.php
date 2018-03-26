@@ -94,12 +94,12 @@ $pic_src = json_encode($pic_src);
 					</div>
 				</div>
 				<div class="details_con">
-					<span class="con_title avts">主治功能</span>
+					<span class="con_title avts">产品说明书</span>
+					<span class="con_title">主治功能</span>
 					<span class="con_title">注意事项</span>
-					<span class="con_title">产品说明书</span>
-					<div style="display: block;"><?=$product_description['MainTreat']?></div>
+					<div style="display: block;"><?=$product_description['Description']?></div>
+					<div><?=$product_description['MainTreat']?></div>
 					<div><?=$product_description['CarefulThings']?></div>
-					<div><?=$product_description['Description']?></div>
 				</div>
 			</section>
 			<div class="about_details">

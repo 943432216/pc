@@ -71,6 +71,12 @@ $banner=$db->get_one('ad',"AId='5'");
 			$('.ddd').find('img').addClass('img');
 			$('section').removeAttr('style');
 			$('section').css('padding-bottom','0');
+			$('.contents').find('img').each(function(){
+				if($(this).attr('alt')=='打印'||$(this).attr('alt')=='下载'||$(this).attr('alt')=='分享到新浪微博'||$(this).attr('alt')=='分享到腾讯微博'||$(this).attr('alt')=='分享到QQ空间'||$(this).attr('alt')=='分享到微信'){
+					$(this).removeClass('img');
+						
+				}
+			})
 		})
 	</script>
 

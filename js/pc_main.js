@@ -376,7 +376,6 @@ function newcon() {
 }
 
 function product_pic() {
-	console.log(pics);
 	for(var x = 0; x < 4; x++) {
 		$('.spic').children('div').append('<span><img src="" /></span>');
 		for(var i = 0 in pics) {

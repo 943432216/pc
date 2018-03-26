@@ -17,3 +17,8 @@ table{border-collapse:collapse;border-spacing:0;}
 .overflow{overflow: hidden;}
 .display{display: block;}
 html{font-family:"微软雅黑";}
+@font-face {
+	font-family:'newfamily';
+	src: url('YGYXSZITI2.0.TTF');
+}
+.ff{font-family:'newfamily';}

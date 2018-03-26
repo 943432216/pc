@@ -186,8 +186,9 @@ if ($_SERVER['REQUEST_METHOD']=='POST') {
 				$(this).children('ul').slideToggle();
 			})
 			if (errors==0) {
-				
-			}else if(errors==1){
+				//不做任何操作
+			}
+			if(errors==1){
 					alert('提交成功');
 			}else{
 				$.each(errors, function(a,b) {
