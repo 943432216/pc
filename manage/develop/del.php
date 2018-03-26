@@ -7,10 +7,9 @@ include('../../inc/manage/config.php');
 
 $DevID = htmlentities($_GET['DevID']);
 $info = $db->get_one('develop', "DevID=$DevID");
-if (unlink($site_root_path.$info['pic_src'])) {
-	$db->delete('develop', "DevID=$DevID");
-	echo "<script>alert('删除成功！');</script>";
-}
+unlink($site_root_path.$info['pic_src']);
+$db->delete('develop', "DevID=$DevID");
+
 header('Location:index.php');
 
 ?>

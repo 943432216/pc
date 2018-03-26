@@ -26,11 +26,12 @@ include('../../inc/manage/header.php');
 	</tr>
 	<?php
 	foreach ($dev_arr as $k => $item) {
+		$time = empty($item['time'])?'没有选择时间':date('Y-m-d', $item['time']);
 	?>
 	<tr align="center">
 		<td nowrap><?=$k+1;?></td>
 		<td class="break_all"><?php if($item['dev_cate']==1) {echo "一级节点";} else {echo "二级节点";} ?></td>
-		<td align="left" class="flh_150"><?php isset($item['time'])?date('Y-m-d', $item['time']):'';?></td>
+		<td align="left" class="flh_150"><?=$time?></td>
 		<td nowrap><?=date('Y-m-d H:i:s', $item['add_time'])?></td>
 		<td nowrap><a href="mod.php?DevID=<?=$item['DevID']?>"><img src="../images/mod.gif" alt=""></a>&nbsp;&nbsp;<a href="del.php?DevID=<?=$item['DevID']?>"><img src="../images/copy.gif" alt=""></a></td>
 	</tr>
