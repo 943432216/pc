@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 	$arr = array(
 		'dev_cate' => htmlentities($_POST['dev_cate']),
 		'time' => strtotime(htmlentities($_POST['time'])),
-		'pic_src' => isset($_FILES["pic_src"]["name"])?'/u_file/develop/' . $pic_name:'',
+		'pic_src' => empty($_FILES["pic_src"]["name"])?'':'/u_file/develop/' . $pic_name,
 		'happen' => htmlentities($_POST['happen']),
 		'add_time' => time()
 		);
