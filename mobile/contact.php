@@ -48,6 +48,8 @@ if ($_SERVER['REQUEST_METHOD']=='POST') {
 } else {
 	$error = 0;
 }
+$banner=$db->get_one('ad',"AId='8'");
+$site_root_path = dirname($site_root_path);
 ?>
 <!DOCTYPE html>
 <html>
@@ -81,7 +83,12 @@ if ($_SERVER['REQUEST_METHOD']=='POST') {
 			</header>
 			<div class="banner float width">
 				<div class="contact_banner">
-					<img src="img/731b7eec3f.jpg" class="img" />
+					<?php
+				    for($i=0;$i<5;$i++){
+					if(!is_file($site_root_path.$banner['PicPath_'.$i]))continue;
+					?>
+					<img src="<?=$banner['PicPath_'.$i]?>" class="img" style="<?=$i==0?'':'display:none;'?>"/>
+					<?php }?>
 				</div>
 			</div>
 			<section class="float width float">

@@ -6,6 +6,8 @@ include($site_root_path.'/inc/function.php');
 include($site_root_path.'/inc/common.php');
 
 $content=$db->get_one('info2_contents',"InfoId='29'");
+$banner=$db->get_one('ad',"AId='3'");
+$site_root_path = dirname($site_root_path);
 ?>
 <!DOCTYPE html>
 <html>

@@ -32,6 +32,7 @@ switch ($_GET['CateId']) {
 		$pic_name = 'title_heart.png'; 
 		break;
 }
+$site_root_path = dirname($site_root_path);
 //var_dump($xs_state);exit;
 ?>
 <!DOCTYPE html>

@@ -33,6 +33,7 @@ switch ($_GET['CateId']) {
 		$pic_name = 'title_product_01.png';
 		break;
 }
+$site_root_path = dirname($site_root_path);
 //var_dump($title_top['CateId']);exit;
 ?>
 <!DOCTYPE html>

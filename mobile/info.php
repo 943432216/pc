@@ -31,6 +31,7 @@ for ($i=0; $i<20; $i++) {
 	$fresh_state[$i]['state_url'] = '/info-detail.php?InfoId=' . $fresh_state[$i]['InfoId'];
 }
 $fresh_state = json_encode($fresh_state, JSON_UNESCAPED_UNICODE);
+$site_root_path = dirname($site_root_path);
 //var_dump($fresh_state);exit;
 
 ?>

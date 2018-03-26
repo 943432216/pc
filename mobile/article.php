@@ -46,6 +46,9 @@ $dev_arr = $db->get_all('develop', 1, 'dev_cate,time,pic_src,happen');
 $dev_str = json_encode($dev_arr, JSON_UNESCAPED_UNICODE);
 $hor_arr = $db->get_all('honor', 1, 'hor_src,hor_commend');
 $hor_str = json_encode($hor_arr, JSON_UNESCAPED_UNICODE);
+
+$banner=$db->get_one('ad',"AId='3'");
+$site_root_path = dirname($site_root_path);
 ?>
 <!DOCTYPE html>
 <html>

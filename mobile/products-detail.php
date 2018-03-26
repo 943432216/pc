@@ -37,6 +37,7 @@ switch ($product['CateId']) {
 		$title_top = $xbw;
 		break;
 }
+$site_root_path = dirname($site_root_path);
 //var_dump($banner);exit;
 //$pic_top = $db->get_one('ad',"AId='6");
 ?>
