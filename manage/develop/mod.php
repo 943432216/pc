@@ -46,10 +46,12 @@ include('../../inc/manage/header.php');
 				<?php 
 					switch ($info['dev_cate']) {
 						case '1':
-							echo '<option value="1">一级节点</option>';
+							echo '<option value="1" selected="selected">一级节点</option>';
+							echo '<option value="2">二级节点</option>';
 							break;						
 						default:
-							echo '<option value="2">二级节点</option>';
+							echo '<option value="1">一级节点</option>';
+							echo '<option value="2" selected="selected">二级节点</option>';
 							break;
 					}
 				?>			
