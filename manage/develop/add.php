@@ -30,7 +30,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 	$arr = array(
 		'dev_cate' => htmlentities($_POST['dev_cate']),
-		'time' => htmlentities($_POST['time']),
+		'time' => strtotime(htmlentities($_POST['time'])),
 		'pic_src' => '/u_file/develop/' . $pic_name,
 		'happen' => htmlentities($_POST['happen']),
 		'add_time' => time()
