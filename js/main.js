@@ -358,9 +358,7 @@ function sendID() {
 }
 
 function xllc(data) {
-	console.log(data)
 	var $lcleft = '<div class="float width overflow ex_box"><span class="lc_con"><h3></h3><div class="lc_conbox width float"><p></p><img src=""/></div></span></div>';
-	//	var $lc_con = '<div class="lc_conbox width float"><p></p><img src=""/></div>'
 	var $lcright = '<div class="float width overflow ex_box"><span class="lc_conr"><h3></h3><div class="lc_conbox width float"><p></p><img src=""/></div></span></div>';
 	$.each(data, function(a, b) {
 		console.log(b)

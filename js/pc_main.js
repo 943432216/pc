@@ -413,12 +413,32 @@ function product_pic() {
 
 function glory(el, data) {
 	var $rybox = '<span class="ry_box"><img src="" class="img"/><p></p></span>';
-	console.log(data);
+//	console.log(data);
 	$.each(data, function(a, b) {
 		$(el).append($rybox);
 		$(el).children('span').eq(a).find('img').attr('src', b.hor_src);
 		$(el).children('span').eq(a).find('p').html(b.hor_commend);
 	});
+}
+
+
+function xllc(data) {
+	var $lcleft = '<div class="float width overflow ex_box"><span class="lc_con"><h3></h3><div class="lc_conbox width float"><p></p><img src=""/></div></span></div>';
+	var $lcright = '<div class="float width overflow ex_box"><span class="lc_conr"><h3></h3><div class="lc_conbox width float"><p></p><img src=""/></div></span></div>';
+	$.each(data, function(a, b) {
+		if(a % 2 == 0) {
+			$('.XB_lc').append($lcleft);
+			$('.XB_lc').children('div').eq(a).find('h3').html(b.time);
+			$('.XB_lc').children('div').eq(a).find('img').attr('src', b.pic_src);
+			$('.XB_lc').children('div').eq(a).find('p').html(b.happen);
+		} else {
+			$('.XB_lc').append($lcright);
+			$('.XB_lc').children('div').eq(a).find('h3').html(b.time);
+			$('.XB_lc').children('div').eq(a).find('img').attr('src', b.pic_src);
+			$('.XB_lc').children('div').eq(a).find('p').html(b.happen);
+		}
+
+	})
 }
 
 function trim(str) {

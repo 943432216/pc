@@ -233,12 +233,11 @@ input[value='Go']{float:left;font-size: 18px;padding: 4px 0;}
 /*荣誉*/
 
 .XB_lc{background: url(../img/PCfz.jpg) no-repeat;background-size:100% auto;overflow: hidden;padding-bottom:5%;}
-.lc_left:nth-of-type(1){margin-top:15%;}
+/*.lc_left:nth-of-type(1){margin-top:15%;}
 .lc_left{float: left;margin: 0 50% 0 0;background: url(../img/timer.png) no-repeat right top;background-size:35px auto;width: 50%;}
 .lc_right{float: left;margin: 0 0 0 46.5%;background: url(../img/timer.png) no-repeat left top;background-size:35px auto;width: 53.5%;}
 .lc_left p{float: left;color: #323232;font-size:15px;width:100%;text-align: right;margin-top:20px;}
 .lc_left h3{font-size: 25px;color: #b50005;text-align: right;width: 90%;margin: 0;padding-right:10%;height: 35px;line-height: 35px;}
-.lc_left b{float: left;text-align: right;}
 .lc_left b img{width: 125px;height: 80px;display: block;margin-left:10%;}
 .lc_left b:nth-of-type(1){width:30%;margin-left: 10%;text-align: right;}
 .lc_left b:nth-of-type(2){width:53%;padding-right:6%;background: url(../img/hx.png) no-repeat 96% 20%;background-size: 19px 1px;height: 80px;overflow: hidden;line-height: 130%;padding-left: 2%;}
@@ -246,10 +245,26 @@ input[value='Go']{float:left;font-size: 18px;padding: 4px 0;}
 .lc_right p{float: left;color: #323232;font-size:15px;width:100%;text-align:left;margin-top:20px;}
 .lc_right h3{font-size: 25px;color: #b50005;text-align:left;width: 90%;margin: 0;padding-left:10%;height: 35px;line-height: 35px;}
 .lc_right b{float: left;text-align:left;}
-.lc_right b img{width: 125px;height: 80px;}
 .lc_right b img{width: 125px;height: 80px;display: block;}
 .lc_right b:nth-of-type(2){width:30%;margin-right: 10%;text-align: left;float: left;}
-.lc_right b:nth-of-type(1){width:48%;padding-left: 8%;background: url(../img/hx.png) no-repeat 6% 20%;background-size: 21px 1px;height: 80px;overflow: hidden;float: left;line-height: 130%;padding-right: 2%;}
+.lc_right b:nth-of-type(1){width:48%;padding-left: 8%;background: url(../img/hx.png) no-repeat 6% 20%;background-size: 21px 1px;height: 80px;overflow: hidden;float: left;line-height: 130%;padding-right: 2%;}*/
+
+/*.exper { float: left; width: 100%;overflow: hidden; background: url(../img/wapxllc_bg.png) no-repeat left top #e9ddd4;background-size: 100%;padding: 0.6rem 0;}*/
+.ex_box {background: url(../mobile/img/lct.png) no-repeat center top;background-size: 0.8rem 0.8rem;}
+.lc_con {width: 45%;overflow: hidden;margin: 0 50% 0 0%;display: block;padding-left: 5%;}
+.lc_con {background-image: url(../mobile/img/lctx.png);background-repeat: no-repeat;background-position: right 0.8rem;background-size: 0.06rem 100%;}
+.lc_con h3 {width: 85%;float: left;font-size: 0.52rem;color: #b50005;text-align: right;padding-right: 15%;}
+.lc_con p {line-height: 160%;overflow: hidden;display: block;float: left;color: #323232;width: 85%;padding-right: 15%;background: url(../mobile/img/hxx.png) no-repeat right center;background-size: 0.64rem 0.08rem;font-size: 0.42rem;text-align: right;}
+.lc_con img {width: 4rem;height: 3rem;float: left;display: block;margin-top: 0.4rem;}
+.ex_box:nth-of-type(1) h3 {background: url(../mobile/img/img/qz.png) no-repeat;background-size: 0.4rem 0.6rem;background-position: 60%;}
+.lc_conr {width: 45%;overflow: hidden; margin: 0 0% 0 50%;display: block;padding-right: 5%;}
+.lc_conr {background-image: url(../mobile/img/lctx.png);background-repeat: no-repeat;background-position: left 0.8rem;background-size: 0.06rem 100%;}
+.lc_conr h3 {width: 85%;float: left;font-size: 0.52rem;color: #b50005;text-align: left;padding-left: 15%;}
+.lc_conr p {line-height: 160%;overflow: hidden;display: block;float: left;color: #323232;width: 85%;padding-left: 15%;background: url(../mobile/img/hxx.png) no-repeat left center;background-size: 0.64rem 0.08rem;font-size: 0.42rem;text-align: left;}
+.lc_conr img {width: 4rem;height: 3rem;float: right;display: block;margin-top: 0.4rem;}
+.lc_conbox {margin-top: 0.5rem;}
+
+
 /*历程*/
 .shades:nth-of-type(1){margin-left:45% !important;width:160px;background:#fff;}
 .ctn span{margin-left:7% !important;}

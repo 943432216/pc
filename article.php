@@ -64,36 +64,7 @@ $hor_str = json_encode($hor_arr, JSON_UNESCAPED_UNICODE);
 					<div class="sec_box width left" style="display: block;">
 						<?php if($AId == 6) { ?>
 						<div class="XB_lc">
-							<!--<span class="lc_left"><h3>1984</h3><p><b><img src="img/e1804.png" class="img"/></b><b>被誉为“中国救心丸”的星辰牌“心宝丸”在广东省药物研究所震撼问世</b></p></span>
-							<span class="lc_right"><h3>1984</h3><p><b>被誉为“中国救心丸”的星辰牌“心宝丸”在广东省药物研究所震撼问世</b><b><img src="img/e1804.png" class="img"/></b></p></span>
-							<span class="lc_left">
-								<h3>1984</h3>
-								<p>
-									<b><img src="img/e1804.png" class="img"/></b>
-									<b>被誉为“中国救心丸”的星辰牌“心宝丸”在广东省药物研究所震撼问世</b>
-								</p>
-							</span>
-							<span class="lc_right">
-								<h3>1984</h3>
-								<p>
-									<b>被誉为“中国救心丸”的星辰牌“心宝丸”在广东省药物研究所震撼问世</b>
-									<b><img src="img/e1804.png" class="img"/></b>
-								</p>
-							</span>
-							<span class="lc_left">
-								<h3>1984</h3>
-								<p>
-									<b><img src="img/e1804.png" class="img"/></b>
-									<b>被誉为“中国救心丸”的星辰牌“心宝丸”在广东省药物研究所震撼问世</b>
-								</p>
-							</span>
-							<span class="lc_right">
-								<h3>1984</h3>
-								<p>
-									<b>被誉为“中国救心丸”的星辰牌“心宝丸”在广东省药物研究所震撼问世</b>
-									<b><img src="img/e1804.png" class="img"/></b>
-								</p>
-							</span>-->
+						
 						</div>
 						<?php } ?>
 						<?php if($AId == 4) { ?>
@@ -217,24 +188,25 @@ $hor_str = json_encode($hor_arr, JSON_UNESCAPED_UNICODE);
 				}
 				$('.sec_box').find('*').removeAttr('style');
 				$('.sec_box').find('img').addClass('img')
-				var $lcleft='<span class="lc_left"><h3></h3><p><b><img src="" class="img"/></b><b></b></p></span>';
-				var $lcright='<span class="lc_right"><h3></h3><p><b></b><b><img src="" class="img"/></b></p></span>'
-				$.each(lcs,function(a,b){
-					console.log(b)
-					if(a%2==0){
-						$('.XB_lc').append($lcleft);
-						$('.XB_lc').children('span').eq(a).find('h3').html(b.time);
-						$('.XB_lc').children('span').eq(a).find('img').attr('src',b.pic_src);
-						$('.XB_lc').children('span').eq(a).find('b').eq(1).html(b.happen);
-					}else{
-						$('.XB_lc').append($lcright);
-						$('.XB_lc').children('span').eq(a).find('h3').html(b.time);
-						$('.XB_lc').children('span').eq(a).find('img').attr('src',b.pic_src);
-						$('.XB_lc').children('span').eq(a).find('b').eq(0).html(b.happen);
-					}
-					
-				});
-				glory('.XB_ry',ry)
+//				var $lcleft='<span class="lc_left"><h3></h3><p><b><img src="" class="img"/></b><b></b></p></span>';
+//				var $lcright='<span class="lc_right"><h3></h3><p><b></b><b><img src="" class="img"/></b></p></span>';
+//				console.log(lcs);
+//				$.each(lcs,function(a,b){
+//					if(a%2==0){
+//						$('.XB_lc').append($lcleft);
+//						$('.XB_lc').children('span').eq(a).find('h3').html(b.time);
+//						$('.XB_lc').children('span').eq(a).find('img').attr('src',b.pic_src);
+//						$('.XB_lc').children('span').eq(a).find('b').eq(1).html(b.happen);
+//					}else{
+//						$('.XB_lc').append($lcright);
+//						$('.XB_lc').children('span').eq(a).find('h3').html(b.time);
+//						$('.XB_lc').children('span').eq(a).find('img').attr('src',b.pic_src);
+//						$('.XB_lc').children('span').eq(a).find('b').eq(0).html(b.happen);
+//					}
+//					
+//				});
+				glory('.XB_ry',ry);
+				xllc(lcs)
 			})
 		</script>
 	</body>
