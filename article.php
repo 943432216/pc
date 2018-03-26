@@ -21,7 +21,10 @@ if($GroupId==1){
 }elseif($GroupId==2){
 	$banner=$db->get_one('ad',"AId='8'");
 }
-$dev_arr = $db->get_all('develop', 1, 'dev_cate,time,pic_src,happen');
+$dev_arr = $db->get_all('develop', 1, 'dev_cate,time,pic_src,happen', 'time asc');
+foreach ($dev_arr as $k => $v) {
+	$dev_arr[$k]['time'] = date('m/d/Y', $v['time']);
+}
 // var_dump($dev_arr);exit;
 $dev_str = json_encode($dev_arr, JSON_UNESCAPED_UNICODE);
 $hor_arr = $db->get_all('honor', 1, 'hor_src,hor_commend');
