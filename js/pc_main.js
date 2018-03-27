@@ -479,6 +479,7 @@ function tzs() {
 			c = 't2';
 			break;
 	}
+	console.log(a)
 	var sUserAgent = navigator.userAgent.toLowerCase();
 	var bIsIpad = sUserAgent.match(/ipad/i) == 'ipad';
 	var bIsIphone = sUserAgent.match(/iphone os/i) == 'iphone os';
@@ -495,7 +496,7 @@ function tzs() {
 		}else if(c=='t1'){
 			window.location.href = '../mobile/'+d+'&a='+c;
 		}else if(c=='t5'){
-			window.location.href = '../mobile/'+d+'&a='+c;
+			window.location.href = '../mobile/'+d+'&a='+a;
 		}else if(c=='t2'){
 			window.location.href = '../mobile/'+d+'&a='+c;
 		}else if(c=='t3'){

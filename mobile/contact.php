@@ -194,8 +194,7 @@ $site_root_path = dirname($site_root_path);
 			})
 			if (errors==0) {
 				//不做任何操作
-			}
-			if(errors==1){
+			}else if(errors==1){
 					alert('提交成功');
 			}else{
 				$.each(errors, function(a,b) {
