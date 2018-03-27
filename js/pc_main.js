@@ -496,7 +496,7 @@ function tzs() {
 		}else if(c=='t1'){
 			window.location.href = '../mobile/'+d+'&a='+c;
 		}else if(c=='t5'){
-			window.location.href = '../mobile/'+d+'&a='+a;
+			window.location.href = '../mobile/contact.php'+'?AId=11'+'&a='+c;
 		}else if(c=='t2'){
 			window.location.href = '../mobile/'+d+'&a='+c;
 		}else if(c=='t3'){
