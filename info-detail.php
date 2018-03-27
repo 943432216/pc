@@ -34,11 +34,26 @@ foreach ($msg_all as $k => $v) {
 		<meta charset="utf-8" />
 		<title>心宝药业</title>
 		<link rel="stylesheet" type="text/css" href="css/nitialize.css" />
-		<link rel="stylesheet" type="text/css" href="css/pc_1600.css" id="lins" />
+		<link rel="stylesheet" type="text/css" href="" id="lins" />
 		<script type="text/javascript">
 			var btname=<?=$CateId?>;
 			var about_new=<?=json_encode($msg_all,JSON_UNESCAPED_UNICODE)?>;
 			var read_new=<?=json_encode($recommend,JSON_UNESCAPED_UNICODE)?>;
+		</script>
+		<script type="text/javascript">
+			window.onload=function(){
+				var resolution = window.screen.width;
+				var lins=document.getElementById('lins');
+				if(resolution >= 1360 && resolution <= 1367) {
+					lins.href='css/pc_1366.css';
+				}else if(resolution >= 1585 && resolution <= 1601) {
+					lins.href='css/pc_1600.css';
+				}else if(resolution >= 1901 && resolution <= 1921) {
+					lins.href='css/pc_1920.css';
+				}else if(resolution > 1921) {
+					lins.href='css/pc_1366.css';
+				}
+			}
 		</script>
 	</head>
 		

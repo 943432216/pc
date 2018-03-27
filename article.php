@@ -38,10 +38,25 @@ $hor_str = json_encode($hor_arr, JSON_UNESCAPED_UNICODE);
 		<meta charset="utf-8" />
 		<title>心宝药业</title>
 		<link rel="stylesheet" type="text/css" href="css/nitialize.css" />
-		<link rel="stylesheet" type="text/css" href="css/pc_1600.css" id="lins"/>
+		<link rel="stylesheet" type="text/css" href="" id="lins"/>
 		<script type="text/javascript">
 			var lcs=<?=$dev_str?>;
 			var ry=<?=$hor_str?>;
+		</script>
+		<script type="text/javascript">
+			window.onload=function(){
+				var resolution = window.screen.width;
+				var lins=document.getElementById('lins');
+				if(resolution >= 1360 && resolution <= 1367) {
+					lins.href='css/pc_1366.css';
+				}else if(resolution >= 1585 && resolution <= 1601) {
+					lins.href='css/pc_1600.css';
+				}else if(resolution >= 1901 && resolution <= 1921) {
+					lins.href='css/pc_1920.css';
+				}else if(resolution > 1921) {
+					lins.href='css/pc_1366.css';
+				}
+			}
 		</script>
 	</head>
 

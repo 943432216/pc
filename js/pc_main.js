@@ -2,7 +2,7 @@ $(function() {
 	var ul_hf = window.location.href;
 	var titles = document.title;
 	var n = 0;
-	var resolution = window.screen.width;
+//	var resolution = window.screen.width;
 	//导航
 	$('.start').each(function() {
 		$(this).parent('li').on({
@@ -129,18 +129,18 @@ $(function() {
 		})
 	});
 
-	if(resolution >= 1360 && resolution <= 1367) {
-		$('#lins').attr('href', 'css/pc_1366.css');
-	}
-	if(resolution >= 1585 && resolution <= 1601) {
-		$('#lins').attr('href', 'css/pc_1600.css');
-	}
-	if(resolution >= 1901 && resolution <= 1921) {
-		$('#lins').attr('href', 'css/pc_1920.css');
-	}
-	if(resolution > 1921) {
-		$('#lins').attr('href', 'css/pc_1366.css');
-	}
+//	if(resolution >= 1360 && resolution <= 1367) {
+//		$('#lins').attr('href', 'css/pc_1366.css');
+//	}
+//	if(resolution >= 1585 && resolution <= 1601) {
+//		$('#lins').attr('href', 'css/pc_1600.css');
+//	}
+//	if(resolution >= 1901 && resolution <= 1921) {
+//		$('#lins').attr('href', 'css/pc_1920.css');
+//	}
+//	if(resolution > 1921) {
+//		$('#lins').attr('href', 'css/pc_1366.css');
+//	}
 	navs();
 	tzs()
 })
