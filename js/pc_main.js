@@ -5,16 +5,27 @@ $(function() {
 	var resolution = window.screen.width;
 	//导航
 	$('.start').each(function() {
-		$(this).on({
+		$(this).parent('li').on({
 			mouseover: function() {
 				$('.nav2').css('display', 'none');
-				$(this).parents('li').css('display', 'block');
-				$(this).next('.nav2').css('display', 'block');
+//				$(this).parents('li').css('display', 'block');
+				$(this).children('.nav2').css('display', 'block');
+//				console.log($(this))
 			},
 			mouseout: function() {
-				$(this).next('.nav2').css('display', 'none');
+				$(this).children('.nav2').css('display', 'none');
 			}
-		})
+		});
+//		$(this).on({
+//			mouseover: function() {
+//				$('.nav2').css('display', 'none');
+////				$(this).parents('li').css('display', 'block');
+//				$(this).next('.nav2').css('display', 'block');
+//			},
+//			mouseout: function() {
+//				$(this).next('.nav2').css('display', 'none');
+//			}
+//		})
 	});
 	$('.nav2').each(function() {
 		$(this).on({
