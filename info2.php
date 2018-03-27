@@ -28,7 +28,6 @@ $banner=$db->get_one('ad',"AId='7'");
 		<link rel="stylesheet" type="text/css" href="css/nitialize.css" />
 		<link rel="stylesheet" type="text/css" href="" id="lins" />
 		<script type="text/javascript">
-			window.onload=function(){
 				var resolution = window.screen.width;
 				var lins=document.getElementById('lins');
 				if(resolution >= 1360 && resolution <= 1367) {
@@ -40,7 +39,6 @@ $banner=$db->get_one('ad',"AId='7'");
 				}else if(resolution > 1921) {
 					lins.href='css/pc_1366.css';
 				}
-			}
 		</script>
 	</head>
 

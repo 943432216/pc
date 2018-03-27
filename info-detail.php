@@ -36,12 +36,6 @@ foreach ($msg_all as $k => $v) {
 		<link rel="stylesheet" type="text/css" href="css/nitialize.css" />
 		<link rel="stylesheet" type="text/css" href="" id="lins" />
 		<script type="text/javascript">
-			var btname=<?=$CateId?>;
-			var about_new=<?=json_encode($msg_all,JSON_UNESCAPED_UNICODE)?>;
-			var read_new=<?=json_encode($recommend,JSON_UNESCAPED_UNICODE)?>;
-		</script>
-		<script type="text/javascript">
-			window.onload=function(){
 				var resolution = window.screen.width;
 				var lins=document.getElementById('lins');
 				if(resolution >= 1360 && resolution <= 1367) {
@@ -53,7 +47,11 @@ foreach ($msg_all as $k => $v) {
 				}else if(resolution > 1921) {
 					lins.href='css/pc_1366.css';
 				}
-			}
+		</script>
+		<script type="text/javascript">
+			var btname=<?=$CateId?>;
+			var about_new=<?=json_encode($msg_all,JSON_UNESCAPED_UNICODE)?>;
+			var read_new=<?=json_encode($recommend,JSON_UNESCAPED_UNICODE)?>;
 		</script>
 	</head>
 		

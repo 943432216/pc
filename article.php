@@ -44,18 +44,16 @@ $hor_str = json_encode($hor_arr, JSON_UNESCAPED_UNICODE);
 			var ry=<?=$hor_str?>;
 		</script>
 		<script type="text/javascript">
-			window.onload=function(){
-				var resolution = window.screen.width;
-				var lins=document.getElementById('lins');
-				if(resolution >= 1360 && resolution <= 1367) {
-					lins.href='css/pc_1366.css';
-				}else if(resolution >= 1585 && resolution <= 1601) {
-					lins.href='css/pc_1600.css';
-				}else if(resolution >= 1901 && resolution <= 1921) {
-					lins.href='css/pc_1920.css';
-				}else if(resolution > 1921) {
-					lins.href='css/pc_1366.css';
-				}
+			var resolution = window.screen.width;
+			var lins=document.getElementById('lins');
+			if(resolution >= 1360 && resolution <= 1367) {
+				lins.href='css/pc_1366.css';
+			}else if(resolution >= 1585 && resolution <= 1601) {
+				lins.href='css/pc_1600.css';
+			}else if(resolution >= 1901 && resolution <= 1921) {
+				lins.href='css/pc_1920.css';
+			}else if(resolution > 1921) {
+				lins.href='css/pc_1366.css';
 			}
 		</script>
 	</head>
